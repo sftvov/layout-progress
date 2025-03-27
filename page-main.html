@@ -2,7 +2,7 @@
 <html lang="ru">
   <head>
     <meta name="robots" content="noindex"/>
-    <link rel="stylesheet" href="css/style.min.css?_v=1742886805578"/>
+    <link rel="stylesheet" href="css/style.min.css?_v=1743110888967"/>
     <meta charset="utf-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <title>MAIN</title>
@@ -15,10 +15,13 @@
       <header class="header _lp">
         <div class="header__container _container">
           <div class="header__top-level">
-            <div class="header__city city-select">
-              <p class="city-select__current">Санкт-Петербург</p>
-              <div class="city-select__variants"><a class="city-select__variant" href="#">Москва</a></div>
-            </div>
+            <button class="header__city header-select _menu-btn">
+              <div class="header-select__triangle triangle"></div>
+              <div class="header-select__current-city">Санкт-Петербург</div>
+              <div class="header-select__variants-wrapper _menu-body">
+                <div class="header-select__variants"><a class="header-select__city _active" href="#">Санкт-Петербург</a><a class="header-select__city" href="#">Москва</a></div>
+              </div>
+            </button>
             <div class="header__icon-links"><a class="header__icon-link" href="#">
                 <svg class="header__icon-link-svg">
                   <use xlink:href="img/sprite/symbols.svg#plan"></use>
@@ -29,14 +32,18 @@
                 <svg class="header__icon-link-svg">
                   <use xlink:href="img/sprite/symbols.svg#mail"></use>
                 </svg>Рассылка</a></div>
-            <div class="header__phone phone-select"><a class="phone-select__first" href="#">8 (800) 333-88-44</a>
-              <div class="phone-select__variants"><a class="phone-select__variant" href="#">8 (812) 331-88-88</a></div>
-            </div><a class="header__mail" href="#">
+            <button class="header__phone header-select header-select--accent _menu-btn">
+              <div class="header-select__triangle triangle"></div>
+              <div class="header-select__first-phone" href="#">8 (800) 333-88-44</div>
+              <div class="header-select__variants-wrapper _menu-body">
+                <div class="header-select__variants"><a class="header-select__phone _active" href="#">8 (800) 333-88-44</a><a class="header-select__phone" href="#">8 (812) 331-88-88</a></div>
+              </div>
+            </button><a class="header__mail" href="#">
               <svg class="header__mail-svg">
                 <use xlink:href="img/sprite/symbols.svg#email"></use>
               </svg>client@cntiprogress.ru</a>
           </div>
-          <div class="header__body"><a class="header__logo-link" href="#"> <img class="header__logo-link-img" src="img/logo.svg" alt=""></a>
+          <div class="header__body"><a class="header__logo-link" href="/"> <img class="header__logo-link-img" src="img/logo.svg" alt=""></a>
             <form class="header__search">
               <input class="header__search-input" placeholder="Поиск по сайту">
               <input class="header__search-btn" type="submit" value="Найти курс">
@@ -44,10 +51,43 @@
           </div>
           <div class="header-menu">
             <div class="header-menu__items">
-              <div class="header-menu__item header-menu__item--has-children"> <a class="header-menu__item-link" href="#"> СЕМИНАРЫ И КУРСЫ</a></div>
-              <div class="header-menu__item header-menu__item--has-children"> <a class="header-menu__item-link" href="#"> О КОМПАНИИ</a></div>
-              <div class="header-menu__item"> <a class="header-menu__item-link" href="#"> АКЦИИ</a></div>
-              <div class="header-menu__item"> <a class="header-menu__item-link" href="#"> КОНТАКТЫ</a></div>
+              <button class="header-menu__item _menu-btn"><span class="header-menu__item-name">СЕМИНАРЫ И КУРСЫ</span>
+                <svg class="header-menu__item-svg">
+                  <use xlink:href="img/sprite/symbols.svg#chevron-down"></use>
+                </svg>
+                <div class="header-menu__triangle triangle"></div>
+              </button>
+              <div class="header-menu__submenu submenu _menu-body">
+                <div class="submenu__items"><a class="submenu__item" href="#"> <span class="submenu__item-name">Семинары и курсы</span>
+                    <svg class="submenu__item-svg">
+                      <use xlink:href="img/sprite/symbols.svg#chevron-down"></use>
+                    </svg></a><a class="submenu__item" href="#"> <span class="submenu__item-name">Онлайн-обучение</span>
+                    <svg class="submenu__item-svg">
+                      <use xlink:href="img/sprite/symbols.svg#chevron-down"></use>
+                    </svg></a>
+                  <div class="submenu__item submenu__item--has-children" href="#"> <span class="submenu__item-name">Дистанционные курсы</span>
+                    <div class="submenu__links"><a class="submenu__link" href="#">Профпереподготовка
+                        <svg class="submenu__link-svg">
+                          <use xlink:href="img/sprite/symbols.svg#chevron-down"></use>
+                        </svg></a><a class="submenu__link" href="#">Повышение квалификации
+                        <svg class="submenu__link-svg">
+                          <use xlink:href="img/sprite/symbols.svg#chevron-down"></use>
+                        </svg></a></div>
+                  </div><a class="submenu__item" href="#"> <span class="submenu__item-name">Корпоративное обучение</span>
+                    <svg class="submenu__item-svg">
+                      <use xlink:href="img/sprite/symbols.svg#chevron-down"></use>
+                    </svg></a>
+                </div>
+              </div>
+              <button class="header-menu__item _menu-btn"><span class="header-menu__item-name">О КОМПАНИИ  </span>
+                <svg class="header-menu__item-svg">
+                  <use xlink:href="img/sprite/symbols.svg#chevron-down"></use>
+                </svg>
+                <div class="header-menu__triangle triangle"> </div>
+              </button>
+              <div class="header-menu__submenu submenu _menu-body">
+                <div class="submenu__items"></div>
+              </div><a class="header-menu__item" href="#"><span class="header-menu__item-name">АКЦИИ</span></a><a class="header-menu__item" href="#"><span class="header-menu__item-name">КОНТАКТЫ</span></a>
             </div>
             <div class="square"></div>
             <div class="square square--orange"></div>
@@ -63,6 +103,6 @@
       </main>
       <footer class="footer"></footer>
     </div>
-    <script src="js/script.min.js?_v=1742886805578"></script>
+    <script src="js/script.min.js?_v=1743110888967"></script>
   </body>
 </html>
