@@ -2,10 +2,10 @@
 <html lang="ru">
   <head>
     <meta name="robots" content="noindex"/>
-    <link rel="stylesheet" href="css/style.min.css?_v=1748375454892"/>
+    <link rel="stylesheet" href="css/style.min.css?_v=1748375454695"/>
     <meta charset="utf-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <title>ПЛАН</title>
+    <title>РАССЫЛКА</title>
     <meta name="description" content="description"/>
     <meta name="theme-color" content=""/>
     <link rel="canonical" href=""/>
@@ -205,698 +205,778 @@
         </div>
       </header>
       <main class="page" id="page">
-        <section class="plan section">
-          <div class="plan__container container">
-            <div class="plan__body">
-              <div class="plan__intro">
-                <h1 class="plan__title t1">Создайте учебный план в конструкторе</h1>
-                <div class="plan__intro-text">
-                  <p class="p1">Создайте свой план в 3 простых шага — выберите время обучения, тематику курсов и город. Конструктор сформирует для вас pdf-расписание, с которым удобно планировать обучение.</p>
-                </div>
-              </div>
-              <div class="plan__main">
-                <div class="plan__block">
-                  <div class="plan__block-top">
-                    <p class="plan__block-num a1">1.</p>
-                    <div class="plan__block-top-main">
-                      <h2 class="plan__block-name t2">Выберите интервал</h2>
-                      <div class="plan__dates dates">
-                        <div class="dates__date"><span class="dates__date-span p1">с</span>
-                          <div class="datepicker">
-                            <input class="datepicker__input" value="17.02.2025">
-                          </div>
-                        </div>
-                        <div class="dates__date"><span class="dates__date-span p1">по</span>
-                          <div class="datepicker">
-                            <input class="datepicker__input" value="16.02.2026">
-                          </div>
+        <section class="mailing section">
+          <div class="mailing__container container">
+            <div class="mailing__body">
+              <h1 class="mailing__title title">Простая рассылка <br class="_n4-hide">о серьёзном обучении</h1>
+              <form class="mailing__form">
+                <div class="mailing__top">
+                  <h2 class="mailing__top-title t2">В рассылке: скидка 3% новым подписчикам, акции, премьеры курсов</h2>
+                  <div class="mailing__top-main">
+                    <h3 class="mailing__top-main-title t2">Заполните данные о себе</h3>
+                    <div class="mailing__top-inputs">
+                      <div class="mailing__top-input-wrapper--bright">
+                        <input class="mailing__top-input" type="text" placeholder="Фамилия">
+                      </div>
+                      <div class="mailing__top-input-wrapper">
+                        <input class="mailing__top-input" type="text" placeholder="Имя">
+                      </div>
+                      <div class="mailing__top-input-wrapper">
+                        <input class="mailing__top-input" type="text" placeholder="Отчество">
+                      </div>
+                      <div class="mailing__top-input-wrapper--accent">
+                        <input class="mailing__top-input" type="email" placeholder="Электронная почта">
+                      </div>
+                      <div class="mailing__top-input-wrapper">
+                        <input class="mailing__top-input" type="text" placeholder="Должность">
+                      </div>
+                      <div class="mailing__top-checkboxes-wrapper">
+                        <p class="mailing__top-checkboxes-title p2">Я отвечаю за обучение сотрудников</p>
+                        <div class="mailing__top-checkboxes">
+                          <label class="checkbox">
+                            <input class="checkbox__input" type="radio" name="employee_training_responsible" checked>
+                            <div class="checkbox__span-wrapper"><span class="checkbox__span">Да</span></div>
+                          </label>
+                          <label class="checkbox">
+                            <input class="checkbox__input" type="radio" name="employee_training_responsible">
+                            <div class="checkbox__span-wrapper"><span class="checkbox__span">Нет</span></div>
+                          </label>
                         </div>
                       </div>
                     </div>
                   </div>
                 </div>
-                <div class="plan__block">
-                  <div class="plan__block-top">
-                    <p class="plan__block-num a1">2.</p>
-                    <div class="plan__block-top-main">
-                      <h2 class="plan__block-name t2">Выберите рубрики. Кликните на рубрику, чтобы увидеть подрубрики и выбрать нужные. Это займет полминуты.        </h2>
-                    </div>
-                  </div>
-                  <div class="plan__spollers branch-spollers" data-spollers>
-                    <div class="branch-spollers__spoller" style="--group-color:var(--jade)" data-checkbox-group>
-                      <button class="branch-spollers__spoller-title" data-spoller>
-                        <h2 class="branch-title"><span class="branch-title__main"><span class="branch-title__title">Промышленность</span> <span class="branch-title__num" data-checkbox-num></span></span></h2>
-                      </button>
-                      <div class="branch-spollers__spoller-body">
-                        <div class="branch-spollers__checkboxes">
+                <div class="mailing__choose">
+                  <h2 class="mailing__choose-title t1">Выберите рубрики — это займёт полминуты</h2>
+                  <div class="mailing__choose-main">
+                    <div class="mailing__group" style="--group-color:var(--jade)">
+                      <h2 class="branch-title"><span class="branch-title__main"><span class="branch-title__title">Промышленность</span></span></h2>
+                      <div class="mailing__checkboxes">
+                        <div class="mailing__checkbox-wrapper">
                           <label class="checkbox">
-                            <input class="checkbox__input" type="checkbox" data-checkbox-all>
-                            <div class="checkbox__span-wrapper"><span class="checkbox__span">Выбрать все</span></div>
-                          </label>
-                          <label class="checkbox">
-                            <input class="checkbox__input" type="checkbox" data-checkbox-item>
+                            <input class="checkbox__input" type="checkbox">
                             <div class="checkbox__span-wrapper"><span class="checkbox__span">Управление производством</span></div>
                           </label>
+                        </div>
+                        <div class="mailing__checkbox-wrapper">
                           <label class="checkbox">
-                            <input class="checkbox__input" type="checkbox" data-checkbox-item>
+                            <input class="checkbox__input" type="checkbox">
                             <div class="checkbox__span-wrapper"><span class="checkbox__span">Материалы, технологии, оборудование</span></div>
                           </label>
+                        </div>
+                        <div class="mailing__checkbox-wrapper">
                           <label class="checkbox">
-                            <input class="checkbox__input" type="checkbox" data-checkbox-item>
+                            <input class="checkbox__input" type="checkbox">
                             <div class="checkbox__span-wrapper"><span class="checkbox__span">Бережливое производство</span></div>
                           </label>
+                        </div>
+                        <div class="mailing__checkbox-wrapper">
                           <label class="checkbox">
-                            <input class="checkbox__input" type="checkbox" data-checkbox-item>
+                            <input class="checkbox__input" type="checkbox">
                             <div class="checkbox__span-wrapper"><span class="checkbox__span">Гособоронзаказ</span></div>
                           </label>
+                        </div>
+                        <div class="mailing__checkbox-wrapper">
                           <label class="checkbox">
-                            <input class="checkbox__input" type="checkbox" data-checkbox-item>
+                            <input class="checkbox__input" type="checkbox">
                             <div class="checkbox__span-wrapper"><span class="checkbox__span">Импортозамещение</span></div>
                           </label>
+                        </div>
+                        <div class="mailing__checkbox-wrapper">
                           <label class="checkbox">
-                            <input class="checkbox__input" type="checkbox" data-checkbox-item>
+                            <input class="checkbox__input" type="checkbox">
                             <div class="checkbox__span-wrapper"><span class="checkbox__span">Управление качеством</span></div>
                           </label>
+                        </div>
+                        <div class="mailing__checkbox-wrapper">
                           <label class="checkbox">
-                            <input class="checkbox__input" type="checkbox" data-checkbox-item>
+                            <input class="checkbox__input" type="checkbox">
                             <div class="checkbox__span-wrapper"><span class="checkbox__span">Стандартизация. Метрология</span></div>
                           </label>
+                        </div>
+                        <div class="mailing__checkbox-wrapper" data-checkbox-group>
                           <label class="checkbox">
-                            <input class="checkbox__input" type="checkbox" data-checkbox-item>
+                            <input class="checkbox__input" type="checkbox" data-checkbox-all>
                             <div class="checkbox__span-wrapper"><span class="checkbox__span">Закупки. Снабжение. Склад</span></div>
                           </label>
+                          <div class="mailing__subrubrics">
+                            <label class="checkbox">
+                              <input class="checkbox__input" type="checkbox" data-checkbox-item>
+                              <div class="checkbox__span-wrapper"><span class="checkbox__span">Госзакупки</span></div>
+                            </label>
+                            <label class="checkbox">
+                              <input class="checkbox__input" type="checkbox" data-checkbox-item>
+                              <div class="checkbox__span-wrapper"><span class="checkbox__span">Склад</span></div>
+                            </label>
+                            <label class="checkbox">
+                              <input class="checkbox__input" type="checkbox" data-checkbox-item>
+                              <div class="checkbox__span-wrapper"><span class="checkbox__span">Закупки и снабжение</span></div>
+                            </label>
+                          </div>
+                        </div>
+                        <div class="mailing__checkbox-wrapper">
                           <label class="checkbox">
-                            <input class="checkbox__input" type="checkbox" data-checkbox-item>
+                            <input class="checkbox__input" type="checkbox">
                             <div class="checkbox__span-wrapper"><span class="checkbox__span">Транспорт</span></div>
                           </label>
+                        </div>
+                        <div class="mailing__checkbox-wrapper">
                           <label class="checkbox">
-                            <input class="checkbox__input" type="checkbox" data-checkbox-item>
+                            <input class="checkbox__input" type="checkbox">
                             <div class="checkbox__span-wrapper"><span class="checkbox__span">Интеллектуальная собственность</span></div>
                           </label>
+                        </div>
+                        <div class="mailing__checkbox-wrapper">
                           <label class="checkbox">
-                            <input class="checkbox__input" type="checkbox" data-checkbox-item>
+                            <input class="checkbox__input" type="checkbox">
                             <div class="checkbox__span-wrapper"><span class="checkbox__span">Управление инновациями</span></div>
                           </label>
+                        </div>
+                        <div class="mailing__checkbox-wrapper">
                           <label class="checkbox">
-                            <input class="checkbox__input" type="checkbox" data-checkbox-item>
+                            <input class="checkbox__input" type="checkbox">
                             <div class="checkbox__span-wrapper"><span class="checkbox__span">Легкая промышленность</span></div>
                           </label>
                         </div>
                       </div>
                     </div>
-                    <div class="branch-spollers__spoller" style="--group-color:var(--jade)" data-checkbox-group>
-                      <button class="branch-spollers__spoller-title" data-spoller>
-                        <h2 class="branch-title"><span class="branch-title__main"><span class="branch-title__title">Безопасность</span> <span class="branch-title__num" data-checkbox-num></span></span></h2>
-                      </button>
-                      <div class="branch-spollers__spoller-body">
-                        <div class="branch-spollers__checkboxes">
+                    <div class="mailing__group" style="--group-color:var(--jade)">
+                      <h2 class="branch-title"><span class="branch-title__main"><span class="branch-title__title">Безопасность</span></span></h2>
+                      <div class="mailing__checkboxes">
+                        <div class="mailing__checkbox-wrapper">
                           <label class="checkbox">
-                            <input class="checkbox__input" type="checkbox" data-checkbox-all>
-                            <div class="checkbox__span-wrapper"><span class="checkbox__span">Выбрать все</span></div>
-                          </label>
-                          <label class="checkbox">
-                            <input class="checkbox__input" type="checkbox" data-checkbox-item>
+                            <input class="checkbox__input" type="checkbox">
                             <div class="checkbox__span-wrapper"><span class="checkbox__span">Экономическая и&nbsp;юридическая</span></div>
                           </label>
+                        </div>
+                        <div class="mailing__checkbox-wrapper">
                           <label class="checkbox">
-                            <input class="checkbox__input" type="checkbox" data-checkbox-item>
+                            <input class="checkbox__input" type="checkbox">
                             <div class="checkbox__span-wrapper"><span class="checkbox__span">Кадровые риски</span></div>
                           </label>
+                        </div>
+                        <div class="mailing__checkbox-wrapper">
                           <label class="checkbox">
-                            <input class="checkbox__input" type="checkbox" data-checkbox-item>
+                            <input class="checkbox__input" type="checkbox">
                             <div class="checkbox__span-wrapper"><span class="checkbox__span">Пожарная безопасность</span></div>
                           </label>
+                        </div>
+                        <div class="mailing__checkbox-wrapper">
                           <label class="checkbox">
-                            <input class="checkbox__input" type="checkbox" data-checkbox-item>
+                            <input class="checkbox__input" type="checkbox">
                             <div class="checkbox__span-wrapper"><span class="checkbox__span">Безопасность систем управления</span></div>
                           </label>
+                        </div>
+                        <div class="mailing__checkbox-wrapper">
                           <label class="checkbox">
-                            <input class="checkbox__input" type="checkbox" data-checkbox-item>
+                            <input class="checkbox__input" type="checkbox">
                             <div class="checkbox__span-wrapper"><span class="checkbox__span">Промышленная безопасность</span></div>
                           </label>
+                        </div>
+                        <div class="mailing__checkbox-wrapper">
                           <label class="checkbox">
-                            <input class="checkbox__input" type="checkbox" data-checkbox-item>
+                            <input class="checkbox__input" type="checkbox">
                             <div class="checkbox__span-wrapper"><span class="checkbox__span">Экологическая безопасность</span></div>
                           </label>
+                        </div>
+                        <div class="mailing__checkbox-wrapper">
                           <label class="checkbox">
-                            <input class="checkbox__input" type="checkbox" data-checkbox-item>
+                            <input class="checkbox__input" type="checkbox">
                             <div class="checkbox__span-wrapper"><span class="checkbox__span">Информационная безопасность</span></div>
                           </label>
+                        </div>
+                        <div class="mailing__checkbox-wrapper">
                           <label class="checkbox">
-                            <input class="checkbox__input" type="checkbox" data-checkbox-item>
+                            <input class="checkbox__input" type="checkbox">
                             <div class="checkbox__span-wrapper"><span class="checkbox__span">Охрана труда</span></div>
                           </label>
+                        </div>
+                        <div class="mailing__checkbox-wrapper">
                           <label class="checkbox">
-                            <input class="checkbox__input" type="checkbox" data-checkbox-item>
+                            <input class="checkbox__input" type="checkbox">
                             <div class="checkbox__span-wrapper"><span class="checkbox__span">Комплексная безопасность</span></div>
                           </label>
                         </div>
                       </div>
                     </div>
-                    <div class="branch-spollers__spoller" style="--group-color:var(--turquoise)" data-checkbox-group>
-                      <button class="branch-spollers__spoller-title" data-spoller>
-                        <h2 class="branch-title"><span class="branch-title__main"><span class="branch-title__title">Энергетика</span> <span class="branch-title__num" data-checkbox-num></span></span></h2>
-                      </button>
-                      <div class="branch-spollers__spoller-body">
-                        <div class="branch-spollers__checkboxes">
+                    <div class="mailing__group" style="--group-color:var(--turquoise)">
+                      <h2 class="branch-title"><span class="branch-title__main"><span class="branch-title__title">Энергетика</span></span></h2>
+                      <div class="mailing__checkboxes">
+                        <div class="mailing__checkbox-wrapper">
                           <label class="checkbox">
-                            <input class="checkbox__input" type="checkbox" data-checkbox-all>
-                            <div class="checkbox__span-wrapper"><span class="checkbox__span">Выбрать все</span></div>
-                          </label>
-                          <label class="checkbox">
-                            <input class="checkbox__input" type="checkbox" data-checkbox-item>
+                            <input class="checkbox__input" type="checkbox">
                             <div class="checkbox__span-wrapper"><span class="checkbox__span">Энергосбережение</span></div>
                           </label>
+                        </div>
+                        <div class="mailing__checkbox-wrapper">
                           <label class="checkbox">
-                            <input class="checkbox__input" type="checkbox" data-checkbox-item>
+                            <input class="checkbox__input" type="checkbox">
                             <div class="checkbox__span-wrapper"><span class="checkbox__span">Экономика и&nbsp;инвестиции&nbsp;в&nbsp;энергетике</span></div>
                           </label>
+                        </div>
+                        <div class="mailing__checkbox-wrapper">
                           <label class="checkbox">
-                            <input class="checkbox__input" type="checkbox" data-checkbox-item>
+                            <input class="checkbox__input" type="checkbox">
                             <div class="checkbox__span-wrapper"><span class="checkbox__span">Правовое регулирование в&nbsp;энергетике</span></div>
                           </label>
+                        </div>
+                        <div class="mailing__checkbox-wrapper">
                           <label class="checkbox">
-                            <input class="checkbox__input" type="checkbox" data-checkbox-item>
+                            <input class="checkbox__input" type="checkbox">
                             <div class="checkbox__span-wrapper"><span class="checkbox__span">Эксплуатация объектов&nbsp;ТЭК</span></div>
                           </label>
                         </div>
                       </div>
                     </div>
-                    <div class="branch-spollers__spoller" style="--group-color:var(--turquoise)" data-checkbox-group>
-                      <button class="branch-spollers__spoller-title" data-spoller>
-                        <h2 class="branch-title"><span class="branch-title__main"><span class="branch-title__title">Строительство и&nbsp;инженерные сети</span> <span class="branch-title__num" data-checkbox-num></span></span></h2>
-                      </button>
-                      <div class="branch-spollers__spoller-body">
-                        <div class="branch-spollers__checkboxes">
+                    <div class="mailing__group" style="--group-color:var(--turquoise)">
+                      <h2 class="branch-title"><span class="branch-title__main"><span class="branch-title__title">Строительство и&nbsp;инженерные сети</span></span></h2>
+                      <div class="mailing__checkboxes">
+                        <div class="mailing__checkbox-wrapper">
                           <label class="checkbox">
-                            <input class="checkbox__input" type="checkbox" data-checkbox-all>
-                            <div class="checkbox__span-wrapper"><span class="checkbox__span">Выбрать все</span></div>
-                          </label>
-                          <label class="checkbox">
-                            <input class="checkbox__input" type="checkbox" data-checkbox-item>
+                            <input class="checkbox__input" type="checkbox">
                             <div class="checkbox__span-wrapper"><span class="checkbox__span">Проектирование. Изыскания</span></div>
                           </label>
+                        </div>
+                        <div class="mailing__checkbox-wrapper">
                           <label class="checkbox">
-                            <input class="checkbox__input" type="checkbox" data-checkbox-item>
+                            <input class="checkbox__input" type="checkbox">
                             <div class="checkbox__span-wrapper"><span class="checkbox__span">Строительство: организация и&nbsp;управление</span></div>
                           </label>
+                        </div>
+                        <div class="mailing__checkbox-wrapper" data-checkbox-group>
                           <label class="checkbox">
-                            <input class="checkbox__input" type="checkbox" data-checkbox-item>
+                            <input class="checkbox__input" type="checkbox" data-checkbox-all>
                             <div class="checkbox__span-wrapper"><span class="checkbox__span">Инженерные сети: проектирование и&nbsp;строительство</span></div>
                           </label>
+                          <div class="mailing__subrubrics">
+                            <label class="checkbox">
+                              <input class="checkbox__input" type="checkbox" data-checkbox-item>
+                              <div class="checkbox__span-wrapper"><span class="checkbox__span">Электроснабжение</span></div>
+                            </label>
+                            <label class="checkbox">
+                              <input class="checkbox__input" type="checkbox" data-checkbox-item>
+                              <div class="checkbox__span-wrapper"><span class="checkbox__span">Теплоснабжение</span></div>
+                            </label>
+                            <label class="checkbox">
+                              <input class="checkbox__input" type="checkbox" data-checkbox-item>
+                              <div class="checkbox__span-wrapper"><span class="checkbox__span">Водоснабжение и водоотведение</span></div>
+                            </label>
+                            <label class="checkbox">
+                              <input class="checkbox__input" type="checkbox" data-checkbox-item>
+                              <div class="checkbox__span-wrapper"><span class="checkbox__span">Газоснабжение</span></div>
+                            </label>
+                            <label class="checkbox">
+                              <input class="checkbox__input" type="checkbox" data-checkbox-item>
+                              <div class="checkbox__span-wrapper"><span class="checkbox__span">Слаботочные системы</span></div>
+                            </label>
+                          </div>
+                        </div>
+                        <div class="mailing__checkbox-wrapper">
                           <label class="checkbox">
-                            <input class="checkbox__input" type="checkbox" data-checkbox-item>
+                            <input class="checkbox__input" type="checkbox">
                             <div class="checkbox__span-wrapper"><span class="checkbox__span">Строительные материалы и&nbsp;технологии</span></div>
                           </label>
+                        </div>
+                        <div class="mailing__checkbox-wrapper">
                           <label class="checkbox">
-                            <input class="checkbox__input" type="checkbox" data-checkbox-item>
+                            <input class="checkbox__input" type="checkbox">
                             <div class="checkbox__span-wrapper"><span class="checkbox__span">Дорожное строительство</span></div>
                           </label>
+                        </div>
+                        <div class="mailing__checkbox-wrapper">
                           <label class="checkbox">
-                            <input class="checkbox__input" type="checkbox" data-checkbox-item>
+                            <input class="checkbox__input" type="checkbox">
                             <div class="checkbox__span-wrapper"><span class="checkbox__span">Экономика строительства</span></div>
                           </label>
+                        </div>
+                        <div class="mailing__checkbox-wrapper">
                           <label class="checkbox">
-                            <input class="checkbox__input" type="checkbox" data-checkbox-item>
+                            <input class="checkbox__input" type="checkbox">
                             <div class="checkbox__span-wrapper"><span class="checkbox__span">Сметное дело</span></div>
                           </label>
+                        </div>
+                        <div class="mailing__checkbox-wrapper">
                           <label class="checkbox">
-                            <input class="checkbox__input" type="checkbox" data-checkbox-item>
+                            <input class="checkbox__input" type="checkbox">
                             <div class="checkbox__span-wrapper"><span class="checkbox__span">Правовое регулирование строительной деятельности</span></div>
                           </label>
                         </div>
                       </div>
                     </div>
-                    <div class="branch-spollers__spoller" style="--group-color:var(--turquoise)" data-checkbox-group>
-                      <button class="branch-spollers__spoller-title" data-spoller>
-                        <h2 class="branch-title"><span class="branch-title__main"><span class="branch-title__title">ЖКХ. Городское хозяйство</span> <span class="branch-title__num" data-checkbox-num></span></span></h2>
-                      </button>
-                      <div class="branch-spollers__spoller-body">
-                        <div class="branch-spollers__checkboxes">
+                    <div class="mailing__group" style="--group-color:var(--turquoise)">
+                      <h2 class="branch-title"><span class="branch-title__main"><span class="branch-title__title">ЖКХ. Городское хозяйство</span></span></h2>
+                      <div class="mailing__checkboxes">
+                        <div class="mailing__checkbox-wrapper">
                           <label class="checkbox">
-                            <input class="checkbox__input" type="checkbox" data-checkbox-all>
-                            <div class="checkbox__span-wrapper"><span class="checkbox__span">Выбрать все</span></div>
-                          </label>
-                          <label class="checkbox">
-                            <input class="checkbox__input" type="checkbox" data-checkbox-item>
+                            <input class="checkbox__input" type="checkbox">
                             <div class="checkbox__span-wrapper"><span class="checkbox__span">ЖКХ. Городское хозяйство</span></div>
                           </label>
+                        </div>
+                        <div class="mailing__checkbox-wrapper">
                           <label class="checkbox">
-                            <input class="checkbox__input" type="checkbox" data-checkbox-item>
+                            <input class="checkbox__input" type="checkbox">
                             <div class="checkbox__span-wrapper"><span class="checkbox__span">Ремонт и&nbsp;эксплуатация зданий и&nbsp;сооружений</span></div>
                           </label>
                         </div>
                       </div>
                     </div>
-                    <div class="branch-spollers__spoller" style="--group-color:var(--lime)" data-checkbox-group>
-                      <button class="branch-spollers__spoller-title" data-spoller>
-                        <h2 class="branch-title"><span class="branch-title__main"><span class="branch-title__title">Недвижимость</span> <span class="branch-title__num" data-checkbox-num></span></span></h2>
-                      </button>
-                      <div class="branch-spollers__spoller-body">
-                        <div class="branch-spollers__checkboxes">
+                    <div class="mailing__group" style="--group-color:var(--lime)">
+                      <h2 class="branch-title"><span class="branch-title__main"><span class="branch-title__title">Недвижимость</span></span></h2>
+                      <div class="mailing__checkboxes">
+                        <div class="mailing__checkbox-wrapper">
                           <label class="checkbox">
-                            <input class="checkbox__input" type="checkbox" data-checkbox-all>
-                            <div class="checkbox__span-wrapper"><span class="checkbox__span">Выбрать все</span></div>
-                          </label>
-                          <label class="checkbox">
-                            <input class="checkbox__input" type="checkbox" data-checkbox-item>
+                            <input class="checkbox__input" type="checkbox">
                             <div class="checkbox__span-wrapper"><span class="checkbox__span">Управление и&nbsp;эксплуатация недвижимости</span></div>
                           </label>
                         </div>
                       </div>
                     </div>
-                    <div class="branch-spollers__spoller" style="--group-color:var(--lime)" data-checkbox-group>
-                      <button class="branch-spollers__spoller-title" data-spoller>
-                        <h2 class="branch-title"><span class="branch-title__main"><span class="branch-title__title">Экология и&nbsp;землепользование</span> <span class="branch-title__num" data-checkbox-num></span></span></h2>
-                      </button>
-                      <div class="branch-spollers__spoller-body">
-                        <div class="branch-spollers__checkboxes">
+                    <div class="mailing__group" style="--group-color:var(--lime)">
+                      <h2 class="branch-title"><span class="branch-title__main"><span class="branch-title__title">Экология и&nbsp;землепользование</span></span></h2>
+                      <div class="mailing__checkboxes">
+                        <div class="mailing__checkbox-wrapper">
                           <label class="checkbox">
-                            <input class="checkbox__input" type="checkbox" data-checkbox-all>
-                            <div class="checkbox__span-wrapper"><span class="checkbox__span">Выбрать все</span></div>
-                          </label>
-                          <label class="checkbox">
-                            <input class="checkbox__input" type="checkbox" data-checkbox-item>
+                            <input class="checkbox__input" type="checkbox">
                             <div class="checkbox__span-wrapper"><span class="checkbox__span">Экология</span></div>
                           </label>
+                        </div>
+                        <div class="mailing__checkbox-wrapper">
                           <label class="checkbox">
-                            <input class="checkbox__input" type="checkbox" data-checkbox-item>
+                            <input class="checkbox__input" type="checkbox">
                             <div class="checkbox__span-wrapper"><span class="checkbox__span">Недропользование</span></div>
                           </label>
+                        </div>
+                        <div class="mailing__checkbox-wrapper">
                           <label class="checkbox">
-                            <input class="checkbox__input" type="checkbox" data-checkbox-item>
+                            <input class="checkbox__input" type="checkbox">
                             <div class="checkbox__span-wrapper"><span class="checkbox__span">Землепользование</span></div>
                           </label>
                         </div>
                       </div>
                     </div>
-                    <div class="branch-spollers__spoller" style="--group-color:var(--apricot)" data-checkbox-group>
-                      <button class="branch-spollers__spoller-title" data-spoller>
-                        <h2 class="branch-title"><span class="branch-title__main"><span class="branch-title__title">Управление персоналом</span> <span class="branch-title__num" data-checkbox-num></span></span></h2>
-                      </button>
-                      <div class="branch-spollers__spoller-body">
-                        <div class="branch-spollers__checkboxes">
+                    <div class="mailing__group" style="--group-color:var(--apricot)">
+                      <h2 class="branch-title"><span class="branch-title__main"><span class="branch-title__title">Управление персоналом</span></span></h2>
+                      <div class="mailing__checkboxes">
+                        <div class="mailing__checkbox-wrapper" data-checkbox-group>
                           <label class="checkbox">
                             <input class="checkbox__input" type="checkbox" data-checkbox-all>
-                            <div class="checkbox__span-wrapper"><span class="checkbox__span">Выбрать все</span></div>
-                          </label>
-                          <label class="checkbox">
-                            <input class="checkbox__input" type="checkbox" data-checkbox-item>
                             <div class="checkbox__span-wrapper"><span class="checkbox__span">Трудовое право. Кадровое делопроизводство</span></div>
                           </label>
+                          <div class="mailing__subrubrics">
+                            <label class="checkbox">
+                              <input class="checkbox__input" type="checkbox" data-checkbox-item>
+                              <div class="checkbox__span-wrapper"><span class="checkbox__span">Трудовое право</span></div>
+                            </label>
+                            <label class="checkbox">
+                              <input class="checkbox__input" type="checkbox" data-checkbox-item>
+                              <div class="checkbox__span-wrapper"><span class="checkbox__span">Кадровое делопроизводство</span></div>
+                            </label>
+                          </div>
+                        </div>
+                        <div class="mailing__checkbox-wrapper" data-checkbox-group>
                           <label class="checkbox">
-                            <input class="checkbox__input" type="checkbox" data-checkbox-item>
+                            <input class="checkbox__input" type="checkbox" data-checkbox-all>
                             <div class="checkbox__span-wrapper"><span class="checkbox__span">HR-технологии. Управление персоналом</span></div>
                           </label>
+                          <div class="mailing__subrubrics">
+                            <label class="checkbox">
+                              <input class="checkbox__input" type="checkbox" data-checkbox-item>
+                              <div class="checkbox__span-wrapper"><span class="checkbox__span">Управление персоналом</span></div>
+                            </label>
+                            <label class="checkbox">
+                              <input class="checkbox__input" type="checkbox" data-checkbox-item>
+                              <div class="checkbox__span-wrapper"><span class="checkbox__span">HR-технологии</span></div>
+                            </label>
+                            <label class="checkbox">
+                              <input class="checkbox__input" type="checkbox" data-checkbox-item>
+                              <div class="checkbox__span-wrapper"><span class="checkbox__span">Оценка и обучение персонала</span></div>
+                            </label>
+                            <label class="checkbox">
+                              <input class="checkbox__input" type="checkbox" data-checkbox-item>
+                              <div class="checkbox__span-wrapper"><span class="checkbox__span">Мотивация персонала</span></div>
+                            </label>
+                          </div>
                         </div>
                       </div>
                     </div>
-                    <div class="branch-spollers__spoller" style="--group-color:var(--gold)" data-checkbox-group>
-                      <button class="branch-spollers__spoller-title" data-spoller>
-                        <h2 class="branch-title"><span class="branch-title__main"><span class="branch-title__title">Офисные службы</span> <span class="branch-title__num" data-checkbox-num></span></span></h2>
-                      </button>
-                      <div class="branch-spollers__spoller-body">
-                        <div class="branch-spollers__checkboxes">
+                    <div class="mailing__group" style="--group-color:var(--gold)">
+                      <h2 class="branch-title"><span class="branch-title__main"><span class="branch-title__title">Офисные службы</span></span></h2>
+                      <div class="mailing__checkboxes">
+                        <div class="mailing__checkbox-wrapper">
                           <label class="checkbox">
-                            <input class="checkbox__input" type="checkbox" data-checkbox-all>
-                            <div class="checkbox__span-wrapper"><span class="checkbox__span">Выбрать все</span></div>
-                          </label>
-                          <label class="checkbox">
-                            <input class="checkbox__input" type="checkbox" data-checkbox-item>
+                            <input class="checkbox__input" type="checkbox">
                             <div class="checkbox__span-wrapper"><span class="checkbox__span">Работа с руководителем</span></div>
                           </label>
+                        </div>
+                        <div class="mailing__checkbox-wrapper">
                           <label class="checkbox">
-                            <input class="checkbox__input" type="checkbox" data-checkbox-item>
+                            <input class="checkbox__input" type="checkbox">
                             <div class="checkbox__span-wrapper"><span class="checkbox__span">Делопроизводство</span></div>
                           </label>
+                        </div>
+                        <div class="mailing__checkbox-wrapper">
                           <label class="checkbox">
-                            <input class="checkbox__input" type="checkbox" data-checkbox-item>
+                            <input class="checkbox__input" type="checkbox">
                             <div class="checkbox__span-wrapper"><span class="checkbox__span">Архивы</span></div>
                           </label>
                         </div>
                       </div>
                     </div>
-                    <div class="branch-spollers__spoller" style="--group-color:var(--gold)" data-checkbox-group>
-                      <button class="branch-spollers__spoller-title" data-spoller>
-                        <h2 class="branch-title"><span class="branch-title__main"><span class="branch-title__title">Менеджмент</span> <span class="branch-title__num" data-checkbox-num></span></span></h2>
-                      </button>
-                      <div class="branch-spollers__spoller-body">
-                        <div class="branch-spollers__checkboxes">
+                    <div class="mailing__group" style="--group-color:var(--gold)">
+                      <h2 class="branch-title"><span class="branch-title__main"><span class="branch-title__title">Менеджмент</span></span></h2>
+                      <div class="mailing__checkboxes">
+                        <div class="mailing__checkbox-wrapper">
                           <label class="checkbox">
-                            <input class="checkbox__input" type="checkbox" data-checkbox-all>
-                            <div class="checkbox__span-wrapper"><span class="checkbox__span">Выбрать все</span></div>
-                          </label>
-                          <label class="checkbox">
-                            <input class="checkbox__input" type="checkbox" data-checkbox-item>
+                            <input class="checkbox__input" type="checkbox">
                             <div class="checkbox__span-wrapper"><span class="checkbox__span">Общий менеджмент</span></div>
                           </label>
+                        </div>
+                        <div class="mailing__checkbox-wrapper">
                           <label class="checkbox">
-                            <input class="checkbox__input" type="checkbox" data-checkbox-item>
+                            <input class="checkbox__input" type="checkbox">
                             <div class="checkbox__span-wrapper"><span class="checkbox__span">Специальный менеджмент</span></div>
                           </label>
+                        </div>
+                        <div class="mailing__checkbox-wrapper">
                           <label class="checkbox">
-                            <input class="checkbox__input" type="checkbox" data-checkbox-item>
+                            <input class="checkbox__input" type="checkbox">
                             <div class="checkbox__span-wrapper"><span class="checkbox__span">Управление административно-хозяйственной деятельностью</span></div>
                           </label>
+                        </div>
+                        <div class="mailing__checkbox-wrapper">
                           <label class="checkbox">
-                            <input class="checkbox__input" type="checkbox" data-checkbox-item>
+                            <input class="checkbox__input" type="checkbox">
                             <div class="checkbox__span-wrapper"><span class="checkbox__span">Спортивный менеджмент</span></div>
                           </label>
                         </div>
                       </div>
                     </div>
-                    <div class="branch-spollers__spoller" style="--group-color:var(--graphite)" data-checkbox-group>
-                      <button class="branch-spollers__spoller-title" data-spoller>
-                        <h2 class="branch-title"><span class="branch-title__main"><span class="branch-title__title">Маркетинг. PR</span> <span class="branch-title__num" data-checkbox-num></span></span></h2>
-                      </button>
-                      <div class="branch-spollers__spoller-body">
-                        <div class="branch-spollers__checkboxes">
+                    <div class="mailing__group" style="--group-color:var(--graphite)">
+                      <h2 class="branch-title"><span class="branch-title__main"><span class="branch-title__title">Маркетинг. PR</span></span></h2>
+                      <div class="mailing__checkboxes">
+                        <div class="mailing__checkbox-wrapper">
                           <label class="checkbox">
-                            <input class="checkbox__input" type="checkbox" data-checkbox-all>
-                            <div class="checkbox__span-wrapper"><span class="checkbox__span">Выбрать все</span></div>
-                          </label>
-                          <label class="checkbox">
-                            <input class="checkbox__input" type="checkbox" data-checkbox-item>
+                            <input class="checkbox__input" type="checkbox">
                             <div class="checkbox__span-wrapper"><span class="checkbox__span">Маркетинг. Продажи</span></div>
                           </label>
+                        </div>
+                        <div class="mailing__checkbox-wrapper">
                           <label class="checkbox">
-                            <input class="checkbox__input" type="checkbox" data-checkbox-item>
+                            <input class="checkbox__input" type="checkbox">
                             <div class="checkbox__span-wrapper"><span class="checkbox__span">Реклама. PR</span></div>
                           </label>
                         </div>
                       </div>
                     </div>
-                    <div class="branch-spollers__spoller" style="--group-color:var(--gold)" data-checkbox-group>
-                      <button class="branch-spollers__spoller-title" data-spoller>
-                        <h2 class="branch-title"><span class="branch-title__main"><span class="branch-title__title">Экономика. Финансы. Бухгалтерский учет</span> <span class="branch-title__num" data-checkbox-num></span></span></h2>
-                      </button>
-                      <div class="branch-spollers__spoller-body">
-                        <div class="branch-spollers__checkboxes">
+                    <div class="mailing__group" style="--group-color:var(--gold)">
+                      <h2 class="branch-title"><span class="branch-title__main"><span class="branch-title__title">Экономика. Финансы. Бухгалтерский учет</span></span></h2>
+                      <div class="mailing__checkboxes">
+                        <div class="mailing__checkbox-wrapper">
                           <label class="checkbox">
-                            <input class="checkbox__input" type="checkbox" data-checkbox-all>
-                            <div class="checkbox__span-wrapper"><span class="checkbox__span">Выбрать все</span></div>
-                          </label>
-                          <label class="checkbox">
-                            <input class="checkbox__input" type="checkbox" data-checkbox-item>
+                            <input class="checkbox__input" type="checkbox">
                             <div class="checkbox__span-wrapper"><span class="checkbox__span">Налогообложение</span></div>
                           </label>
+                        </div>
+                        <div class="mailing__checkbox-wrapper" data-checkbox-group>
                           <label class="checkbox">
-                            <input class="checkbox__input" type="checkbox" data-checkbox-item>
+                            <input class="checkbox__input" type="checkbox" data-checkbox-all>
                             <div class="checkbox__span-wrapper"><span class="checkbox__span">Бухгалтерский учет</span></div>
                           </label>
+                          <div class="mailing__subrubrics">
+                            <label class="checkbox">
+                              <input class="checkbox__input" type="checkbox" data-checkbox-item>
+                              <div class="checkbox__span-wrapper"><span class="checkbox__span">Бухгалтерский учет в коммерческих организациях</span></div>
+                            </label>
+                            <label class="checkbox">
+                              <input class="checkbox__input" type="checkbox" data-checkbox-item>
+                              <div class="checkbox__span-wrapper"><span class="checkbox__span">Бюджетный учет</span></div>
+                            </label>
+                            <label class="checkbox">
+                              <input class="checkbox__input" type="checkbox" data-checkbox-item>
+                              <div class="checkbox__span-wrapper"><span class="checkbox__span">Отраслевой учет</span></div>
+                            </label>
+                          </div>
+                        </div>
+                        <div class="mailing__checkbox-wrapper">
                           <label class="checkbox">
-                            <input class="checkbox__input" type="checkbox" data-checkbox-item>
+                            <input class="checkbox__input" type="checkbox">
                             <div class="checkbox__span-wrapper"><span class="checkbox__span">Финансовый менеджмент. Экономика</span></div>
                           </label>
+                        </div>
+                        <div class="mailing__checkbox-wrapper">
                           <label class="checkbox">
-                            <input class="checkbox__input" type="checkbox" data-checkbox-item>
+                            <input class="checkbox__input" type="checkbox">
                             <div class="checkbox__span-wrapper"><span class="checkbox__span">Оплата труда и&nbsp;мотивация</span></div>
                           </label>
+                        </div>
+                        <div class="mailing__checkbox-wrapper">
                           <label class="checkbox">
-                            <input class="checkbox__input" type="checkbox" data-checkbox-item>
+                            <input class="checkbox__input" type="checkbox">
                             <div class="checkbox__span-wrapper"><span class="checkbox__span">Нормирование труда</span></div>
                           </label>
                         </div>
                       </div>
                     </div>
-                    <div class="branch-spollers__spoller" style="--group-color:var(--gold)" data-checkbox-group>
-                      <button class="branch-spollers__spoller-title" data-spoller>
-                        <h2 class="branch-title"><span class="branch-title__main"><span class="branch-title__title">Право. ВЭД</span> <span class="branch-title__num" data-checkbox-num></span></span></h2>
-                      </button>
-                      <div class="branch-spollers__spoller-body">
-                        <div class="branch-spollers__checkboxes">
+                    <div class="mailing__group" style="--group-color:var(--gold)">
+                      <h2 class="branch-title"><span class="branch-title__main"><span class="branch-title__title">Право. ВЭД</span></span></h2>
+                      <div class="mailing__checkboxes">
+                        <div class="mailing__checkbox-wrapper">
                           <label class="checkbox">
-                            <input class="checkbox__input" type="checkbox" data-checkbox-all>
-                            <div class="checkbox__span-wrapper"><span class="checkbox__span">Выбрать все</span></div>
-                          </label>
-                          <label class="checkbox">
-                            <input class="checkbox__input" type="checkbox" data-checkbox-item>
+                            <input class="checkbox__input" type="checkbox">
                             <div class="checkbox__span-wrapper"><span class="checkbox__span">Корпоративное право</span></div>
                           </label>
+                        </div>
+                        <div class="mailing__checkbox-wrapper">
                           <label class="checkbox">
-                            <input class="checkbox__input" type="checkbox" data-checkbox-item>
+                            <input class="checkbox__input" type="checkbox">
                             <div class="checkbox__span-wrapper"><span class="checkbox__span">Гражданское и&nbsp;процессуальное право</span></div>
                           </label>
+                        </div>
+                        <div class="mailing__checkbox-wrapper">
                           <label class="checkbox">
-                            <input class="checkbox__input" type="checkbox" data-checkbox-item>
+                            <input class="checkbox__input" type="checkbox">
                             <div class="checkbox__span-wrapper"><span class="checkbox__span">Другие отрасли&nbsp;права</span></div>
                           </label>
+                        </div>
+                        <div class="mailing__checkbox-wrapper">
                           <label class="checkbox">
-                            <input class="checkbox__input" type="checkbox" data-checkbox-item>
+                            <input class="checkbox__input" type="checkbox">
                             <div class="checkbox__span-wrapper"><span class="checkbox__span">Право по виду деятельности</span></div>
                           </label>
+                        </div>
+                        <div class="mailing__checkbox-wrapper">
                           <label class="checkbox">
-                            <input class="checkbox__input" type="checkbox" data-checkbox-item>
+                            <input class="checkbox__input" type="checkbox">
                             <div class="checkbox__span-wrapper"><span class="checkbox__span">Договорная работа</span></div>
                           </label>
+                        </div>
+                        <div class="mailing__checkbox-wrapper">
                           <label class="checkbox">
-                            <input class="checkbox__input" type="checkbox" data-checkbox-item>
+                            <input class="checkbox__input" type="checkbox">
                             <div class="checkbox__span-wrapper"><span class="checkbox__span">Внешнеэкономическая деятельность</span></div>
                           </label>
                         </div>
                       </div>
                     </div>
-                    <div class="branch-spollers__spoller" style="--group-color:var(--ocean)" data-checkbox-group>
-                      <button class="branch-spollers__spoller-title" data-spoller>
-                        <h2 class="branch-title"><span class="branch-title__main"><span class="branch-title__title">Информационные технологии</span> <span class="branch-title__num" data-checkbox-num></span></span></h2>
-                      </button>
-                      <div class="branch-spollers__spoller-body">
-                        <div class="branch-spollers__checkboxes">
+                    <div class="mailing__group" style="--group-color:var(--ocean)">
+                      <h2 class="branch-title"><span class="branch-title__main"><span class="branch-title__title">Информационные технологии</span></span></h2>
+                      <div class="mailing__checkboxes">
+                        <div class="mailing__checkbox-wrapper">
                           <label class="checkbox">
-                            <input class="checkbox__input" type="checkbox" data-checkbox-all>
-                            <div class="checkbox__span-wrapper"><span class="checkbox__span">Выбрать все</span></div>
-                          </label>
-                          <label class="checkbox">
-                            <input class="checkbox__input" type="checkbox" data-checkbox-item>
+                            <input class="checkbox__input" type="checkbox">
                             <div class="checkbox__span-wrapper"><span class="checkbox__span">Управление ИТ-инфраструктурой</span></div>
                           </label>
+                        </div>
+                        <div class="mailing__checkbox-wrapper">
                           <label class="checkbox">
-                            <input class="checkbox__input" type="checkbox" data-checkbox-item>
+                            <input class="checkbox__input" type="checkbox">
                             <div class="checkbox__span-wrapper"><span class="checkbox__span">Программное обеспечение</span></div>
                           </label>
+                        </div>
+                        <div class="mailing__checkbox-wrapper">
                           <label class="checkbox">
-                            <input class="checkbox__input" type="checkbox" data-checkbox-item>
+                            <input class="checkbox__input" type="checkbox">
                             <div class="checkbox__span-wrapper"><span class="checkbox__span">Кибербезопасность и&nbsp;защита данных</span></div>
                           </label>
                         </div>
                       </div>
                     </div>
-                    <div class="branch-spollers__spoller" style="--group-color:var(--ocean)" data-checkbox-group>
-                      <button class="branch-spollers__spoller-title" data-spoller>
-                        <h2 class="branch-title"><span class="branch-title__main"><span class="branch-title__title">Связь</span> <span class="branch-title__num" data-checkbox-num></span></span></h2>
-                      </button>
-                      <div class="branch-spollers__spoller-body">
-                        <div class="branch-spollers__checkboxes">
+                    <div class="mailing__group" style="--group-color:var(--ocean)">
+                      <h2 class="branch-title"><span class="branch-title__main"><span class="branch-title__title">Связь</span></span></h2>
+                      <div class="mailing__checkboxes">
+                        <div class="mailing__checkbox-wrapper">
                           <label class="checkbox">
-                            <input class="checkbox__input" type="checkbox" data-checkbox-all>
-                            <div class="checkbox__span-wrapper"><span class="checkbox__span">Выбрать все</span></div>
-                          </label>
-                          <label class="checkbox">
-                            <input class="checkbox__input" type="checkbox" data-checkbox-item>
+                            <input class="checkbox__input" type="checkbox">
                             <div class="checkbox__span-wrapper"><span class="checkbox__span">Проектирование и&nbsp;строительство объектов&nbsp;связи</span></div>
                           </label>
                         </div>
                       </div>
                     </div>
-                    <div class="branch-spollers__spoller" style="--group-color:var(--lavender)" data-checkbox-group>
-                      <button class="branch-spollers__spoller-title" data-spoller>
-                        <h2 class="branch-title"><span class="branch-title__main"><span class="branch-title__title">Государственное и&nbsp;муниципальное управление</span> <span class="branch-title__num" data-checkbox-num></span></span></h2>
-                      </button>
-                      <div class="branch-spollers__spoller-body">
-                        <div class="branch-spollers__checkboxes">
+                    <div class="mailing__group" style="--group-color:var(--lavender)">
+                      <h2 class="branch-title"><span class="branch-title__main"><span class="branch-title__title">Государственное и&nbsp;муниципальное управление</span></span></h2>
+                      <div class="mailing__checkboxes">
+                        <div class="mailing__checkbox-wrapper">
                           <label class="checkbox">
-                            <input class="checkbox__input" type="checkbox" data-checkbox-all>
-                            <div class="checkbox__span-wrapper"><span class="checkbox__span">Выбрать все</span></div>
-                          </label>
-                          <label class="checkbox">
-                            <input class="checkbox__input" type="checkbox" data-checkbox-item>
+                            <input class="checkbox__input" type="checkbox">
                             <div class="checkbox__span-wrapper"><span class="checkbox__span">Организация деятельности&nbsp;учреждений и&nbsp;органов&nbsp;власти</span></div>
                           </label>
+                        </div>
+                        <div class="mailing__checkbox-wrapper">
                           <label class="checkbox">
-                            <input class="checkbox__input" type="checkbox" data-checkbox-item>
+                            <input class="checkbox__input" type="checkbox">
                             <div class="checkbox__span-wrapper"><span class="checkbox__span">Бюджетное финансирование</span></div>
                           </label>
+                        </div>
+                        <div class="mailing__checkbox-wrapper">
                           <label class="checkbox">
-                            <input class="checkbox__input" type="checkbox" data-checkbox-item>
+                            <input class="checkbox__input" type="checkbox">
                             <div class="checkbox__span-wrapper"><span class="checkbox__span">Некоммерческие организации</span></div>
                           </label>
                         </div>
                       </div>
                     </div>
-                    <div class="branch-spollers__spoller" style="--group-color:var(--berry)" data-checkbox-group>
-                      <button class="branch-spollers__spoller-title" data-spoller>
-                        <h2 class="branch-title"><span class="branch-title__main"><span class="branch-title__title">Социальная защита</span> <span class="branch-title__num" data-checkbox-num></span></span></h2>
-                      </button>
-                      <div class="branch-spollers__spoller-body">
-                        <div class="branch-spollers__checkboxes">
+                    <div class="mailing__group" style="--group-color:var(--berry)">
+                      <h2 class="branch-title"><span class="branch-title__main"><span class="branch-title__title">Социальная защита</span></span></h2>
+                      <div class="mailing__checkboxes">
+                        <div class="mailing__checkbox-wrapper">
                           <label class="checkbox">
-                            <input class="checkbox__input" type="checkbox" data-checkbox-all>
-                            <div class="checkbox__span-wrapper"><span class="checkbox__span">Выбрать все</span></div>
-                          </label>
-                          <label class="checkbox">
-                            <input class="checkbox__input" type="checkbox" data-checkbox-item>
+                            <input class="checkbox__input" type="checkbox">
                             <div class="checkbox__span-wrapper"><span class="checkbox__span">Организация работы органов&nbsp;социальной защиты населения</span></div>
                           </label>
+                        </div>
+                        <div class="mailing__checkbox-wrapper">
                           <label class="checkbox">
-                            <input class="checkbox__input" type="checkbox" data-checkbox-item>
+                            <input class="checkbox__input" type="checkbox">
                             <div class="checkbox__span-wrapper"><span class="checkbox__span">Технологии&nbsp;социального обслуживания</span></div>
                           </label>
                         </div>
                       </div>
                     </div>
-                    <div class="branch-spollers__spoller" style="--group-color:var(--berry)" data-checkbox-group>
-                      <button class="branch-spollers__spoller-title" data-spoller>
-                        <h2 class="branch-title"><span class="branch-title__main"><span class="branch-title__title">Медицина</span> <span class="branch-title__num" data-checkbox-num></span></span></h2>
-                      </button>
-                      <div class="branch-spollers__spoller-body">
-                        <div class="branch-spollers__checkboxes">
+                    <div class="mailing__group" style="--group-color:var(--berry)">
+                      <h2 class="branch-title"><span class="branch-title__main"><span class="branch-title__title">Медицина</span></span></h2>
+                      <div class="mailing__checkboxes">
+                        <div class="mailing__checkbox-wrapper">
                           <label class="checkbox">
-                            <input class="checkbox__input" type="checkbox" data-checkbox-all>
-                            <div class="checkbox__span-wrapper"><span class="checkbox__span">Выбрать все</span></div>
-                          </label>
-                          <label class="checkbox">
-                            <input class="checkbox__input" type="checkbox" data-checkbox-item>
+                            <input class="checkbox__input" type="checkbox">
                             <div class="checkbox__span-wrapper"><span class="checkbox__span">Организация здравоохранения</span></div>
                           </label>
+                        </div>
+                        <div class="mailing__checkbox-wrapper">
                           <label class="checkbox">
-                            <input class="checkbox__input" type="checkbox" data-checkbox-item>
+                            <input class="checkbox__input" type="checkbox">
                             <div class="checkbox__span-wrapper"><span class="checkbox__span">Право в&nbsp;здравоохранении</span></div>
                           </label>
+                        </div>
+                        <div class="mailing__checkbox-wrapper">
                           <label class="checkbox">
-                            <input class="checkbox__input" type="checkbox" data-checkbox-item>
+                            <input class="checkbox__input" type="checkbox">
                             <div class="checkbox__span-wrapper"><span class="checkbox__span">Экономика и финансы в&nbsp;здравоохранении</span></div>
                           </label>
                         </div>
                       </div>
                     </div>
-                    <div class="branch-spollers__spoller" style="--group-color:var(--periwinkle)" data-checkbox-group>
-                      <button class="branch-spollers__spoller-title" data-spoller>
-                        <h2 class="branch-title"><span class="branch-title__main"><span class="branch-title__title">Образование</span> <span class="branch-title__num" data-checkbox-num></span></span></h2>
-                      </button>
-                      <div class="branch-spollers__spoller-body">
-                        <div class="branch-spollers__checkboxes">
+                    <div class="mailing__group" style="--group-color:var(--periwinkle)">
+                      <h2 class="branch-title"><span class="branch-title__main"><span class="branch-title__title">Образование</span></span></h2>
+                      <div class="mailing__checkboxes">
+                        <div class="mailing__checkbox-wrapper">
                           <label class="checkbox">
-                            <input class="checkbox__input" type="checkbox" data-checkbox-all>
-                            <div class="checkbox__span-wrapper"><span class="checkbox__span">Выбрать все</span></div>
-                          </label>
-                          <label class="checkbox">
-                            <input class="checkbox__input" type="checkbox" data-checkbox-item>
+                            <input class="checkbox__input" type="checkbox">
                             <div class="checkbox__span-wrapper"><span class="checkbox__span">Высшее образование</span></div>
                           </label>
+                        </div>
+                        <div class="mailing__checkbox-wrapper">
                           <label class="checkbox">
-                            <input class="checkbox__input" type="checkbox" data-checkbox-item>
+                            <input class="checkbox__input" type="checkbox">
                             <div class="checkbox__span-wrapper"><span class="checkbox__span">Среднее профессиональное образование</span></div>
                           </label>
+                        </div>
+                        <div class="mailing__checkbox-wrapper">
                           <label class="checkbox">
-                            <input class="checkbox__input" type="checkbox" data-checkbox-item>
+                            <input class="checkbox__input" type="checkbox">
                             <div class="checkbox__span-wrapper"><span class="checkbox__span">Дополнительное профессиональное образование</span></div>
                           </label>
+                        </div>
+                        <div class="mailing__checkbox-wrapper">
                           <label class="checkbox">
-                            <input class="checkbox__input" type="checkbox" data-checkbox-item>
+                            <input class="checkbox__input" type="checkbox">
                             <div class="checkbox__span-wrapper"><span class="checkbox__span">Среднее общее и&nbsp;специальное (коррекционное) образование</span></div>
                           </label>
                         </div>
                       </div>
                     </div>
-                    <div class="branch-spollers__spoller" style="--group-color:var(--blush)" data-checkbox-group>
-                      <button class="branch-spollers__spoller-title" data-spoller>
-                        <h2 class="branch-title"><span class="branch-title__main"><span class="branch-title__title">Культура</span> <span class="branch-title__num" data-checkbox-num></span></span></h2>
-                      </button>
-                      <div class="branch-spollers__spoller-body">
-                        <div class="branch-spollers__checkboxes">
+                    <div class="mailing__group" style="--group-color:var(--blush)">
+                      <h2 class="branch-title"><span class="branch-title__main"><span class="branch-title__title">Культура</span></span></h2>
+                      <div class="mailing__checkboxes">
+                        <div class="mailing__checkbox-wrapper">
                           <label class="checkbox">
-                            <input class="checkbox__input" type="checkbox" data-checkbox-all>
-                            <div class="checkbox__span-wrapper"><span class="checkbox__span">Выбрать все</span></div>
-                          </label>
-                          <label class="checkbox">
-                            <input class="checkbox__input" type="checkbox" data-checkbox-item>
+                            <input class="checkbox__input" type="checkbox">
                             <div class="checkbox__span-wrapper"><span class="checkbox__span">Управление в&nbsp;сфере культуры</span></div>
                           </label>
+                        </div>
+                        <div class="mailing__checkbox-wrapper">
                           <label class="checkbox">
-                            <input class="checkbox__input" type="checkbox" data-checkbox-item>
+                            <input class="checkbox__input" type="checkbox">
                             <div class="checkbox__span-wrapper"><span class="checkbox__span">Театры. ДК</span></div>
                           </label>
+                        </div>
+                        <div class="mailing__checkbox-wrapper">
                           <label class="checkbox">
-                            <input class="checkbox__input" type="checkbox" data-checkbox-item>
+                            <input class="checkbox__input" type="checkbox">
                             <div class="checkbox__span-wrapper"><span class="checkbox__span">Музеи. Библиотеки</span></div>
                           </label>
+                        </div>
+                        <div class="mailing__checkbox-wrapper">
                           <label class="checkbox">
-                            <input class="checkbox__input" type="checkbox" data-checkbox-item>
+                            <input class="checkbox__input" type="checkbox">
                             <div class="checkbox__span-wrapper"><span class="checkbox__span">Организация культурно-досуговых мероприятий</span></div>
                           </label>
+                        </div>
+                        <div class="mailing__checkbox-wrapper">
                           <label class="checkbox">
-                            <input class="checkbox__input" type="checkbox" data-checkbox-item>
+                            <input class="checkbox__input" type="checkbox">
                             <div class="checkbox__span-wrapper"><span class="checkbox__span">Технологии: звук, свет, сцена</span></div>
                           </label>
                         </div>
                       </div>
                     </div>
-                    <div class="branch-spollers__spoller" style="--group-color:var(--graphite)" data-checkbox-group>
-                      <button class="branch-spollers__spoller-title" data-spoller>
-                        <h2 class="branch-title"><span class="branch-title__main"><span class="branch-title__title">Массмедиа</span> <span class="branch-title__num" data-checkbox-num></span></span></h2>
-                      </button>
-                      <div class="branch-spollers__spoller-body">
-                        <div class="branch-spollers__checkboxes">
+                    <div class="mailing__group" style="--group-color:var(--graphite)">
+                      <h2 class="branch-title"><span class="branch-title__main"><span class="branch-title__title">Массмедиа</span></span></h2>
+                      <div class="mailing__checkboxes">
+                        <div class="mailing__checkbox-wrapper">
                           <label class="checkbox">
-                            <input class="checkbox__input" type="checkbox" data-checkbox-all>
-                            <div class="checkbox__span-wrapper"><span class="checkbox__span">Выбрать все</span></div>
-                          </label>
-                          <label class="checkbox">
-                            <input class="checkbox__input" type="checkbox" data-checkbox-item>
+                            <input class="checkbox__input" type="checkbox">
                             <div class="checkbox__span-wrapper"><span class="checkbox__span">СМИ, редакция</span></div>
                           </label>
+                        </div>
+                        <div class="mailing__checkbox-wrapper">
                           <label class="checkbox">
-                            <input class="checkbox__input" type="checkbox" data-checkbox-item>
+                            <input class="checkbox__input" type="checkbox">
                             <div class="checkbox__span-wrapper"><span class="checkbox__span">Дизайн</span></div>
                           </label>
+                        </div>
+                        <div class="mailing__checkbox-wrapper">
                           <label class="checkbox">
-                            <input class="checkbox__input" type="checkbox" data-checkbox-item>
+                            <input class="checkbox__input" type="checkbox">
                             <div class="checkbox__span-wrapper"><span class="checkbox__span">Переводы</span></div>
                           </label>
                         </div>
                       </div>
                     </div>
-                    <div class="branch-spollers__spoller" style="--group-color:var(--lime)" data-checkbox-group>
-                      <button class="branch-spollers__spoller-title" data-spoller>
-                        <h2 class="branch-title"><span class="branch-title__main"><span class="branch-title__title">Агропромышленный комплекс</span> <span class="branch-title__num" data-checkbox-num></span></span></h2>
-                      </button>
-                      <div class="branch-spollers__spoller-body">
-                        <div class="branch-spollers__checkboxes">
+                    <div class="mailing__group" style="--group-color:var(--lime)">
+                      <h2 class="branch-title"><span class="branch-title__main"><span class="branch-title__title">Агропромышленный комплекс</span></span></h2>
+                      <div class="mailing__checkboxes">
+                        <div class="mailing__checkbox-wrapper">
                           <label class="checkbox">
-                            <input class="checkbox__input" type="checkbox" data-checkbox-all>
-                            <div class="checkbox__span-wrapper"><span class="checkbox__span">Выбрать все</span></div>
-                          </label>
-                          <label class="checkbox">
-                            <input class="checkbox__input" type="checkbox" data-checkbox-item>
+                            <input class="checkbox__input" type="checkbox">
                             <div class="checkbox__span-wrapper"><span class="checkbox__span">Пищевое производство</span></div>
                           </label>
+                        </div>
+                        <div class="mailing__checkbox-wrapper">
                           <label class="checkbox">
-                            <input class="checkbox__input" type="checkbox" data-checkbox-item>
+                            <input class="checkbox__input" type="checkbox">
                             <div class="checkbox__span-wrapper"><span class="checkbox__span">Сельское хозяйство</span></div>
                           </label>
                         </div>
                       </div>
                     </div>
-                    <div class="branch-spollers__spoller" style="--group-color:var(--scarlet)" data-checkbox-group>
-                      <button class="branch-spollers__spoller-title" data-spoller>
-                        <h2 class="branch-title"><span class="branch-title__main"><span class="branch-title__title">HoReCa</span> <span class="branch-title__num" data-checkbox-num></span></span></h2>
-                      </button>
-                      <div class="branch-spollers__spoller-body">
-                        <div class="branch-spollers__checkboxes">
+                    <div class="mailing__group" style="--group-color:var(--scarlet)">
+                      <h2 class="branch-title"><span class="branch-title__main"><span class="branch-title__title">HoReCa</span></span></h2>
+                      <div class="mailing__checkboxes">
+                        <div class="mailing__checkbox-wrapper">
                           <label class="checkbox">
-                            <input class="checkbox__input" type="checkbox" data-checkbox-all>
-                            <div class="checkbox__span-wrapper"><span class="checkbox__span">Выбрать все</span></div>
-                          </label>
-                          <label class="checkbox">
-                            <input class="checkbox__input" type="checkbox" data-checkbox-item>
+                            <input class="checkbox__input" type="checkbox">
                             <div class="checkbox__span-wrapper"><span class="checkbox__span">Гостиницы</span></div>
                           </label>
+                        </div>
+                        <div class="mailing__checkbox-wrapper">
                           <label class="checkbox">
-                            <input class="checkbox__input" type="checkbox" data-checkbox-item>
+                            <input class="checkbox__input" type="checkbox">
                             <div class="checkbox__span-wrapper"><span class="checkbox__span">Общепит</span></div>
                           </label>
+                        </div>
+                        <div class="mailing__checkbox-wrapper">
                           <label class="checkbox">
-                            <input class="checkbox__input" type="checkbox" data-checkbox-item>
+                            <input class="checkbox__input" type="checkbox">
                             <div class="checkbox__span-wrapper"><span class="checkbox__span">ХАССП и&nbsp;контроль качества</span></div>
                           </label>
                         </div>
@@ -904,52 +984,33 @@
                     </div>
                   </div>
                 </div>
-                <div class="plan__block">
-                  <div class="plan__block-top">
-                    <p class="plan__block-num a1">3.</p>
-                    <div class="plan__block-top-main">
-                      <h2 class="plan__block-name t2">Выберите место</h2>
-                      <div class="plan__checkboxes">
-                        <label class="checkbox">
-                          <input class="checkbox__input" type="checkbox" checked>
-                          <div class="checkbox__span-wrapper"><span class="checkbox__span">Санкт-Петербург</span></div>
-                        </label>
-                        <label class="checkbox">
-                          <input class="checkbox__input" type="checkbox">
-                          <div class="checkbox__span-wrapper"><span class="checkbox__span">Москва</span></div>
-                        </label>
-                        <label class="checkbox">
-                          <input class="checkbox__input" type="checkbox">
-                          <div class="checkbox__span-wrapper"><span class="checkbox__span">Онлайн</span></div>
-                        </label>
-                      </div>
-                    </div>
+                <div class="mailing__action">
+                  <h2 class="mailing__action-title t1">Вы у цели! Осталось нажать <br class="_n4-hide">главную кнопку...</h2>
+                  <input class="mailing__action-submit button--primary" type="submit" value="Подписаться на рассылку">
+                  <label class="mailing__action-checkbox checkbox">
+                    <input class="checkbox__input" type="checkbox" checked>
+                    <div class="checkbox__span-wrapper--blue"><span class="checkbox__span">Отправляя форму, я принимаю <a class="link" href="#">пользовательское соглашение</a></span></div>
+                  </label>
+                </div>
+                <div class="mailing__bottom">
+                  <div class="mailing__column">
+                    <h2 class="mailing__column-title t2">Как получить скидку 3%</h2>
+                    <ol class="ol">
+                      <li class="ol__li">Заполните форму на этой странице и подпишитесь на рассылку.</li>
+                      <li class="ol__li">Вы получите письмо для потверждения подписки — так мы проверяем, что адрес действующий.</li>
+                      <li class="ol__li">Сразу после этого вы получите письмо с промокодом.</li>
+                      <li class="ol__li">Используйте промокод при записи на курс.</li>
+                    </ol>
+                  </div>
+                  <div class="mailing__column">
+                    <h2 class="mailing__column-title t2">Как сменить адрес почты</h2>
+                    <ol class="ol">
+                      <li class="ol__li">Сначала отпишите старый адрес. Для этого найдите в конце любого письма от ЦНТИ Прогресс ссылку «Отменить подписку» и нажмите на нее. Если старый email адрес по-прежнему актуален, пропустите этот пункт.</li>
+                      <li class="ol__li">Подпишите новый email-адрес — заполните форму на этой странице и выберите рубрики.</li>
+                    </ol>
                   </div>
                 </div>
-              </div>
-              <div class="plan__download">
-                <h3 class="plan__download-title t1">готово! теперь можно</h3><a class="plan__download-link button--primary" href="#" download>Скачать план</a>
-              </div>
-            </div>
-          </div>
-        </section>
-        <section class="bottom-plan section">
-          <div class="bottom-plan__container container">
-            <div class="bottom-plan__body"><img class="bottom-plan__img" src="img/plan/bottom.png" alt="">
-              <div class="bottom-plan__main">
-                <div class="bottom-plan__phone-column">
-                  <h2 class="bottom-plan__column-title t2">8 800 333-88-44</h2>
-                  <div class="bottom-plan__column-text"> 
-                    <p class="p1">Возьмем часть забот на себя: <br class="_n3-hide">поможем спланировать обучение большого штата или оформить сложную закупку.</p>
-                  </div>
-                </div>
-                <div class="bottom-plan__download-column">
-                  <h2 class="bottom-plan__column-title t2">Хотите скачать всё и сразу?</h2>
-                  <div class="bottom-plan__column-text"> 
-                    <p class="p1">Вот полный годовой план по всем направлениям. Внимание: в течение года план постоянно растет.</p><a class="bottom-plan__column-link button--accent">План 2024-2025</a>
-                  </div>
-                </div>
-              </div>
+              </form>
             </div>
           </div>
         </section>
@@ -1030,6 +1091,6 @@
         </div>
       </footer>
     </div>
-    <script src="js/script.min.js?_v=1748375454892"></script>
+    <script src="js/script.min.js?_v=1748375454695"></script>
   </body>
 </html>
