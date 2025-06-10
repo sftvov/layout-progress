@@ -2,13 +2,14 @@
 <html lang="ru">
   <head>
     <meta name="robots" content="noindex"/>
-    <link rel="stylesheet" href="css/style.min.css?_v=1749476810710"/>
+    <link rel="stylesheet" href="css/style.min.css?_v=1749592663533"/>
     <meta charset="utf-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <title>ОТЕЛИ</title>
     <meta name="description" content="description"/>
     <meta name="theme-color" content=""/>
     <link rel="canonical" href=""/>
+    <script src="https://api-maps.yandex.ru/2.1/?apikey=de140e86-bb51-4ff4-a9c6-b52842c10b4d&amp;lang=ru_RU&quot; type=&quot;text/javascript"></script>
   </head>
   <body>
     <div class="wrapper">
@@ -262,14 +263,14 @@
             <div class="hotels__body">
               <div class="hotels__toc">
                 <div class="hotels__header col2">
-                  <h2 class="t1">11 отелей-партнеров в&nbsp;Санкт-Петербурге</h2>
+                  <h2 class="t1">12 отелей-партнеров в&nbsp;Санкт-Петербурге</h2>
                   <p class="p1">Выберите отель на&nbsp;карте или из&nbsp;списка.</p>
                 </div>
                 <div class="hotels__toc-main m1">
                   <ol class="ol">
-                    <li class="ol__li"><a class="hotels__toc-link">Отель &laquo;Династия&raquo;</a></li>
-                    <li class="ol__li"><a class="hotels__toc-link">Гостевой дом &laquo;Демидов&raquo;</a></li>
-                    <li class="ol__li"><a class="hotels__toc-link">Отель &laquo;Сапфир&raquo;</a></li>
+                    <li class="ol__li"><a class="hotels__toc-link">Отель &laquo;Династия&raquo;, ул.&nbsp;Рубинштейна, д.&nbsp;29/28</a></li>
+                    <li class="ol__li"><a class="hotels__toc-link">Гостевой дом &laquo;Демидов&raquo;, Средний пр.&nbsp;В.О., д.&nbsp;28/29</a></li>
+                    <li class="ol__li"><a class="hotels__toc-link">Отель &laquo;Сапфир&raquo;, Невский пр-т, д.&nbsp;50</a></li>
                     <li class="ol__li"><a class="hotels__toc-link">Отель &laquo;Марко Поло&raquo;, 12-я линия В.О., д.&nbsp;27</a></li>
                     <li class="ol__li"><a class="hotels__toc-link">Отель &laquo;Арт Нуво&raquo;, 17-я линия В.О., д.&nbsp;64</a></li>
                     <li class="ol__li"><a class="hotels__toc-link">Отель &laquo;Касл&raquo;, 14-я линия В.О., д.&nbsp;25/27</a></li>
@@ -278,9 +279,11 @@
                     <li class="ol__li"><a class="hotels__toc-link">GRAND CATHERINE PALACE HOTEL, Невский проспект, д.&nbsp;32-34</a></li>
                     <li class="ol__li"><a class="hotels__toc-link">Отель &laquo;За&nbsp;Кулисами&raquo;, 11 линия В.О., д.&nbsp;54 лит А.</a></li>
                     <li class="ol__li"><a class="hotels__toc-link">Отель &laquo;Арт на&nbsp;Репина&raquo;, 1 линия В.О., д.&nbsp;34</a></li>
+                    <li class="ol__li"><a class="hotels__toc-link">Mirum Hotel, Невский проспект, д.&nbsp;53 лит Я</a></li>
                   </ol>
                 </div>
               </div>
+              <div class="hotels__map m1" id="map"></div>
               <div class="hotels__main">
                 <div class="hotel section">
                   <h2 class="subtitle">Отель &laquo;Династия&raquo;</h2>
@@ -516,6 +519,68 @@
             </div>
           </div>
         </section>
+        <script>const branches = [{"name":"Отель «Династия»","address":"ул. Рубинштейна, д. 29/28","coords":[59.926843,30.342106],"slug":"dinasty"},{"name":"Гостевой дом «Демидов»","address":"Средний пр. В.О., д. 28/29","coords":[59.943202,30.279393],"slug":"demidov"},{"name":"Отель «Сапфир»","address":"Невский пр-т, д. 50","coords":[59.935303,30.334905],"slug":"saphire"},{"name":"Отель «Марко Поло»","address":"12-я линия В.О., д. 27","coords":[59.940149,30.272204],"slug":"marko"},{"name":"Отель «Арт Нуво»","address":"17-я линия В.О., д. 64","coords":[59.945582,30.258178],"slug":"nuvo"},{"name":"Отель «Касл»","address":"14-я линия В.О., д. 25/27","coords":[59.938134,30.271315],"slug":"castle"},{"name":"Отель «Матрикс»","address":"Большой проспект В.О., д. 20","coords":[59.938739,30.28316],"slug":"matix"},{"name":"River Palace Hotel","address":"2-я линия В.О., 61/30 лит Набережная Макарова, д. 30","coords":[59.9487223,30.2774494],"slug":"river"},{"name":"GRAND CATHERINE PALACE HOTEL","address":"Невский проспект, д. 32-34","coords":[59.935393,30.32832],"slug":"catherine"},{"name":"Отель «За Кулисами»","address":"11 линия В.О., д.54 лит А.","coords":[59.944256,30.270027],"slug":"kulis"},{"name":"Отель «Арт на Репина»","address":"1 линия В.О., д.34","coords":[59.943964,30.287492],"slug":"art"},{"name":"Mirum Hotel","address":"Невский проспект, д. 53 лит Я","coords":[59.931715,30.349492],"slug":"mirum"}];
+          
+          ymaps.ready(init);
+          
+          function init() {
+            const map = new ymaps.Map("map", {
+              center: [59.951448, 30.305152],
+              zoom: 10,
+            });
+          
+            // Функция создания параметров иконки с номером
+            const getNumberedIconOptions = (number) => {
+              return {
+                // Используем стандартный layout с изображением и контентом
+                iconLayout: 'default#imageWithContent',
+                // Ваша кастомная иконка
+                iconImageHref: 'https://img.cntiprogress.ru/file/ivksenia/map_icon_other.png',
+                iconImageSize: [36, 52],
+                iconImageOffset: [0, -26],
+                // Параметры для отображения номера
+                iconContentOffset: [0, 5],
+                iconContentLayout: ymaps.templateLayoutFactory.createClass(
+                  `<div class="hotels__pin">${number}</div>`
+                )
+              };
+            };
+          
+            // Параметры для специального маркера (без номера)
+            const specialIconOptions = {
+              iconLayout: 'default#image',
+              iconImageHref: 'https://img.cntiprogress.ru/file/ivksenia/map_icon_cnti.png',
+              iconImageSize: [56, 81],
+              iconImageOffset: [-28, -81]
+            };
+          
+            // Добавляем маркеры филиалов с номерами
+            branches.forEach((branch, index) => {
+              const placemark = new ymaps.Placemark(
+                branch.coords, 
+                {
+                  hintContent: branch.name,
+                  balloonContent: branch.name
+                },
+                getNumberedIconOptions(index + 1) // Нумерация с 1
+              );
+              map.geoObjects.add(placemark);
+            });
+          
+            // Специальный маркер (без номера)
+            const specialPlacemark = new ymaps.Placemark(
+              [59.942227, 30.27578],
+              {
+                hintContent: "ЦНТИ Прогресс",
+                balloonContent: "Средний пр-т В.О, 36/40"
+              },
+              specialIconOptions
+            );
+          
+            map.geoObjects.add(specialPlacemark);
+            map.setBounds(map.geoObjects.getBounds());
+          }       
+        </script>
         <section class="conditions section" id="conditions">
           <div class="container">
             <h2 class="title">Важные условия бронирования и&nbsp;оплаты</h2>
@@ -631,6 +696,6 @@
         </div>
       </footer>
     </div>
-    <script src="js/script.min.js?_v=1749476810710"></script>
+    <script src="js/script.min.js?_v=1749592663533"></script>
   </body>
 </html>
