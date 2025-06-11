@@ -2,7 +2,7 @@
 <html lang="ru">
   <head>
     <meta name="robots" content="noindex"/>
-    <link rel="stylesheet" href="css/style.min.css?_v=1749626759646"/>
+    <link rel="stylesheet" href="css/style.min.css?_v=1749637397324"/>
     <meta charset="utf-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <title>ОТЕЛИ</title>
@@ -560,7 +560,11 @@
                 branch.coords, 
                 {
                   hintContent: branch.name,
-                  balloonContent: branch.name
+                  balloonContent: `<div class="hotels__baloon">
+                                      <h3 class="t2">${branch.name}</h3>
+                                      <p class="p1 m3">${branch.address}</p>
+                                      <a class="link" href="#${branch.slug}">Подробнее</a>
+                                    </div>`
                 },
                 getNumberedIconOptions(index + 1) // Нумерация с 1
               );
@@ -572,7 +576,10 @@
               [59.942227, 30.27578],
               {
                 hintContent: "ЦНТИ Прогресс",
-                balloonContent: "Средний пр-т В.О, 36/40"
+                balloonContent: `<div class="hotels__baloon">
+                                    <h3 class="t2">ЦНТИ Прогресс</h3>
+                                    <p class="p1 m3">Средний пр-т В.О, 36/40</p>
+                                  </div>`
               },
               specialIconOptions
             );
@@ -696,6 +703,6 @@
         </div>
       </footer>
     </div>
-    <script src="js/script.min.js?_v=1749626759646"></script>
+    <script src="js/script.min.js?_v=1749637397324"></script>
   </body>
 </html>
