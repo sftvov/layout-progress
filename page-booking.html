@@ -2,7 +2,7 @@
 <html lang="ru">
   <head>
     <meta name="robots" content="noindex"/>
-    <link rel="stylesheet" href="css/style.min.css?_v=1750058558805"/>
+    <link rel="stylesheet" href="css/style.min.css?_v=1750081265068"/>
     <meta charset="utf-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <title>БРОНИРОВАНИЕ</title>
@@ -214,13 +214,13 @@
           <div class="container">
             <div class="booking__body">
               <h1 class="title bright">Бронирование гостиниц:</h1>
-              <div class="booking__main m1 row">
+              <form class="booking__main m1 row">
                 <div class="booking__hotel">
                   <h2 class="booking__column-title t2d">Информация об&nbsp;отеле</h2>
                   <div class="col3">
                     <div class="booking__input-wrapper">
                       <h3 class="booking__input-title">Гостиница</h3>
-                      <button class="select _select">
+                      <div class="select _select">
                         <input class="select__input _select-input" value="Отель «Династия»" readonly inert>
                         <div class="select__variants _select-variants">
                           <div class="select__variant _select-variant">Отель &laquo;Династия&raquo;</div>
@@ -236,28 +236,28 @@
                           <div class="select__variant _select-variant">Отель &laquo;Арт на&nbsp;Репина&raquo;</div>
                           <div class="select__variant _select-variant">Mirum Hotel</div>
                         </div>
-                      </button>
+                      </div>
                     </div>
                     <div class="booking__input-wrapper">
                       <h3 class="booking__input-title">Категория номера</h3>
-                      <button class="select _select">
+                      <div class="select _select">
                         <input class="select__input _select-input" value="Стандарт" readonly inert>
                         <div class="select__variants _select-variants">
                           <div class="select__variant _select-variant">Стандарт</div>
                           <div class="select__variant _select-variant">Комфорт</div>
                           <div class="select__variant _select-variant">Эконом</div>
                         </div>
-                      </button>
+                      </div>
                     </div>
                     <div class="booking__input-wrapper">
                       <h3 class="booking__input-title">Размещение в&nbsp;номере</h3>
-                      <button class="select _select">
+                      <div class="select _select">
                         <input class="select__input _select-input" value="Одноместное" readonly inert>
                         <div class="select__variants _select-variants">
                           <div class="select__variant _select-variant">Одноместное</div>
                           <div class="select__variant _select-variant">Двуместное</div>
                         </div>
-                      </button>
+                      </div>
                     </div>
                     <div class="booking__input-wrapper">
                       <h3 class="booking__input-title">Дата заезда</h3>
@@ -275,8 +275,8 @@
                     </div>
                     <div class="col3">
                       <div class="booking__buttons row g3">
-                        <button class="booking__button button--primary">Отправить</button>
-                        <button class="booking__button button--second">Отмена</button>
+                        <input class="booking__button button--primary" type="submit" value="Отправить">
+                        <input class="booking__button button--second" type="reset" value="Отмена">
                       </div>
                       <p class="p2">Нажимая кнопку, я&nbsp;даю свое согласие на&nbsp;обработку моих персональных данных, в&nbsp;соответствии с&nbsp;Федеральным законом от&nbsp;27.07.2006 года № 152-ФЗ &laquo;О&nbsp;персональных данных&raquo;, на&nbsp;условиях и&nbsp;для целей, определенных <a class="link" href="#">Политикой конфиденциальности</a>.</p>
                     </div>
@@ -303,17 +303,17 @@
                     </div>
                     <div class="booking__input-wrapper">
                       <h3 class="booking__input-title">Вид оплаты</h3>
-                      <button class="select _select">
+                      <div class="select _select">
                         <input class="select__input _select-input" value="Наличные/Карта" readonly inert>
                         <div class="select__variants _select-variants">
                           <div class="select__variant _select-variant">Наличные/Карта</div>
                           <div class="select__variant _select-variant">Безналичный от&nbsp;юрлица</div>
                         </div>
-                      </button>
+                      </div>
                     </div>
                   </div>
                 </div>
-              </div>
+              </form>
             </div>
           </div>
         </section>
@@ -394,6 +394,6 @@
         </div>
       </footer>
     </div>
-    <script src="js/script.min.js?_v=1750058558805"></script>
+    <script src="js/script.min.js?_v=1750081265068"></script>
   </body>
 </html>
