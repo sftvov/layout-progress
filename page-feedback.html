@@ -2,10 +2,10 @@
 <html lang="ru">
   <head>
     <meta name="robots" content="noindex"/>
-    <link rel="stylesheet" href="css/style.min.css?_v=1750510666092"/>
+    <link rel="stylesheet" href="css/style.min.css?_v=1750510667142"/>
     <meta charset="utf-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <title>NAVIGATION</title>
+    <title>ОБРАТНАЯ СВЯЗЬ</title>
     <meta name="description" content="description"/>
     <meta name="theme-color" content=""/>
     <link rel="canonical" href=""/>
@@ -205,25 +205,94 @@
         </div>
       </header>
       <main class="page" id="page">
-        <div class="section">
-          <div class="container">
-            <ol class="ol">
-              <li class="ol__li"><a class="link" href="page-main.html">ГЛАВНАЯ СТРАНИЦА</a></li>
-              <li class="ol__li"><a class="link" href="page-rubrics.html">РУБРИКАТОР</a></li>
-              <li class="ol__li"><a class="link" href="archive-courses.html">РУБРИКА (РАЗВОДЯЩАЯ КУРСОВ)</a></li>
-              <li class="ol__li"><a class="link" href="page-hotels.html">ОТЕЛИ</a></li>
-              <li class="ol__li"><a class="link" href="page-booking.html">БРОНИРОВАНИЕ</a></li>
-              <li class="ol__li"><a class="link" href="page-plan.html">ПЛАН</a></li>
-              <li class="ol__li"><a class="link" href="page-mailing.html">РАССЫЛКА</a></li>
-              <li class="ol__li"><a class="link" href="page-feedback.html">ОБРАТНАЯ СВЯЗЬ</a></li>
-              <li class="ol__li"><a class="link" href="page-search.html">ПОИСК (РЕЗУЛЬТАТЫ)</a></li>
-              <li class="ol__li"><a class="link" href="page-search-empty.html">ПОИСК (ПУСТОЙ)</a></li>
-            </ol>
-            <ul class="ul m1">
-              <li class="ul__li"><a class="link" href="service-pagination.html">ПАГИНАЦИЯ</a></li>
-            </ul>
+        <section class="breadcrumbs">
+          <div class="breadcrumbs__container container">
+            <div class="breadcrumbs__body"><a class="breadcrumbs__item" href="#"> Главная</a><span class="breadcrumbs__item">Обратная связь</span></div>
           </div>
-        </div>
+        </section>
+        <section class="section feedback">
+          <div class="container">
+            <h1 class="title">обратная связь</h1>
+            <p class="intro m3">Если у&nbsp;вас есть вопросы, пожелания <br class="_n4-hide">или вы&nbsp;хотите оставить отзыв <br>о&nbsp;сайте или курсе, напишите нам,  <br class="_n4-hide">мы&nbsp;с&nbsp;удовольствием ответим.</p>
+            <form class="m1 feedback__form">
+              <div class="row g3 feedback__main">
+                <div class="col3 feedback__column">       
+                  <div class="col4">
+                    <h3 class="p2">Фамилия</h3>
+                    <input class="input" placeholder="Иванов">
+                  </div>
+                  <div class="col4">
+                    <h3 class="p2">Имя</h3>
+                    <input class="input" placeholder="Иван">
+                  </div>
+                  <div class="col4">
+                    <h3 class="p2">Электронная почта</h3>
+                    <input class="input" type="email" placeholder="example@mail.ru">
+                  </div>
+                  <div class="col4">
+                    <h3 class="p2">Телефон</h3>
+                    <input class="input" type="tel" placeholder="8 (999) 999-99-99">
+                  </div>
+                </div>
+                <div class="col3 feedback__column">
+                  <div class="col4">
+                    <h3 class="p2">Сообщение для:</h3>
+                    <div class="select">
+                      <input class="select__input" value="Службы записи" readonly inert>
+                      <div class="select__variants">
+                        <div class="select__variant">Службы записи</div>
+                        <div class="select__variant">Службы корпоративных семинаров</div>
+                        <div class="select__variant">Службы гостиниц</div>
+                        <div class="select__variant">Отзыв о&nbsp;сайте или курсе</div>
+                        <div class="select__variant">Другое</div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col4 feedback__textarea-wrapper">
+                    <h3 class="p2">Выш вопрос или пожелание</h3>
+                    <textarea class="textarea feedback__textarea" placeholder="Напишите свое сообщение">     </textarea>
+                  </div>
+                </div>
+              </div>
+              <div class="col3 m2">
+                <div class="row">
+                  <input class="button--primary w2" type="submit" value="Отправить">
+                  <input class="button--second w2" type="reset" value="Отмена">
+                </div>
+                <label class="checkbox">
+                  <input class="checkbox__input" type="checkbox" checked>
+                  <div class="checkbox__span-wrapper--blue"><span class="checkbox__span">Отправляя форму, я&nbsp;принимаю <a class="link" href="#">пользовательское соглашение</a></span></div>
+                </label>
+              </div>
+            </form>
+          </div>
+        </section>
+        <section class="feedback-contacts section" id="contacts"> 
+          <div class="container">
+            <h1 class="title">контактная информация</h1>
+            <p class="intro m3">Если у&nbsp;вас сложный вопрос по&nbsp;обучению, обратитесь напрямую <br class="_x4-hide">к&nbsp;руководителю отдела.</p>
+            <div class="feedback-contacts__main row g3 m1">
+              <div class="contacts-card"><img class="contacts-card__img" src="../img/feedback/paramonova.png" alt="">
+                <div class="contacts-card__main col3">
+                  <div class="col4">
+                    <h2 class="t2d">Наталия Парамонова</h2>
+                    <p class="p2">руководитель службы записи</p>
+                  </div>
+                  <div class="col4"><a class="p2" href="tel:88123318888">8 (812) 331-88-88</a><a class="p2" href="mailto:client@cntiprogress.ru">client@cntiprogress.ru</a></div>
+                </div>
+              </div>
+              <div class="contacts-card"><img class="contacts-card__img" src="../img/feedback/kutarenko.png" alt="">
+                <div class="contacts-card__main col3">
+                  <div class="col4">
+                    <h2 class="t2d">Ирина Кутаренко</h2>
+                    <p class="p2">руководитель службы по&nbsp;работе с&nbsp;клиентами</p>
+                  </div>
+                  <div class="col4"><a class="p2" href="tel:88123274220">8 (812) 327-42-20</a><a class="p2" href="mailto:srk@cntiprogress.ru">srk@cntiprogress.ru</a></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
       </main>
       <footer class="footer">
         <div class="footer__container container">
@@ -301,6 +370,6 @@
         </div>
       </footer>
     </div>
-    <script src="js/script.min.js?_v=1750510666092"></script>
+    <script src="js/script.min.js?_v=1750510667142"></script>
   </body>
 </html>

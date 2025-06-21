@@ -2,7 +2,7 @@
 <html lang="ru">
   <head>
     <meta name="robots" content="noindex"/>
-    <link rel="stylesheet" href="css/style.min.css?_v=1750081265068"/>
+    <link rel="stylesheet" href="css/style.min.css?_v=1750510666236"/>
     <meta charset="utf-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <title>БРОНИРОВАНИЕ</title>
@@ -17,13 +17,13 @@
           <div class="header__top-level">
             <div class="header__mobile-logo-city-wrapper"><a class="header__mobile-logo-link" href="index.html"> <img class="header__mobile-logo-img" src="img/logo.svg" alt=""></a>
               <div class="header__city-wrapper">
-                <button class="header__city header-select _select-btn">
+                <button class="header__city header-select">
                   <div class="header-select__triangle triangle"></div>
                   <div class="header-select__current-city">Санкт-Петербург</div>
                   <svg class="header-select__svg">
                     <use xlink:href="img/sprite/symbols.svg#chevron-down"></use>
                   </svg>
-                  <div class="header-select__variants-wrapper _select-body">
+                  <div class="header-select__variants-wrapper">
                     <div class="header-select__variants-border">
                       <div class="header-select__variants"><a class="header-select__city _active" href="page-main.html">Санкт-Петербург</a><a class="header-select__city" href="page-main.html">Москва</a></div>
                     </div>
@@ -42,13 +42,13 @@
                   <use xlink:href="img/sprite/symbols.svg#mail"></use>
                 </svg>Рассылка</a></div>
             <div class="header__contacts">
-              <button class="header__phone header-select _select-btn">
+              <button class="header__phone header-select">
                 <div class="header-select__triangle triangle"></div>
                 <div class="header-select__first-phone">8 (800) 333-88-44</div>
                 <svg class="header-select__svg header-select__svg--accent">
                   <use xlink:href="img/sprite/symbols.svg#chevron-down"></use>
                 </svg>
-                <div class="header-select__variants-wrapper _select-body">
+                <div class="header-select__variants-wrapper">
                   <div class="header-select__variants-border">
                     <div class="header-select__variants"><a class="header-select__phone _active" href="tel:88003338844">8 (800) 333-88-44</a><a class="header-select__phone" href="tel:88123318888">8 (812) 331-88-88</a></div>
                   </div>
@@ -210,111 +210,111 @@
             <div class="breadcrumbs__body"><a class="breadcrumbs__item" href="#"> Главная</a><span class="breadcrumbs__item">Бронирование гостиниц</span></div>
           </div>
         </section>
-        <section class="booking section">
+        <section class="section booking" id="booking">
           <div class="container">
-            <div class="booking__body">
-              <h1 class="title bright">Бронирование гостиниц:</h1>
-              <form class="booking__main m1 row">
-                <div class="booking__hotel">
-                  <h2 class="booking__column-title t2d">Информация об&nbsp;отеле</h2>
+            <h1 class="title bright">Бронирование гостиниц:</h1>
+            <form class="m1 booking__form">
+              <div class="row g2 booking__main">
+                <div class="booking__column--hotel">
+                  <h2 class="t2d booking__column-title">Информация об&nbsp;отеле</h2>
                   <div class="col3">
-                    <div class="booking__input-wrapper">
-                      <h3 class="booking__input-title">Гостиница</h3>
-                      <div class="select _select">
-                        <input class="select__input _select-input" value="Отель «Династия»" readonly inert>
-                        <div class="select__variants _select-variants">
-                          <div class="select__variant _select-variant">Отель &laquo;Династия&raquo;</div>
-                          <div class="select__variant _select-variant">Гостевой дом &laquo;Демидов&raquo;</div>
-                          <div class="select__variant _select-variant">Отель &laquo;Сапфир&raquo;</div>
-                          <div class="select__variant _select-variant">Отель &laquo;Марко Поло&raquo;</div>
-                          <div class="select__variant _select-variant">Отель &laquo;Арт Нуво&raquo;</div>
-                          <div class="select__variant _select-variant">Отель &laquo;Касл&raquo;</div>
-                          <div class="select__variant _select-variant">Отель &laquo;Матрикс&raquo;</div>
-                          <div class="select__variant _select-variant">River Palace Hotel</div>
-                          <div class="select__variant _select-variant">GRAND CATHERINE PALACE HOTEL</div>
-                          <div class="select__variant _select-variant">Отель &laquo;За&nbsp;Кулисами&raquo;</div>
-                          <div class="select__variant _select-variant">Отель &laquo;Арт на&nbsp;Репина&raquo;</div>
-                          <div class="select__variant _select-variant">Mirum Hotel</div>
+                    <div class="col4">
+                      <h3 class="p2">Гостиница</h3>
+                      <div class="select">
+                        <input class="select__input" value="Отель «Династия»" readonly inert>
+                        <div class="select__variants">
+                          <div class="select__variant">Отель &laquo;Династия&raquo;</div>
+                          <div class="select__variant">Гостевой дом &laquo;Демидов&raquo;</div>
+                          <div class="select__variant">Отель &laquo;Сапфир&raquo;</div>
+                          <div class="select__variant">Отель &laquo;Марко Поло&raquo;</div>
+                          <div class="select__variant">Отель &laquo;Арт Нуво&raquo;</div>
+                          <div class="select__variant">Отель &laquo;Касл&raquo;</div>
+                          <div class="select__variant">Отель &laquo;Матрикс&raquo;</div>
+                          <div class="select__variant">River Palace Hotel</div>
+                          <div class="select__variant">GRAND CATHERINE PALACE HOTEL</div>
+                          <div class="select__variant">Отель &laquo;За&nbsp;Кулисами&raquo;</div>
+                          <div class="select__variant">Отель &laquo;Арт на&nbsp;Репина&raquo;</div>
+                          <div class="select__variant">Mirum Hotel</div>
                         </div>
                       </div>
                     </div>
-                    <div class="booking__input-wrapper">
-                      <h3 class="booking__input-title">Категория номера</h3>
-                      <div class="select _select">
-                        <input class="select__input _select-input" value="Стандарт" readonly inert>
-                        <div class="select__variants _select-variants">
-                          <div class="select__variant _select-variant">Стандарт</div>
-                          <div class="select__variant _select-variant">Комфорт</div>
-                          <div class="select__variant _select-variant">Эконом</div>
+                    <div class="col4">
+                      <h3 class="p2">Категория номера</h3>
+                      <div class="select">
+                        <input class="select__input" value="Стандарт" readonly inert>
+                        <div class="select__variants">
+                          <div class="select__variant">Стандарт</div>
+                          <div class="select__variant">Комфорт</div>
+                          <div class="select__variant">Эконом</div>
                         </div>
                       </div>
                     </div>
-                    <div class="booking__input-wrapper">
-                      <h3 class="booking__input-title">Размещение в&nbsp;номере</h3>
-                      <div class="select _select">
-                        <input class="select__input _select-input" value="Одноместное" readonly inert>
-                        <div class="select__variants _select-variants">
-                          <div class="select__variant _select-variant">Одноместное</div>
-                          <div class="select__variant _select-variant">Двуместное</div>
+                    <div class="col4">
+                      <h3 class="p2">Размещение в&nbsp;номере</h3>
+                      <div class="select">
+                        <input class="select__input" value="Одноместное" readonly inert>
+                        <div class="select__variants">
+                          <div class="select__variant">Одноместное</div>
+                          <div class="select__variant">Двуместное</div>
                         </div>
                       </div>
                     </div>
-                    <div class="booking__input-wrapper">
-                      <h3 class="booking__input-title">Дата заезда</h3>
+                    <div class="col4">
+                      <h3 class="p2">Дата заезда</h3>
                       <input class="input--date" value="2025-06-10" type="date">
                     </div>
-                    <div class="booking__input-wrapper">
-                      <h3 class="booking__input-title">Дата выезда</h3>
+                    <div class="col4">
+                      <h3 class="p2">Дата выезда</h3>
                       <input class="input--date" value="2025-06-17" type="date">
                     </div>
                   </div>
-                  <div class="booking__bottom col2 m2">
-                    <div class="booking__input-wrapper">
-                      <h3 class="booking__input-title">Примечание</h3>
-                      <textarea class="textarea" placeholder="Напишите свое сообщение"></textarea>
-                    </div>
-                    <div class="col3">
-                      <div class="booking__buttons row g3">
-                        <input class="booking__button button--primary" type="submit" value="Отправить">
-                        <input class="booking__button button--second" type="reset" value="Отмена">
-                      </div>
-                      <p class="p2">Нажимая кнопку, я&nbsp;даю свое согласие на&nbsp;обработку моих персональных данных, в&nbsp;соответствии с&nbsp;Федеральным законом от&nbsp;27.07.2006 года № 152-ФЗ &laquo;О&nbsp;персональных данных&raquo;, на&nbsp;условиях и&nbsp;для целей, определенных <a class="link" href="#">Политикой конфиденциальности</a>.</p>
-                    </div>
-                  </div>
                 </div>
-                <div class="booking__visitor">
-                  <h2 class="booking__column-title t2d">Информация о&nbsp;слушателе</h2>
+                <div class="booking__column--visitor">
+                  <h2 class="t2d booking__column-title">Информация о&nbsp;слушателе</h2>
                   <div class="col3">
-                    <div class="booking__input-wrapper">
-                      <h3 class="booking__input-title">Код семинара</h3>
+                    <div class="col4">
+                      <h3 class="p2">Код семинара</h3>
                       <input class="input" placeholder="789765">
                     </div>
-                    <div class="booking__input-wrapper">
-                      <h3 class="booking__input-title">ФИО участника</h3>
+                    <div class="col4">
+                      <h3 class="p2">ФИО участника</h3>
                       <input class="input" placeholder="Иванов Иван Иванович">
                     </div>
-                    <div class="booking__input-wrapper">
-                      <h3 class="booking__input-title">Электронная почта</h3>
+                    <div class="col4">
+                      <h3 class="p2">Электронная почта</h3>
                       <input class="input" type="email" placeholder="789765">
                     </div>
-                    <div class="booking__input-wrapper">
-                      <h3 class="booking__input-title">Телефон</h3>
+                    <div class="col4">
+                      <h3 class="p2">Телефон</h3>
                       <input class="input" type="tel" placeholder="8 (999) 999-99-99">
                     </div>
-                    <div class="booking__input-wrapper">
-                      <h3 class="booking__input-title">Вид оплаты</h3>
-                      <div class="select _select">
-                        <input class="select__input _select-input" value="Наличные/Карта" readonly inert>
-                        <div class="select__variants _select-variants">
-                          <div class="select__variant _select-variant">Наличные/Карта</div>
-                          <div class="select__variant _select-variant">Безналичный от&nbsp;юрлица</div>
+                    <div class="col4">
+                      <h3 class="p2">Вид оплаты</h3>
+                      <div class="select">
+                        <input class="select__input" value="Наличные/Карта" readonly inert>
+                        <div class="select__variants">
+                          <div class="select__variant">Наличные/Карта</div>
+                          <div class="select__variant">Безналичный от&nbsp;юрлица</div>
                         </div>
                       </div>
                     </div>
                   </div>
                 </div>
-              </form>
-            </div>
+              </div>
+              <div class="col2 m2 booking__bottom">
+                <div class="col4">
+                  <h3 class="p2">Примечание</h3>
+                  <textarea class="textarea" placeholder="Напишите свое сообщение"></textarea>
+                </div>
+                <div class="col3">
+                  <div class="row g3 booking__buttons">
+                    <input class="booking__button button--primary" type="submit" value="Отправить">
+                    <input class="booking__button button--second" type="reset" value="Отмена">
+                  </div>
+                  <p class="p2">Нажимая кнопку, я&nbsp;даю свое согласие на&nbsp;обработку моих персональных данных, в&nbsp;соответствии с&nbsp;Федеральным законом от&nbsp;27.07.2006 года № 152-ФЗ &laquo;О&nbsp;персональных данных&raquo;, на&nbsp;условиях и&nbsp;для целей, определенных <a class="link" href="#">Политикой конфиденциальности</a>.</p>
+                </div>
+              </div>
+            </form>
           </div>
         </section>
       </main>
@@ -394,6 +394,6 @@
         </div>
       </footer>
     </div>
-    <script src="js/script.min.js?_v=1750081265068"></script>
+    <script src="js/script.min.js?_v=1750510666236"></script>
   </body>
 </html>
