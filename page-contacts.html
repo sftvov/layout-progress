@@ -2,13 +2,14 @@
 <html lang="ru">
   <head>
     <meta name="robots" content="noindex"/>
-    <link rel="stylesheet" href="css/style.min.css?_v=1751215454386"/>
+    <link rel="stylesheet" href="css/style.min.css?_v=1751215453152"/>
     <meta charset="utf-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <title>ПОИСК (ПУСТОЙ)</title>
+    <title>КОНТАКТЫ</title>
     <meta name="description" content="description"/>
     <meta name="theme-color" content=""/>
     <link rel="canonical" href=""/>
+    <script src="https://api-maps.yandex.ru/2.1/?apikey=de140e86-bb51-4ff4-a9c6-b52842c10b4d&amp;lang=ru_RU"></script>
   </head>
   <body>
     <div class="wrapper">
@@ -207,34 +208,276 @@
       <main class="page" id="page">
         <section class="breadcrumbs">
           <div class="container">
-            <div class="breadcrumbs__body"><a class="breadcrumbs__item" href="/page-main.html">Главная</a><span class="breadcrumbs__item">Поиск</span>
+            <div class="breadcrumbs__body"><a class="breadcrumbs__item" href="/page-main.html">Главная</a><span class="breadcrumbs__item">Контактная информация и&nbsp;схема проезда</span>
             </div>
           </div>
         </section>
-        <section class="section" id="results">
+        <section class="map section">
           <div class="container">
-            <h1 class="title">вы&nbsp;искали &laquo;паовт&raquo;</h1>
-            <div class="empty-results m2"><img class="empty-results__img" src="img/search/yama.svg" alt="ничего не найдено по поисковому запросу">
-              <div class="m2">
-                <h2 class="subtitle">Увы, мы&nbsp;ничего не&nbsp;нашли по&nbsp;вашему запросу.</h2>
-                <div class="empty-results__columns">
-                  <div class="empty-results__column">
-                    <h3 class="t2d">Попытаться еще раз</h3>
-                    <div class="m5">
-                      <ol class="ol">
-                        <li class="ol__li">Если у&nbsp;вас есть код курса, введите его в&nbsp;поле поиска. Например, 34541.</li>
-                        <li class="ol__li">Попробуйте упростить запрос до&nbsp;одного слова. Например, &laquo;бухгалтер&raquo; или &laquo;гособоронзаказ&raquo;.</li>
-                      </ol>
+            <h1 class="map__title title">Контактная информация <br class="n4hide">и&nbsp;схема проезда</h1>
+            <div class="map__main m2">
+              <div class="map__map" id="map"></div>
+              <div class="map__info col3 n3w4 x3w4">
+                <div class="t2d">Учебный центр в&nbsp;Петербурге</div>
+                <div class="map__info-main col5">
+                  <p class="p1">Средний пр-т Васильевского острова, д.&nbsp;36/40 (ТЦ&nbsp;&laquo;Остров&raquo;), ст.&nbsp;метро &laquo;Василеостровская&raquo;, Санкт-Петербург, 199004</p>
+                  <p class="p1"><a href="tel:7812318888">+7&nbsp;(812)&nbsp;331-88-88</a><br><a href="tel:88003338844">8 (800) 333-88-44</a></p>
+                  <p class="p1">Пн-Пт с&nbsp;8:00 до&nbsp;18:00 (Мск)</p>
+                </div><a class="map__info-link t2d">Как добраться
+                  <div class="map__arrow arrow">
+                    <div class="map__arrow-line arrow__line"></div>
+                    <svg class="map__arrowhead arrow__head">
+                      <use xlink:href="img/sprite/symbols.svg#arrowhead"></use>
+                    </svg>
+                  </div></a>
+              </div>
+            </div>
+          </div>
+        </section>
+        <script>
+          ymaps.ready(initContactsMap);
+          
+          function initContactsMap() {
+            const map = new ymaps.Map("map", {
+              center: [59.942227, 30.27578], // Точные координаты ЦНТИ
+              zoom: 15,
+              controls: []
+            });
+          
+            // Параметры для маркера
+            const specialIconOptions = {
+              iconLayout: 'default#image',
+              iconImageHref: 'https://img.cntiprogress.ru/file/ivksenia/map_icon_cnti.png',
+              iconImageSize: [37.34, 54],
+              iconImageOffset: [-18.67, -54]
+            };
+          
+            // Создаем маркер
+            const cntiPlacemark = new ymaps.Placemark(
+              [59.942227, 30.27578], // Точные координаты ЦНТИ
+              {},
+              specialIconOptions
+            );
+          
+            map.geoObjects.add(cntiPlacemark);
+          
+            // Добавляем контрол
+            const zoomControl = new ymaps.control.ZoomControl({
+              options: {
+                position: {
+                  top: 60,
+                  left: 10
+                },
+              }
+            });
+            map.controls.add(zoomControl);
+          
+            // Отключаем скролл колесиком мыши
+            map.behaviors.disable('scrollZoom');
+          }
+        </script>
+        <div class="support section">
+          <div class="container">
+            <div class="row x3col g3 n1o1">
+              <section class="n1w5 n3w6">
+                <div class="support__head col5">
+                  <h2 class="t1d">обратная связь</h2>
+                  <p class="p1">Если у&nbsp;вас есть вопросы, пожелания или вы&nbsp;хотите оставить отзыво сайте или курсе, напишите нам, мы&nbsp;с&nbsp;удовольствием ответим.</p>
+                </div>
+                <form class="support__form col5 m2">
+                  <div class="col6">
+                    <label class="p2" for="lastName">Фамилия</label>
+                    <input class="input" id="lastName" placeholder="Иванов">
+                  </div>
+                  <div class="col6">
+                    <label class="p2" for="firstName">Имя</label>
+                    <input class="input" id="firstName" placeholder="Иван">
+                  </div>
+                  <div class="col6">
+                    <label class="p2" for="email">Электронная почта</label>
+                    <input class="input" type="email" id="email" placeholder="example@mail.ru">
+                  </div>
+                  <div class="col6">
+                    <label class="p2" for="phone">Телефон</label>
+                    <input class="input" type="tel" id="phone" placeholder="8 (999) 999-99-99">
+                  </div>
+                  <div class="col6">
+                    <label class="p2" for="service">Сообщение для:</label>
+                    <div class="select">
+                      <input class="select__input" id="service" value="Службы записи" readonly inert>
+                      <div class="select__variants">
+                        <div class="select__variant">Службы записи</div>
+                        <div class="select__variant">Службы корпоративных семинаров</div>
+                        <div class="select__variant">Службы гостиниц</div>
+                        <div class="select__variant">Отзыв о&nbsp;сайте или курсе</div>
+                        <div class="select__variant">Другое</div>
+                      </div>
                     </div>
                   </div>
-                  <div class="empty-results__column">
-                    <h3 class="t2d">Спросить вживую</h3>
-                    <div class="m5">
-                      <p class="p1">Позвоните нам по&nbsp;бесплатному номеру <a class="link" href="#"><br class="n1hide x3hide"> 
-                          <nobr>8 (800) 333-88-44</nobr></a> <br class="n2hide x3hide"> или закажите <a class="link" href="#">
-                          <nobr>обратный звонок</nobr></a></p>
+                  <div class="col3">
+                    <div class="col6">
+                      <label class="p2" for="message">Ваш вопрос или пожелание</label>
+                      <textarea class="textarea" id="message" placeholder="Напишите свое сообщение"></textarea>
+                    </div>
+                    <div class="row x4col g5">
+                      <input class="button--primary n1w2 n3w3 x3w2 x4w4" type="submit" value="Отправить">
+                      <input class="button--second n1w2 n3w3 x3w2 x4w4" type="reset" value="Отмена">
                     </div>
                   </div>
+                  <label class="checkbox">
+                    <input class="checkbox__input" type="checkbox" checked>
+                    <div class="checkbox__span-wrapper--blue"><span class="checkbox__span">Отправляя форму, я&nbsp;принимаю <a class="link" href="#">пользовательское соглашение</a></span></div>
+                  </label>
+                </form>
+              </section>
+              <section class="n1w5 n3w6">
+                <div class="support__head col5">
+                  <h2 class="t1d">на&nbsp;ваши вопросы ответят</h2>
+                  <p class="p1">Если у&nbsp;вас сложный вопрос по&nbsp;обучению, обратитесь напрямую к&nbsp;руководителю отдела.</p>
+                </div>
+                <div class="col3 m2">
+                  <div class="support__contact contacts-card"><img class="contacts-card__img" src="img/feedback/paramonova.png" alt="">
+                    <div class="contacts-card__main col5">
+                      <div class="col6">
+                        <h2 class="t2d">Наталия Парамонова</h2>
+                        <p class="p2">руководитель службы записи</p>
+                      </div>
+                      <div class="contacts-card__links col6"><a class="p2 hover" href="tel:88123318888">8 (812) 331-88-88</a><a class="p2 hover" href="mailto:client@cntiprogress.ru">client@cntiprogress.ru</a></div>
+                    </div>
+                  </div>
+                  <div class="support__contact contacts-card"><img class="contacts-card__img" src="img/feedback/kutarenko.png" alt="">
+                    <div class="contacts-card__main col5">
+                      <div class="col6">
+                        <h2 class="t2d">Ирина Кутаренко</h2>
+                        <p class="p2">руководитель службы по&nbsp;работе с&nbsp;клиентами</p>
+                      </div>
+                      <div class="contacts-card__links col6"><a class="p2 hover" href="tel:88123274220">8 (812) 327-42-20</a><a class="p2 hover" href="mailto:srk@cntiprogress.ru">srk@cntiprogress.ru</a></div>
+                    </div>
+                  </div>
+                  <div class="support__contact contacts-card"><img class="contacts-card__img" src="img/feedback/kutarenko.png" alt="">
+                    <div class="contacts-card__main col5">
+                      <div class="col6">
+                        <h2 class="t2d">Ирина Кутаренко</h2>
+                        <p class="p2">руководитель службы по&nbsp;работе с&nbsp;клиентами</p>
+                      </div>
+                      <div class="contacts-card__links col6"><a class="p2 hover" href="tel:88123274220">8 (812) 327-42-20</a><a class="p2 hover" href="mailto:srk@cntiprogress.ru">srk@cntiprogress.ru</a></div>
+                    </div>
+                  </div>
+                </div>
+              </section>
+            </div>
+          </div>
+        </div>
+        <section class="route section">
+          <div class="container">
+            <div class="n1o1 col2">
+              <div class="col5">
+                <h2 class="t1d">Как добраться до&nbsp;учебного комплекса в&nbsp;Петербурге</h2>
+                <p class="p1">Средний пр-т Васильевского острова, д.&nbsp;36/40 (ТЦ&nbsp;&laquo;Остров&raquo;), <br>ст. метро &laquo;Василеостровская&raquo;</p>
+              </div>
+              <div class="row x3col g3">
+                <picture>
+                  <source media="(max-width: 539.95px)" srcset="img/contacts/x4spb.png">
+                  <source media="(max-width: 767.95px)" srcset="img/contacts/x3spb.png"><img class="route__img n1w5 n3w6" src="img/contacts/spb.png" alt="">
+                </picture>
+                <div class="col3">
+                  <div class="col5">
+                    <h3 class="route__heading">
+                      <svg class="icn">
+                        <use xlink:href="img/sprite/symbols.svg#plane"></use>
+                      </svg>Путь из&nbsp;аэропорта
+                    </h3>
+                    <div>
+                      <p class="p1">Из&nbsp;аэропорта в&nbsp;город добирайтесь на&nbsp;автобусе или маршрутном такси до&nbsp;станции метро &laquo;Московская&raquo;. Затем на&nbsp;метро поезжайте до&nbsp;станции &laquo;Василеостровская&raquo;.</p>
+                      <p class="p1">Время в&nbsp;пути 1 ч&nbsp;20 мин.</p>
+                    </div>
+                  </div>
+                  <div class="col5">
+                    <h3 class="route__heading">
+                      <svg class="icn">
+                        <use xlink:href="img/sprite/symbols.svg#train"></use>
+                      </svg>Путь с&nbsp;вокзала
+                    </h3>
+                    <div>
+                      <p class="p1">Рядом с&nbsp;вокзалом спуститесь в&nbsp;метро (Московский вокзал&nbsp;&mdash; ст. &laquo;Маяковская&raquo;, Ладожский вокзал&nbsp;&mdash; ст. &laquo;Ладожская&raquo;, Витебский вокзал&nbsp;&mdash; ст. &laquo;Пушкинская&raquo;, Балтийский вокзал&nbsp;&mdash; ст. &laquo;Балтийская&raquo;). Затем поезжайте до&nbsp;станции &laquo;Василеостровская&raquo;.</p>
+                      <p class="p1">Время в&nbsp;пути 25&ndash;40 мин.</p>
+                    </div>
+                  </div>
+                  <div class="col5">
+                    <h3 class="route__heading">
+                      <svg class="icn">
+                        <use xlink:href="img/sprite/symbols.svg#route"></use>
+                      </svg>Путь от&nbsp;метро
+                    </h3>
+                    <div>
+                      <p class="p1">Выйдя из&nbsp;метро на&nbsp;станции &laquo;Василеостровская&raquo;, сразу идите налево. Перейдите дорогу и&nbsp;через 20 метров войдите в&nbsp;стеклянную дверь-арку. Поднимайтесь на&nbsp;5&nbsp;этаж в&nbsp;учебный центр ЦНТИ Прогресс.</p>
+                      <p class="p1">Время в&nbsp;пути 2 мин.</p>
+                    </div>
+                  </div><a class="route__link t2d" href="#"> Скачать инструкцию
+                    <div class="route__arrow arrow">
+                      <div class="route__arrow-line arrow__line"></div>
+                      <svg class="route__arrowhead arrow__head">
+                        <use xlink:href="img/sprite/symbols.svg#arrowhead"></use>
+                      </svg>
+                    </div></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="route section">
+          <div class="container">
+            <div class="n1o1 col2">
+              <div class="col5">
+                <h2 class="t1d">Как добраться до&nbsp;учебного комплекса в&nbsp;москве</h2>
+                <p class="p1">Бизнес-парк &laquo;Ямское поле&raquo;, г.&nbsp;Москва, 3-я ул.&nbsp;Ямского Поля, д.&nbsp;2, корп. 1, <br>ст. метро &laquo;Белорусская&raquo;</p>
+              </div>
+              <div class="row x3col g3">
+                <picture>
+                  <source media="(max-width: 539.95px)" srcset="img/contacts/x4msk.png">
+                  <source media="(max-width: 767.95px)" srcset="img/contacts/x3msk.png"><img class="route__img n1w5 n3w6" src="img/contacts/msk.png" alt="">
+                </picture>
+                <div class="col3">
+                  <div class="col5">
+                    <h3 class="route__heading">
+                      <svg class="icn">
+                        <use xlink:href="img/sprite/symbols.svg#plane"></use>
+                      </svg>Путь из&nbsp;аэропорта
+                    </h3>
+                    <div>
+                      <p class="p1">Из&nbsp;аэропорта в&nbsp;город добирайтесь на&nbsp;аэроэкспрессе (из&nbsp;Внуково&nbsp;&mdash; до&nbsp;Киевского вокзала, из&nbsp;Домодедово&nbsp;&mdash; до&nbsp;Павелецкого вокзала, из&nbsp;Шереметьево&nbsp;&mdash; до&nbsp;Белорусского вокзала). Выйдя из&nbsp;вокзала, поезжайте на&nbsp;метро до&nbsp;станции &laquo;Белорусская&raquo;.</p>
+                      <p class="p1">Время в&nbsp;пути 1&ndash;1,5 ч.</p>
+                    </div>
+                  </div>
+                  <div class="col5">
+                    <h3 class="route__heading">
+                      <svg class="icn">
+                        <use xlink:href="img/sprite/symbols.svg#train"></use>
+                      </svg>Путь с&nbsp;вокзала
+                    </h3>
+                    <div>
+                      <p class="p1">Рядом с&nbsp;вокзалом зайдите в&nbsp;метро. Поезжайте до&nbsp;станции &laquo;Белорусская&raquo;. Время в&nbsp;пути 25&ndash;45&nbsp;мин. А&nbsp;если вы&nbsp;и&nbsp;так прибыли на&nbsp;Белорусский вокзал, начинайте путь по&nbsp;пл.&nbsp;Тверская Застава до&nbsp;Бизнес-парка &laquo;Ямское поле&raquo;.</p>
+                    </div>
+                  </div>
+                  <div class="col5">
+                    <h3 class="route__heading">
+                      <svg class="icn">
+                        <use xlink:href="img/sprite/symbols.svg#route"></use>
+                      </svg>Путь от&nbsp;метро
+                    </h3>
+                    <div>
+                      <p class="p1">Выйти из&nbsp;метро на&nbsp;станции &laquo;Белорусская&raquo; можно на&nbsp;Лесную улицу (Кольцевая линия, выход № 2) или к&nbsp;пл.&nbsp;Тверская Застава (зеленая линия, выход № 4). Поднимитесь на&nbsp;мост и&nbsp;следуйте в&nbsp;сторону 1-й ул.&nbsp;Ямского Поля.</p>
+                      <p class="p1">На&nbsp;первом перекрестке поверните налево на&nbsp;3-ю ул.&nbsp;Ямского поля. Дойдите до&nbsp;главного входа в&nbsp;Бизнес-парк &laquo;Ямское поле&raquo;, но&nbsp;не&nbsp;заходите внутрь.</p>
+                      <p class="p1">Оставив главный вход по&nbsp;правую руку, пройдите ещё 100 метров, до&nbsp;первого поворота. Поверните направо. Нужное здание будет вторым по&nbsp;левой стороне. Вам во&nbsp;второй подъезд, на&nbsp;второй этаж.</p>
+                      <p class="p1">Время в&nbsp;пути 10 мин.</p>
+                    </div>
+                  </div><a class="route__link t2d" href="#"> Скачать инструкцию
+                    <div class="route__arrow arrow">
+                      <div class="route__arrow-line arrow__line"></div>
+                      <svg class="route__arrowhead arrow__head">
+                        <use xlink:href="img/sprite/symbols.svg#arrowhead"></use>
+                      </svg>
+                    </div></a>
                 </div>
               </div>
             </div>
@@ -317,6 +560,6 @@
         </div>
       </footer>
     </div>
-    <script src="js/script.min.js?_v=1751215454386"></script>
+    <script src="js/script.min.js?_v=1751215453152"></script>
   </body>
 </html>
