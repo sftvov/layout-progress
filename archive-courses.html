@@ -2,7 +2,7 @@
 <html lang="ru">
   <head>
     <meta name="robots" content="noindex"/>
-    <link rel="stylesheet" href="css/style.min.css?_v=1751215450933"/>
+    <link rel="stylesheet" href="css/style.min.css?_v=1751495494955"/>
     <meta charset="utf-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <title>РУБРИКА (РАЗВОДЯЩАЯ КУРСОВ)</title>
@@ -214,9 +214,9 @@
         <section class="choose section" id="choose">
           <div class="container">
             <h1 class="title">семинары и&nbsp;курсы по&nbsp;управлению производством</h1>
-            <div class="choose__main row g3 m2">
-              <div class="choose__block n3w4 x3w2">
-                <div class="t2 accent">Показать курсы в:</div>
+            <form class="row x3wrap g3 m2 n1o1">
+              <fieldset class="n1w3 n3w4 x3w2 x4w4">
+                <legend class="t2 accent">Показать курсы в:</legend>
                 <div class="choose__checkboxes row m5">
                   <label class="checkbox">
                     <input class="checkbox__input" type="checkbox" checked>
@@ -227,26 +227,26 @@
                     <div class="checkbox__span-wrapper"><span class="checkbox__span">Москве</span></div>
                   </label>
                 </div>
-              </div>
-              <div class="choose__block n3w4 x3w2">
-                <div class="t2 accent">Период проведения:</div>
+              </fieldset>
+              <fieldset class="n1w3 n3w4 x3w2 x4w4">
+                <legend class="t2 accent">Период проведения:</legend>
                 <div class="dates m5">
-                  <div class="choose__date dates__date"><span class="dates__date-span">с</span>
-                    <div class="datepicker choose__datepicker">
+                  <label class="dates__date x4w2"><span class="p1 accent">с</span>
+                    <div class="choose__datepicker datepicker">
                       <input class="choose__input datepicker__input" value="17.02.2025">
                     </div>
-                  </div>
-                  <div class="choose__date dates__date"><span class="dates__date-span">по</span>
-                    <div class="datepicker choose__datepicker">
+                  </label>
+                  <label class="dates__date x4w2"><span class="p1 accent">по</span>
+                    <div class="choose__datepicker datepicker">
                       <input class="choose__input datepicker__input" value="16.02.2026">
                     </div>
-                  </div>
+                  </label>
                 </div>
-              </div>
+              </fieldset>
               <div class="choose__buttons row">
-                <button class="choose__button button--primary n3w2 x3w1">Подобрать</button><a class="choose__button button--second n3w2 x3w1" href="#" download> Скачать PDF</a>
+                <button class="button--primary n3w2 x3w1 x4w2">Подобрать</button><a class="button--second n3w2 x3w1 x4w2" href="#" download> Скачать PDF</a>
               </div>
-            </div>
+            </form>
           </div>
         </section>
         <section class="subrubrics section" id="subrubrics">
@@ -258,30 +258,29 @@
             </div>
           </div>
         </section>
-        <section class="courses section" id="courses">
+        <div class="courses section" id="courses">
           <div class="container">
             <div class="body">
               <div class="courses__links row"><a class="courses__link b1 n3w3 x3w2 _active" href="#">ОЧНые
-                  <svg class="courses__link-svg">
+                  <svg class="courses__link-svg icon">
                     <use xlink:href="img/sprite/symbols.svg#attention"></use>
                   </svg></a><a class="courses__link b1 n3w3 x3w2" href="#">онлайн
-                  <svg class="courses__link-svg">
+                  <svg class="courses__link-svg icon">
                     <use xlink:href="img/sprite/symbols.svg#attention"></use>
                   </svg></a></div>
             </div>
           </div>
           <div class="m2">
-            <div class="courses__item">
+            <article class="courses__item">
               <div class="container">
                 <div class="courses__item-body">
-                  <div class="courses__squares">
+                  <header class="courses__squares">
                     <div class="courses__square">32</div>
                     <div class="courses__square--new">NEW</div>
-                  </div>
+                  </header>
                   <div class="courses__course course">
-                    <div class="col6">
-                      <p class="p2">Курс повышения квалификации</p><a class="course__name" href="#"> Производство без потерь. Бережливое производство для мастеров участка</a>
-                    </div>
+                    <p class="p2">Курс повышения квалификации</p>
+                    <h2 class="m6"><a class="course__name" href="#"> Производство без потерь. Бережливое производство для мастеров участка</a></h2>
                     <div class="course__info-row">
                       <p class="course__info-item">
                         <svg class="course__info-svg">
@@ -297,19 +296,17 @@
                           <use xlink:href="img/sprite/symbols.svg#wifi"></use>
                         </svg>Доступна онлайн-трансляция</a>
                     </div>
-                    <div class="m4">
-                      <p class="p2">Курс подготовит руководителей производственных подразделений к&nbsp;внедрению Бережливого производства на&nbsp;своих участках. Бережливое производство помогает укрепить дисциплину, сократить производственные потери и&nbsp;повысить эффективность оборудования</p>
-                    </div>
+                    <p class="p2 m4">Курс подготовит руководителей производственных подразделений к&nbsp;внедрению Бережливого производства на&nbsp;своих участках. Бережливое производство помогает укрепить дисциплину, сократить производственные потери и&nbsp;повысить эффективность оборудования</p>
                   </div>
-                  <div class="courses__dates-wrapper">
+                  <footer class="courses__dates-wrapper">
                     <div class="courses__dates course-dates">
                       <div class="course-dates__headers">
-                        <h3 class="course-dates__header">Дата</h3>
-                        <h3 class="course-dates__header">Код
+                        <p class="course-dates__header">Дата</p>
+                        <p class="course-dates__header">Код
                           <svg class="course-dates__code-svg">
                             <use xlink:href="img/sprite/symbols.svg#attention"></use>
                           </svg>
-                        </h3>
+                        </p>
                       </div>
                       <div class="course-dates__row"><a class="course-dates__date-link">5&ndash;7&nbsp;мая</a><span>72701</span></div>
                       <div class="course-dates__row"><a class="course-dates__date-link">Май 2026</a><span>80471</span></div>
@@ -320,21 +317,20 @@
                           <use xlink:href="img/sprite/symbols.svg#arrowhead"></use>
                         </svg>
                       </div></a>
-                  </div>
+                  </footer>
                 </div>
               </div>
-            </div>
-            <div class="courses__item">
+            </article>
+            <article class="courses__item">
               <div class="container">
                 <div class="courses__item-body">
-                  <div class="courses__squares">
+                  <header class="courses__squares">
                     <div class="courses__square">32</div>
                     <div class="courses__square--new">NEW</div>
-                  </div>
+                  </header>
                   <div class="courses__course course">
-                    <div class="col6">
-                      <p class="p2">Курс повышения квалификации</p><a class="course__name" href="#"> Нормирование точности изделий машиностроения</a>
-                    </div>
+                    <p class="p2">Курс повышения квалификации</p>
+                    <h2 class="m6"><a class="course__name" href="#"> Нормирование точности изделий машиностроения</a></h2>
                     <div class="course__info-row">
                       <p class="course__info-item">
                         <svg class="course__info-svg">
@@ -350,19 +346,17 @@
                           <use xlink:href="img/sprite/symbols.svg#wifi"></use>
                         </svg>Доступна онлайн-трансляция</a>
                     </div>
-                    <div class="m4">
-                      <p class="p2">Цель программы&nbsp;&mdash; ознакомить инженеров-конструкторов с&nbsp;принципами нормирования точности в&nbsp;машиностроении, показать влияние точности на&nbsp;функциональные и&nbsp;эксплуатационные свойства изделий; как нормирование точности связано с&nbsp;взаимозаменяемостью и&nbsp;стоимостью изделия</p>
-                    </div>
+                    <p class="p2 m4">Цель программы&nbsp;&mdash; ознакомить инженеров-конструкторов с&nbsp;принципами нормирования точности в&nbsp;машиностроении, показать влияние точности на&nbsp;функциональные и&nbsp;эксплуатационные свойства изделий; как нормирование точности связано с&nbsp;взаимозаменяемостью и&nbsp;стоимостью изделия</p>
                   </div>
-                  <div class="courses__dates-wrapper">
+                  <footer class="courses__dates-wrapper">
                     <div class="courses__dates course-dates">
                       <div class="course-dates__headers">
-                        <h3 class="course-dates__header">Дата</h3>
-                        <h3 class="course-dates__header">Код
+                        <p class="course-dates__header">Дата</p>
+                        <p class="course-dates__header">Код
                           <svg class="course-dates__code-svg">
                             <use xlink:href="img/sprite/symbols.svg#attention"></use>
                           </svg>
-                        </h3>
+                        </p>
                       </div>
                       <div class="course-dates__row"><a class="course-dates__date-link">12&ndash;15&nbsp;мая</a><span>77913</span></div>
                       <div class="course-dates__row"><a class="course-dates__date-link">Октябрь 2026</a><span>78085</span></div>
@@ -373,21 +367,20 @@
                           <use xlink:href="img/sprite/symbols.svg#arrowhead"></use>
                         </svg>
                       </div></a>
-                  </div>
+                  </footer>
                 </div>
               </div>
-            </div>
-            <div class="courses__item">
+            </article>
+            <article class="courses__item">
               <div class="container">
                 <div class="courses__item-body">
-                  <div class="courses__squares">
+                  <header class="courses__squares">
                     <div class="courses__square">32</div>
                     <div class="courses__square--new">NEW</div>
-                  </div>
+                  </header>
                   <div class="courses__course course">
-                    <div class="col6">
-                      <p class="p2">Курс повышения квалификации</p><a class="course__name" href="#"> Технические компетенции инженера: практическое применение для решения производственных задач</a>
-                    </div>
+                    <p class="p2">Курс повышения квалификации</p>
+                    <h2 class="m6"><a class="course__name" href="#"> Технические компетенции инженера: практическое применение для решения производственных задач</a></h2>
                     <div class="course__info-row">
                       <p class="course__info-item">
                         <svg class="course__info-svg">
@@ -403,19 +396,17 @@
                           <use xlink:href="img/sprite/symbols.svg#wifi"></use>
                         </svg>Доступна онлайн-трансляция</a>
                     </div>
-                    <div class="m4">
-                      <p class="p2">Цель программы&nbsp;&mdash; повышение компетенций технических специалистов, глубокое погружение в&nbsp;инженерный минимум, совершенствование навыков чтения конструкторской и&nbsp;технологической документации, расчета допусков, проведение контроля технологической дисциплины</p>
-                    </div>
+                    <p class="p2 m4">Цель программы&nbsp;&mdash; повышение компетенций технических специалистов, глубокое погружение в&nbsp;инженерный минимум, совершенствование навыков чтения конструкторской и&nbsp;технологической документации, расчета допусков, проведение контроля технологической дисциплины</p>
                   </div>
-                  <div class="courses__dates-wrapper">
+                  <footer class="courses__dates-wrapper">
                     <div class="courses__dates course-dates">
                       <div class="course-dates__headers">
-                        <h3 class="course-dates__header">Дата</h3>
-                        <h3 class="course-dates__header">Код
+                        <p class="course-dates__header">Дата</p>
+                        <p class="course-dates__header">Код
                           <svg class="course-dates__code-svg">
                             <use xlink:href="img/sprite/symbols.svg#attention"></use>
                           </svg>
-                        </h3>
+                        </p>
                       </div>
                       <div class="course-dates__row"><a class="course-dates__date-link">12&ndash;14&nbsp;мая</a><span>72701</span></div>
                       <div class="course-dates__row"><a class="course-dates__date-link">Декабрь 2025</a><span>80471</span></div>
@@ -426,21 +417,20 @@
                           <use xlink:href="img/sprite/symbols.svg#arrowhead"></use>
                         </svg>
                       </div></a>
-                  </div>
+                  </footer>
                 </div>
               </div>
-            </div>
-            <div class="courses__item">
+            </article>
+            <article class="courses__item">
               <div class="container">
                 <div class="courses__item-body">
-                  <div class="courses__squares">
+                  <header class="courses__squares">
                     <div class="courses__square">32</div>
                     <div class="courses__square--new">NEW</div>
-                  </div>
+                  </header>
                   <div class="courses__course course">
-                    <div class="col6">
-                      <p class="p2">Курс повышения квалификации</p><a class="course__name" href="#"> Контроль и&nbsp;анализ эффективности производственной системы. Аудит уровня зрелости бережливого производства</a>
-                    </div>
+                    <p class="p2">Курс повышения квалификации</p>
+                    <h2 class="m6"><a class="course__name" href="#"> Контроль и&nbsp;анализ эффективности производственной системы. Аудит уровня зрелости бережливого производства</a></h2>
                     <div class="course__info-row">
                       <p class="course__info-item">
                         <svg class="course__info-svg">
@@ -456,19 +446,17 @@
                           <use xlink:href="img/sprite/symbols.svg#wifi"></use>
                         </svg>Доступна онлайн-трансляция</a>
                     </div>
-                    <div class="m4">
-                      <p class="p2">В&nbsp;курсе&nbsp;&mdash; как самостоятельно определять сильные и&nbsp;слабые стороны внедренных систем Бережливого производства, идентифицировать области для развития, предоставлять рекомендации и&nbsp;разрабатывать план действий для повышения эффективности методик бережливого производства. Комплект информационных материалов содержит примеры полезной документации. Выезд на&nbsp;предприятие с&nbsp;внедренными методиками Бережливого производства</p>
-                    </div>
+                    <p class="p2 m4">В&nbsp;курсе&nbsp;&mdash; как самостоятельно определять сильные и&nbsp;слабые стороны внедренных систем Бережливого производства, идентифицировать области для развития, предоставлять рекомендации и&nbsp;разрабатывать план действий для повышения эффективности методик бережливого производства. Комплект информационных материалов содержит примеры полезной документации. Выезд на&nbsp;предприятие с&nbsp;внедренными методиками Бережливого производства</p>
                   </div>
-                  <div class="courses__dates-wrapper">
+                  <footer class="courses__dates-wrapper">
                     <div class="courses__dates course-dates">
                       <div class="course-dates__headers">
-                        <h3 class="course-dates__header">Дата</h3>
-                        <h3 class="course-dates__header">Код
+                        <p class="course-dates__header">Дата</p>
+                        <p class="course-dates__header">Код
                           <svg class="course-dates__code-svg">
                             <use xlink:href="img/sprite/symbols.svg#attention"></use>
                           </svg>
-                        </h3>
+                        </p>
                       </div>
                       <div class="course-dates__row"><a class="course-dates__date-link">12&ndash;15&nbsp;мая</a><span>72701</span></div>
                       <div class="course-dates__row"><a class="course-dates__date-link">Май 2026</a><span>80471</span></div>
@@ -479,21 +467,20 @@
                           <use xlink:href="img/sprite/symbols.svg#arrowhead"></use>
                         </svg>
                       </div></a>
-                  </div>
+                  </footer>
                 </div>
               </div>
-            </div>
-            <div class="courses__item">
+            </article>
+            <article class="courses__item">
               <div class="container">
                 <div class="courses__item-body">
-                  <div class="courses__squares">
+                  <header class="courses__squares">
                     <div class="courses__square">32</div>
                     <div class="courses__square--new">NEW</div>
-                  </div>
+                  </header>
                   <div class="courses__course course">
-                    <div class="col6">
-                      <p class="p2">Курс повышения квалификации</p><a class="course__name" href="#"> Современные практики управления производством</a>
-                    </div>
+                    <p class="p2">Курс повышения квалификации</p>
+                    <h2 class="m6"><a class="course__name" href="#"> Современные практики управления производством</a></h2>
                     <div class="course__info-row">
                       <p class="course__info-item">
                         <svg class="course__info-svg">
@@ -509,19 +496,17 @@
                           <use xlink:href="img/sprite/symbols.svg#wifi"></use>
                         </svg>Доступна онлайн-трансляция</a>
                     </div>
-                    <div class="m4">
-                      <p class="p2">Программа направлена на&nbsp;проведение комплексного анализа текущего состояния производства. Курс даст инструменты эффективной оптимизации процессов и&nbsp;сокращения затрат на&nbsp;производстве. Слушатели изучат новые приемы стратегического планирования, пути повышения качества продукции, освоят приемы бережливого производства</p>
-                    </div>
+                    <p class="p2 m4">Программа направлена на&nbsp;проведение комплексного анализа текущего состояния производства. Курс даст инструменты эффективной оптимизации процессов и&nbsp;сокращения затрат на&nbsp;производстве. Слушатели изучат новые приемы стратегического планирования, пути повышения качества продукции, освоят приемы бережливого производства</p>
                   </div>
-                  <div class="courses__dates-wrapper">
+                  <footer class="courses__dates-wrapper">
                     <div class="courses__dates course-dates">
                       <div class="course-dates__headers">
-                        <h3 class="course-dates__header">Дата</h3>
-                        <h3 class="course-dates__header">Код
+                        <p class="course-dates__header">Дата</p>
+                        <p class="course-dates__header">Код
                           <svg class="course-dates__code-svg">
                             <use xlink:href="img/sprite/symbols.svg#attention"></use>
                           </svg>
-                        </h3>
+                        </p>
                       </div>
                       <div class="course-dates__row"><a class="course-dates__date-link">12&ndash;16&nbsp;мая</a><span>72701</span></div>
                       <div class="course-dates__row"><a class="course-dates__date-link">13&ndash;17&nbsp;Октября</a><span>80471</span></div>
@@ -532,21 +517,20 @@
                           <use xlink:href="img/sprite/symbols.svg#arrowhead"></use>
                         </svg>
                       </div></a>
-                  </div>
+                  </footer>
                 </div>
               </div>
-            </div>
-            <div class="courses__item">
+            </article>
+            <article class="courses__item">
               <div class="container">
                 <div class="courses__item-body">
-                  <div class="courses__squares">
+                  <header class="courses__squares">
                     <div class="courses__square">32</div>
                     <div class="courses__square--new">NEW</div>
-                  </div>
+                  </header>
                   <div class="courses__course course">
-                    <div class="col6">
-                      <p class="p2">Курс повышения квалификации</p><a class="course__name" href="#"> Производство изделий из&nbsp;пластмасс. Современные технологии, материалы и&nbsp;оборудование</a>
-                    </div>
+                    <p class="p2">Курс повышения квалификации</p>
+                    <h2 class="m6"><a class="course__name" href="#"> Производство изделий из&nbsp;пластмасс. Современные технологии, материалы и&nbsp;оборудование</a></h2>
                     <div class="course__info-row">
                       <p class="course__info-item">
                         <svg class="course__info-svg">
@@ -562,19 +546,17 @@
                           <use xlink:href="img/sprite/symbols.svg#wifi"></use>
                         </svg>Доступна онлайн-трансляция</a>
                     </div>
-                    <div class="m4">
-                      <p class="p2">Курс охватывает широкий круг вопросов по&nbsp;производству изделий из&nbsp;пластмасс: литью пластмасс, литью с&nbsp;выдувом, экструзии с&nbsp;раздувом, переработке пластика. Вы&nbsp;узнаете об&nbsp;актуальных технологиях и&nbsp;современном оборудовании, лекторы поделятся опытом модернизации технологических процессов и&nbsp;повышения эффективности эксплуатации оборудования</p>
-                    </div>
+                    <p class="p2 m4">Курс охватывает широкий круг вопросов по&nbsp;производству изделий из&nbsp;пластмасс: литью пластмасс, литью с&nbsp;выдувом, экструзии с&nbsp;раздувом, переработке пластика. Вы&nbsp;узнаете об&nbsp;актуальных технологиях и&nbsp;современном оборудовании, лекторы поделятся опытом модернизации технологических процессов и&nbsp;повышения эффективности эксплуатации оборудования</p>
                   </div>
-                  <div class="courses__dates-wrapper">
+                  <footer class="courses__dates-wrapper">
                     <div class="courses__dates course-dates">
                       <div class="course-dates__headers">
-                        <h3 class="course-dates__header">Дата</h3>
-                        <h3 class="course-dates__header">Код
+                        <p class="course-dates__header">Дата</p>
+                        <p class="course-dates__header">Код
                           <svg class="course-dates__code-svg">
                             <use xlink:href="img/sprite/symbols.svg#attention"></use>
                           </svg>
-                        </h3>
+                        </p>
                       </div>
                       <div class="course-dates__row"><a class="course-dates__date-link">12&ndash;16&nbsp;мая</a><span>72701</span></div>
                       <div class="course-dates__row"><a class="course-dates__date-link">22&ndash;25&nbsp;Сентября</a><span>80471</span></div>
@@ -585,21 +567,20 @@
                           <use xlink:href="img/sprite/symbols.svg#arrowhead"></use>
                         </svg>
                       </div></a>
-                  </div>
+                  </footer>
                 </div>
               </div>
-            </div>
-            <div class="courses__item">
+            </article>
+            <article class="courses__item">
               <div class="container">
                 <div class="courses__item-body">
-                  <div class="courses__squares">
+                  <header class="courses__squares">
                     <div class="courses__square">32</div>
                     <div class="courses__square--new">NEW</div>
-                  </div>
+                  </header>
                   <div class="courses__course course">
-                    <div class="col6">
-                      <p class="p2">Курс повышения квалификации</p><a class="course__name" href="#"> Современные композиционные материалы. Производство и&nbsp;применение</a>
-                    </div>
+                    <p class="p2">Курс повышения квалификации</p>
+                    <h2 class="m6"><a class="course__name" href="#"> Современные композиционные материалы. Производство и&nbsp;применение</a></h2>
                     <div class="course__info-row">
                       <p class="course__info-item">
                         <svg class="course__info-svg">
@@ -615,19 +596,17 @@
                           <use xlink:href="img/sprite/symbols.svg#wifi"></use>
                         </svg>Доступна онлайн-трансляция</a>
                     </div>
-                    <div class="m4">
-                      <p class="p2">На&nbsp;курсе рассматриваются эксплуатационные свойства различных композиционных материалов, современные технологии изготовления, применение их&nbsp;на&nbsp;производстве и&nbsp;текущее состояние рынка композитов в&nbsp;России</p>
-                    </div>
+                    <p class="p2 m4">На&nbsp;курсе рассматриваются эксплуатационные свойства различных композиционных материалов, современные технологии изготовления, применение их&nbsp;на&nbsp;производстве и&nbsp;текущее состояние рынка композитов в&nbsp;России</p>
                   </div>
-                  <div class="courses__dates-wrapper">
+                  <footer class="courses__dates-wrapper">
                     <div class="courses__dates course-dates">
                       <div class="course-dates__headers">
-                        <h3 class="course-dates__header">Дата</h3>
-                        <h3 class="course-dates__header">Код
+                        <p class="course-dates__header">Дата</p>
+                        <p class="course-dates__header">Код
                           <svg class="course-dates__code-svg">
                             <use xlink:href="img/sprite/symbols.svg#attention"></use>
                           </svg>
-                        </h3>
+                        </p>
                       </div>
                       <div class="course-dates__row"><a class="course-dates__date-link">13&ndash;16&nbsp;мая</a><span>72701</span></div>
                     </div><a class="courses__arrow-link" href="#"> <span class="courses__arrow-span">узнать всё о&nbsp;курсе</span>
@@ -637,20 +616,19 @@
                           <use xlink:href="img/sprite/symbols.svg#arrowhead"></use>
                         </svg>
                       </div></a>
-                  </div>
+                  </footer>
                 </div>
               </div>
-            </div>
-            <div class="courses__item">
+            </article>
+            <article class="courses__item">
               <div class="container">
                 <div class="courses__item-body">
-                  <div class="courses__squares">
+                  <header class="courses__squares">
                     <div class="courses__square">32</div>
-                  </div>
+                  </header>
                   <div class="courses__course course">
-                    <div class="col6">
-                      <p class="p2">Курс повышения квалификации</p><a class="course__name" href="#"> Автоматизация планирования производства. Внедрение ERP-системы производственного планирования на&nbsp;примере 1С ERP</a>
-                    </div>
+                    <p class="p2">Курс повышения квалификации</p>
+                    <h2 class="m6"><a class="course__name" href="#"> Автоматизация планирования производства. Внедрение ERP-системы производственного планирования на&nbsp;примере 1С ERP</a></h2>
                     <div class="course__info-row">
                       <p class="course__info-item">
                         <svg class="course__info-svg">
@@ -666,19 +644,17 @@
                           <use xlink:href="img/sprite/symbols.svg#wifi"></use>
                         </svg>Доступна онлайн-трансляция</a>
                     </div>
-                    <div class="m4">
-                      <p class="p2">Подготовка производства к&nbsp;внедрению ERP при автоматизации планирования производства на&nbsp;примере 1С ERP. Ожидания пользователей и&nbsp;оценка реальных возможностей и&nbsp;инструментов системы. Разработка дорожной карты, реально работающего плана действий по&nbsp;внедрению ERP-системы</p>
-                    </div>
+                    <p class="p2 m4">Подготовка производства к&nbsp;внедрению ERP при автоматизации планирования производства на&nbsp;примере 1С ERP. Ожидания пользователей и&nbsp;оценка реальных возможностей и&nbsp;инструментов системы. Разработка дорожной карты, реально работающего плана действий по&nbsp;внедрению ERP-системы</p>
                   </div>
-                  <div class="courses__dates-wrapper">
+                  <footer class="courses__dates-wrapper">
                     <div class="courses__dates course-dates">
                       <div class="course-dates__headers">
-                        <h3 class="course-dates__header">Дата</h3>
-                        <h3 class="course-dates__header">Код
+                        <p class="course-dates__header">Дата</p>
+                        <p class="course-dates__header">Код
                           <svg class="course-dates__code-svg">
                             <use xlink:href="img/sprite/symbols.svg#attention"></use>
                           </svg>
-                        </h3>
+                        </p>
                       </div>
                       <div class="course-dates__row"><a class="course-dates__date-link">13&ndash;16&nbsp;мая</a><span>72701</span></div>
                       <div class="course-dates__row"><a class="course-dates__date-link">Май 2026</a><span>80471</span></div>
@@ -689,21 +665,20 @@
                           <use xlink:href="img/sprite/symbols.svg#arrowhead"></use>
                         </svg>
                       </div></a>
-                  </div>
+                  </footer>
                 </div>
               </div>
-            </div>
-            <div class="courses__item">
+            </article>
+            <article class="courses__item">
               <div class="container">
                 <div class="courses__item-body">
-                  <div class="courses__squares">
+                  <header class="courses__squares">
                     <div class="courses__square">32</div>
                     <div class="courses__square--new">NEW</div>
-                  </div>
+                  </header>
                   <div class="courses__course course">
-                    <div class="col6">
-                      <p class="p2">Курс повышения квалификации</p><a class="course__name" href="#"> Технологическая подготовка при постановке оборонной продукции на&nbsp;производство</a>
-                    </div>
+                    <p class="p2">Курс повышения квалификации</p>
+                    <h2 class="m6"><a class="course__name" href="#"> Технологическая подготовка при постановке оборонной продукции на&nbsp;производство</a></h2>
                     <div class="course__info-row">
                       <p class="course__info-item">
                         <svg class="course__info-svg">
@@ -719,19 +694,17 @@
                           <use xlink:href="img/sprite/symbols.svg#wifi"></use>
                         </svg>Доступна онлайн-трансляция</a>
                     </div>
-                    <div class="m4">
-                      <p class="p2">В&nbsp;программе требования к&nbsp;технологической подготовке производства продукции, поставляемой по&nbsp;ГОЗ. Практические рекомендации и&nbsp;комплексное рассмотрение вопросов по&nbsp;организации технологической подготовки, обеспечению технологичности конструкции изделий оборонной продукции на&nbsp;всех этапах жизненного цикла от&nbsp;проектирования до&nbsp;серийного производства, эксплуатации и&nbsp;ремонта</p>
-                    </div>
+                    <p class="p2 m4">В&nbsp;программе требования к&nbsp;технологической подготовке производства продукции, поставляемой по&nbsp;ГОЗ. Практические рекомендации и&nbsp;комплексное рассмотрение вопросов по&nbsp;организации технологической подготовки, обеспечению технологичности конструкции изделий оборонной продукции на&nbsp;всех этапах жизненного цикла от&nbsp;проектирования до&nbsp;серийного производства, эксплуатации и&nbsp;ремонта</p>
                   </div>
-                  <div class="courses__dates-wrapper">
+                  <footer class="courses__dates-wrapper">
                     <div class="courses__dates course-dates">
                       <div class="course-dates__headers">
-                        <h3 class="course-dates__header">Дата</h3>
-                        <h3 class="course-dates__header">Код
+                        <p class="course-dates__header">Дата</p>
+                        <p class="course-dates__header">Код
                           <svg class="course-dates__code-svg">
                             <use xlink:href="img/sprite/symbols.svg#attention"></use>
                           </svg>
-                        </h3>
+                        </p>
                       </div>
                       <div class="course-dates__row"><a class="course-dates__date-link">13&ndash;16&nbsp;мая</a><span>72701</span></div>
                       <div class="course-dates__row"><a class="course-dates__date-link">22&ndash;25&nbsp;Сентября</a><span>80471</span></div>
@@ -742,20 +715,19 @@
                           <use xlink:href="img/sprite/symbols.svg#arrowhead"></use>
                         </svg>
                       </div></a>
-                  </div>
+                  </footer>
                 </div>
               </div>
-            </div>
-            <div class="courses__item">
+            </article>
+            <article class="courses__item">
               <div class="container">
                 <div class="courses__item-body">
-                  <div class="courses__squares">
+                  <header class="courses__squares">
                     <div class="courses__square">32</div>
-                  </div>
+                  </header>
                   <div class="courses__course course">
-                    <div class="col6">
-                      <p class="p2">Курс повышения квалификации</p><a class="course__name" href="#"> Современный электропривод. Автоматизация технологических процессов и&nbsp;производств</a>
-                    </div>
+                    <p class="p2">Курс повышения квалификации</p>
+                    <h2 class="m6"><a class="course__name" href="#"> Современный электропривод. Автоматизация технологических процессов и&nbsp;производств</a></h2>
                     <div class="course__info-row">
                       <p class="course__info-item">
                         <svg class="course__info-svg">
@@ -771,19 +743,17 @@
                           <use xlink:href="img/sprite/symbols.svg#wifi"></use>
                         </svg>Доступна онлайн-трансляция</a>
                     </div>
-                    <div class="m4">
-                      <p class="p2">Вы&nbsp;получите навыки выбора компонентов электропривода, практику пусконаладки электроприводов переменного тока, знания о&nbsp;последних изменениях в&nbsp;современном состоянии приводной техники</p>
-                    </div>
+                    <p class="p2 m4">Вы&nbsp;получите навыки выбора компонентов электропривода, практику пусконаладки электроприводов переменного тока, знания о&nbsp;последних изменениях в&nbsp;современном состоянии приводной техники</p>
                   </div>
-                  <div class="courses__dates-wrapper">
+                  <footer class="courses__dates-wrapper">
                     <div class="courses__dates course-dates">
                       <div class="course-dates__headers">
-                        <h3 class="course-dates__header">Дата</h3>
-                        <h3 class="course-dates__header">Код
+                        <p class="course-dates__header">Дата</p>
+                        <p class="course-dates__header">Код
                           <svg class="course-dates__code-svg">
                             <use xlink:href="img/sprite/symbols.svg#attention"></use>
                           </svg>
-                        </h3>
+                        </p>
                       </div>
                       <div class="course-dates__row"><a class="course-dates__date-link">12&ndash;16&nbsp;мая</a><span>72701</span></div>
                       <div class="course-dates__row"><a class="course-dates__date-link">22&ndash;25&nbsp;Сентября</a><span>80471</span></div>
@@ -794,20 +764,19 @@
                           <use xlink:href="img/sprite/symbols.svg#arrowhead"></use>
                         </svg>
                       </div></a>
-                  </div>
+                  </footer>
                 </div>
               </div>
-            </div>
-            <div class="courses__item">
+            </article>
+            <article class="courses__item">
               <div class="container">
                 <div class="courses__item-body">
-                  <div class="courses__squares">
+                  <header class="courses__squares">
                     <div class="courses__square">24</div>
-                  </div>
+                  </header>
                   <div class="courses__course course">
-                    <div class="col6">
-                      <p class="p2">Курс повышения квалификации</p><a class="course__name" href="#"> Оперативное планирование производственной деятельности цеха/участка. Современные способы управления производством</a>
-                    </div>
+                    <p class="p2">Курс повышения квалификации</p>
+                    <h2 class="m6"><a class="course__name" href="#"> Оперативное планирование производственной деятельности цеха/участка. Современные способы управления производством</a></h2>
                     <div class="course__info-row">
                       <p class="course__info-item">
                         <svg class="course__info-svg">
@@ -823,19 +792,17 @@
                           <use xlink:href="img/sprite/symbols.svg#wifi"></use>
                         </svg>Доступна онлайн-трансляция</a>
                     </div>
-                    <div class="m4">
-                      <p class="p2">Изучение принципов эффективного управления производственным участком и&nbsp;рационального использования ресурсов предприятия, определение дополнительных возможностей и&nbsp;резервов повышения производительности, знакомство с&nbsp;практикой внедрения эффективных технологий управления производственным участком</p>
-                    </div>
+                    <p class="p2 m4">Изучение принципов эффективного управления производственным участком и&nbsp;рационального использования ресурсов предприятия, определение дополнительных возможностей и&nbsp;резервов повышения производительности, знакомство с&nbsp;практикой внедрения эффективных технологий управления производственным участком</p>
                   </div>
-                  <div class="courses__dates-wrapper">
+                  <footer class="courses__dates-wrapper">
                     <div class="courses__dates course-dates">
                       <div class="course-dates__headers">
-                        <h3 class="course-dates__header">Дата</h3>
-                        <h3 class="course-dates__header">Код
+                        <p class="course-dates__header">Дата</p>
+                        <p class="course-dates__header">Код
                           <svg class="course-dates__code-svg">
                             <use xlink:href="img/sprite/symbols.svg#attention"></use>
                           </svg>
-                        </h3>
+                        </p>
                       </div>
                       <div class="course-dates__row"><a class="course-dates__date-link">12&ndash;16&nbsp;мая</a><span>72701</span></div>
                       <div class="course-dates__row"><a class="course-dates__date-link">22&ndash;25&nbsp;Сентября</a><span>80471</span></div>
@@ -846,21 +813,20 @@
                           <use xlink:href="img/sprite/symbols.svg#arrowhead"></use>
                         </svg>
                       </div></a>
-                  </div>
+                  </footer>
                 </div>
               </div>
-            </div>
-            <div class="courses__item">
+            </article>
+            <article class="courses__item">
               <div class="container">
                 <div class="courses__item-body">
-                  <div class="courses__squares">
+                  <header class="courses__squares">
                     <div class="courses__square">40</div>
                     <div class="courses__square--new">NEW</div>
-                  </div>
+                  </header>
                   <div class="courses__course course">
-                    <div class="col6">
-                      <p class="p2">Курс повышения квалификации</p><a class="course__name" href="#"> Металлообработка&nbsp;&mdash; подготовка производства, возможности интенсификации, автоматизации</a>
-                    </div>
+                    <p class="p2">Курс повышения квалификации</p>
+                    <h2 class="m6"><a class="course__name" href="#"> Металлообработка&nbsp;&mdash; подготовка производства, возможности интенсификации, автоматизации</a></h2>
                     <div class="course__info-row">
                       <p class="course__info-item">
                         <svg class="course__info-svg">
@@ -876,19 +842,17 @@
                           <use xlink:href="img/sprite/symbols.svg#wifi"></use>
                         </svg>Доступна онлайн-трансляция</a>
                     </div>
-                    <div class="m4">
-                      <p class="p2">Как повысить эффективность металлообработки в&nbsp;условиях импортозамещения. В&nbsp;курсе&nbsp;&mdash; практические занятия, работа у&nbsp;станков, реальные примеры применения современных методик, пути интенсификации производства. Планирование и&nbsp;внедрение современных технологических процессов изготовления изделий. Как обеспечить качество, эффективность, точность изготовления деталей</p>
-                    </div>
+                    <p class="p2 m4">Как повысить эффективность металлообработки в&nbsp;условиях импортозамещения. В&nbsp;курсе&nbsp;&mdash; практические занятия, работа у&nbsp;станков, реальные примеры применения современных методик, пути интенсификации производства. Планирование и&nbsp;внедрение современных технологических процессов изготовления изделий. Как обеспечить качество, эффективность, точность изготовления деталей</p>
                   </div>
-                  <div class="courses__dates-wrapper">
+                  <footer class="courses__dates-wrapper">
                     <div class="courses__dates course-dates">
                       <div class="course-dates__headers">
-                        <h3 class="course-dates__header">Дата</h3>
-                        <h3 class="course-dates__header">Код
+                        <p class="course-dates__header">Дата</p>
+                        <p class="course-dates__header">Код
                           <svg class="course-dates__code-svg">
                             <use xlink:href="img/sprite/symbols.svg#attention"></use>
                           </svg>
-                        </h3>
+                        </p>
                       </div>
                       <div class="course-dates__row"><a class="course-dates__date-link">12&ndash;16&nbsp;мая</a><span>72701</span></div>
                       <div class="course-dates__row"><a class="course-dates__date-link">22&ndash;25&nbsp;Сентября</a><span>80471</span></div>
@@ -899,20 +863,19 @@
                           <use xlink:href="img/sprite/symbols.svg#arrowhead"></use>
                         </svg>
                       </div></a>
-                  </div>
+                  </footer>
                 </div>
               </div>
-            </div>
-            <div class="courses__item">
+            </article>
+            <article class="courses__item">
               <div class="container">
                 <div class="courses__item-body">
-                  <div class="courses__squares">
+                  <header class="courses__squares">
                     <div class="courses__square">40</div>
-                  </div>
+                  </header>
                   <div class="courses__course course">
-                    <div class="col6">
-                      <p class="p2">Курс повышения квалификации</p><a class="course__name" href="#"> Новые материалы и&nbsp;технологии для лакокрасочных покрытий</a>
-                    </div>
+                    <p class="p2">Курс повышения квалификации</p>
+                    <h2 class="m6"><a class="course__name" href="#"> Новые материалы и&nbsp;технологии для лакокрасочных покрытий</a></h2>
                     <div class="course__info-row">
                       <p class="course__info-item">
                         <svg class="course__info-svg">
@@ -928,19 +891,17 @@
                           <use xlink:href="img/sprite/symbols.svg#wifi"></use>
                         </svg>Доступна онлайн-трансляция</a>
                     </div>
-                    <div class="m4">
-                      <p class="p2">Вы&nbsp;получите практическую информацию о&nbsp;состоянии современного рынка ЛКМ, применении современного оборудования для ЛКМ, подготовке поверхности, технологиях нанесения ЛКМ, а&nbsp;также по&nbsp;комплексному оснащению лаборатории для испытаний ЛКМ</p>
-                    </div>
+                    <p class="p2 m4">Вы&nbsp;получите практическую информацию о&nbsp;состоянии современного рынка ЛКМ, применении современного оборудования для ЛКМ, подготовке поверхности, технологиях нанесения ЛКМ, а&nbsp;также по&nbsp;комплексному оснащению лаборатории для испытаний ЛКМ</p>
                   </div>
-                  <div class="courses__dates-wrapper">
+                  <footer class="courses__dates-wrapper">
                     <div class="courses__dates course-dates">
                       <div class="course-dates__headers">
-                        <h3 class="course-dates__header">Дата</h3>
-                        <h3 class="course-dates__header">Код
+                        <p class="course-dates__header">Дата</p>
+                        <p class="course-dates__header">Код
                           <svg class="course-dates__code-svg">
                             <use xlink:href="img/sprite/symbols.svg#attention"></use>
                           </svg>
-                        </h3>
+                        </p>
                       </div>
                       <div class="course-dates__row"><a class="course-dates__date-link">12&ndash;16&nbsp;мая</a><span>72701</span></div>
                       <div class="course-dates__row"><a class="course-dates__date-link">22&ndash;25&nbsp;Сентября</a><span>80471</span></div>
@@ -951,20 +912,19 @@
                           <use xlink:href="img/sprite/symbols.svg#arrowhead"></use>
                         </svg>
                       </div></a>
-                  </div>
+                  </footer>
                 </div>
               </div>
-            </div>
-            <div class="courses__item">
+            </article>
+            <article class="courses__item">
               <div class="container">
                 <div class="courses__item-body">
-                  <div class="courses__squares">
+                  <header class="courses__squares">
                     <div class="courses__square">40</div>
-                  </div>
+                  </header>
                   <div class="courses__course course">
-                    <div class="col6">
-                      <p class="p2">Курс повышения квалификации</p><a class="course__name" href="#"> Производство упаковки&nbsp;&mdash; новые тренды и&nbsp;технологии</a>
-                    </div>
+                    <p class="p2">Курс повышения квалификации</p>
+                    <h2 class="m6"><a class="course__name" href="#"> Производство упаковки&nbsp;&mdash; новые тренды и&nbsp;технологии</a></h2>
                     <div class="course__info-row">
                       <p class="course__info-item">
                         <svg class="course__info-svg">
@@ -980,19 +940,17 @@
                           <use xlink:href="img/sprite/symbols.svg#wifi"></use>
                         </svg>Доступна онлайн-трансляция</a>
                     </div>
-                    <div class="m4">
-                      <p class="p2">Современная упаковка&nbsp;&mdash; это не&nbsp;просто коробка или пакет, это совокупность требований рынка, предъявляемых к&nbsp;упаковке, психологии потребителя и&nbsp;бизнес-задач производителя. На&nbsp;семинаре: как не&nbsp;потеряться в&nbsp;огромном потоке производимой упаковки и&nbsp;оставаться заметными на&nbsp;полке, как соблюсти все тонкости технологии производства упаковки различных типов, как правильно подобрать материалы для изготовления и&nbsp;печати и&nbsp;избежать типичных ошибок при изготовлении разных видов упаковки</p>
-                    </div>
+                    <p class="p2 m4">Современная упаковка&nbsp;&mdash; это не&nbsp;просто коробка или пакет, это совокупность требований рынка, предъявляемых к&nbsp;упаковке, психологии потребителя и&nbsp;бизнес-задач производителя. На&nbsp;семинаре: как не&nbsp;потеряться в&nbsp;огромном потоке производимой упаковки и&nbsp;оставаться заметными на&nbsp;полке, как соблюсти все тонкости технологии производства упаковки различных типов, как правильно подобрать материалы для изготовления и&nbsp;печати и&nbsp;избежать типичных ошибок при изготовлении разных видов упаковки</p>
                   </div>
-                  <div class="courses__dates-wrapper">
+                  <footer class="courses__dates-wrapper">
                     <div class="courses__dates course-dates">
                       <div class="course-dates__headers">
-                        <h3 class="course-dates__header">Дата</h3>
-                        <h3 class="course-dates__header">Код
+                        <p class="course-dates__header">Дата</p>
+                        <p class="course-dates__header">Код
                           <svg class="course-dates__code-svg">
                             <use xlink:href="img/sprite/symbols.svg#attention"></use>
                           </svg>
-                        </h3>
+                        </p>
                       </div>
                       <div class="course-dates__row"><a class="course-dates__date-link">12&ndash;16&nbsp;мая</a><span>72701</span></div>
                       <div class="course-dates__row"><a class="course-dates__date-link">22&ndash;25&nbsp;Сентября</a><span>80471</span></div>
@@ -1003,20 +961,19 @@
                           <use xlink:href="img/sprite/symbols.svg#arrowhead"></use>
                         </svg>
                       </div></a>
-                  </div>
+                  </footer>
                 </div>
               </div>
-            </div>
-            <div class="courses__item">
+            </article>
+            <article class="courses__item">
               <div class="container">
                 <div class="courses__item-body">
-                  <div class="courses__squares">
+                  <header class="courses__squares">
                     <div class="courses__square">40</div>
-                  </div>
+                  </header>
                   <div class="courses__course course">
-                    <div class="col6">
-                      <p class="p2">Курс повышения квалификации</p><a class="course__name" href="#"> Планирование и&nbsp;диспетчеризация производства</a>
-                    </div>
+                    <p class="p2">Курс повышения квалификации</p>
+                    <h2 class="m6"><a class="course__name" href="#"> Планирование и&nbsp;диспетчеризация производства</a></h2>
                     <div class="course__info-row">
                       <p class="course__info-item">
                         <svg class="course__info-svg">
@@ -1032,19 +989,17 @@
                           <use xlink:href="img/sprite/symbols.svg#wifi"></use>
                         </svg>Доступна онлайн-трансляция</a>
                     </div>
-                    <div class="m4">
-                      <p class="p2">Практический курс нацелен на&nbsp;моделирование и&nbsp;разбор реальных ситуаций по&nbsp;организации производственного планирования, включает практические занятия с&nbsp;использованием примеров участников</p>
-                    </div>
+                    <p class="p2 m4">Практический курс нацелен на&nbsp;моделирование и&nbsp;разбор реальных ситуаций по&nbsp;организации производственного планирования, включает практические занятия с&nbsp;использованием примеров участников</p>
                   </div>
-                  <div class="courses__dates-wrapper">
+                  <footer class="courses__dates-wrapper">
                     <div class="courses__dates course-dates">
                       <div class="course-dates__headers">
-                        <h3 class="course-dates__header">Дата</h3>
-                        <h3 class="course-dates__header">Код
+                        <p class="course-dates__header">Дата</p>
+                        <p class="course-dates__header">Код
                           <svg class="course-dates__code-svg">
                             <use xlink:href="img/sprite/symbols.svg#attention"></use>
                           </svg>
-                        </h3>
+                        </p>
                       </div>
                       <div class="course-dates__row"><a class="course-dates__date-link">12&ndash;16&nbsp;мая</a><span>72701</span></div>
                       <div class="course-dates__row"><a class="course-dates__date-link">22&ndash;25&nbsp;Сентября</a><span>80471</span></div>
@@ -1055,13 +1010,13 @@
                           <use xlink:href="img/sprite/symbols.svg#arrowhead"></use>
                         </svg>
                       </div></a>
-                  </div>
+                  </footer>
                 </div>
               </div>
-            </div>
+            </article>
           </div>
           <div class="container">
-            <div class="courses__pagination pagination">
+            <div class="pagination m3">
               <!-- Кнопка "Назад"--><a class="pagination__prev" href="?page=1">Назад</a>
               <div class="pagination__pages">
                 <!-- Сложный вариант с троеточиями-->
@@ -1074,7 +1029,7 @@
               <!-- Кнопка "Вперед"--><a class="pagination__next" href="?page=3">Вперед</a>
             </div>
           </div>
-        </section>
+        </div>
       </main>
       <footer class="footer">
         <div class="footer__container container">
@@ -1152,6 +1107,6 @@
         </div>
       </footer>
     </div>
-    <script src="js/script.min.js?_v=1751215450933"></script>
+    <script src="js/script.min.js?_v=1751495494955"></script>
   </body>
 </html>

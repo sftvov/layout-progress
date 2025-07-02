@@ -2,7 +2,7 @@
 <html lang="ru">
   <head>
     <meta name="robots" content="noindex"/>
-    <link rel="stylesheet" href="css/style.min.css?_v=1751215452844"/>
+    <link rel="stylesheet" href="css/style.min.css?_v=1751495495181"/>
     <meta charset="utf-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <title>БРОНИРОВАНИЕ</title>
@@ -214,13 +214,13 @@
         <section class="booking section" id="booking">
           <div class="container">
             <h1 class="title bright">Бронирование гостиниц:</h1>
-            <form class="booking__form m2">
-              <div class="booking__main row g3">
-                <div class="booking__hotel n3w6">
-                  <h2 class="t2d">Информация об&nbsp;отеле</h2>
+            <form class="m2 n1o1">
+              <div class="booking__main row x3col g3">
+                <fieldset class="n1w4 n2w5 n3w6">
+                  <legend class="t2d">Информация об&nbsp;отеле</legend>
                   <div class="col5 m4">
                     <div class="col6">
-                      <h3 class="p2">Гостиница</h3>
+                      <p class="p2">Гостиница</p>
                       <div class="select">
                         <input class="select__input" value="Отель «Династия»" readonly inert>
                         <div class="select__variants">
@@ -240,7 +240,7 @@
                       </div>
                     </div>
                     <div class="col6">
-                      <h3 class="p2">Категория номера</h3>
+                      <p class="p2">Категория номера</p>
                       <div class="select">
                         <input class="select__input" value="Стандарт" readonly inert>
                         <div class="select__variants">
@@ -251,7 +251,7 @@
                       </div>
                     </div>
                     <div class="col6">
-                      <h3 class="p2">Размещение в&nbsp;номере</h3>
+                      <p class="p2">Размещение в&nbsp;номере</p>
                       <div class="select">
                         <input class="select__input" value="Одноместное" readonly inert>
                         <div class="select__variants">
@@ -260,37 +260,37 @@
                         </div>
                       </div>
                     </div>
-                    <div class="col6">
-                      <h3 class="p2">Дата заезда</h3>
+                    <label class="col6">
+                      <p class="p2">Дата заезда</p>
                       <input class="input--date" value="2025-06-10" type="date">
-                    </div>
-                    <div class="col6">
-                      <h3 class="p2">Дата выезда</h3>
+                    </label>
+                    <label class="col6">
+                      <p class="p2">Дата выезда</p>
                       <input class="input--date" value="2025-06-17" type="date">
-                    </div>
+                    </label>
                   </div>
-                </div>
-                <div class="booking__visitor n3w6">
-                  <h2 class="t2d">Информация о&nbsp;слушателе</h2>
+                </fieldset>
+                <fieldset class="n1w5 n3w6">
+                  <legend class="t2d">Информация о&nbsp;слушателе</legend>
                   <div class="col5 m4">
-                    <div class="col6">
-                      <h3 class="p2">Код семинара</h3>
+                    <label class="col6">
+                      <p class="p2">Код семинара</p>
                       <input class="input" placeholder="789765">
-                    </div>
-                    <div class="col6">
-                      <h3 class="p2">ФИО участника</h3>
+                    </label>
+                    <label class="col6">
+                      <p class="p2">ФИО участника</p>
                       <input class="input" placeholder="Иванов Иван Иванович">
-                    </div>
-                    <div class="col6">
-                      <h3 class="p2">Электронная почта</h3>
+                    </label>
+                    <label class="col6">
+                      <p class="p2">Электронная почта</p>
                       <input class="input" type="email" placeholder="example@mail.ru">
-                    </div>
-                    <div class="col6">
-                      <h3 class="p2">Телефон</h3>
+                    </label>
+                    <label class="col6">
+                      <p class="p2">Телефон</p>
                       <input class="input" type="tel" placeholder="8 (999) 999-99-99">
-                    </div>
+                    </label>
                     <div class="col6">
-                      <h3 class="p2">Вид оплаты</h3>
+                      <p class="p2">Вид оплаты</p>
                       <div class="select">
                         <input class="select__input" value="Наличные/Карта" readonly inert>
                         <div class="select__variants">
@@ -300,21 +300,21 @@
                       </div>
                     </div>
                   </div>
-                </div>
+                </fieldset>
               </div>
-              <div class="booking__bottom col3 n3w6 m3">
-                <div class="col6">
-                  <h3 class="p2">Примечание</h3>
+              <footer class="booking__bottom col3 n1w4 n2w5 n3w6 m3">
+                <label class="col6">
+                  <p class="p2">Примечание</p>
                   <textarea class="textarea" placeholder="Напишите свое сообщение"></textarea>
-                </div>
+                </label>
                 <div class="col5">
-                  <div class="booking__buttons row g5">
-                    <input class="booking__button button--primary w3 x3w2" type="submit" value="Отправить">
-                    <input class="booking__button button--second w3 x3w2" type="reset" value="Отмена">
+                  <div class="row g5 x4col">
+                    <button class="button--primary n2w2 n3w3 x3w2 x4w4" type="submit">Отправить</button>
+                    <input class="button--second n2w2 n3w3 x3w2 x4w4" type="reset" value="Отмена">
                   </div>
                   <p class="p2">Нажимая кнопку, я&nbsp;даю свое согласие на&nbsp;обработку моих персональных данных, в&nbsp;соответствии с&nbsp;Федеральным законом от&nbsp;27.07.2006 года № 152-ФЗ &laquo;О&nbsp;персональных данных&raquo;, на&nbsp;условиях и&nbsp;для целей, определенных <a class="link" href="#">Политикой конфиденциальности</a>.</p>
                 </div>
-              </div>
+              </footer>
             </form>
           </div>
         </section>
@@ -395,6 +395,6 @@
         </div>
       </footer>
     </div>
-    <script src="js/script.min.js?_v=1751215452844"></script>
+    <script src="js/script.min.js?_v=1751495495181"></script>
   </body>
 </html>
