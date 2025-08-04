@@ -2,10 +2,10 @@
 <html lang="ru">
   <head>
     <meta name="robots" content="noindex"/>
-    <link rel="stylesheet" href="css/style.min.css?_v=1754052066139"/>
+    <link rel="stylesheet" href="css/style.min.css?_v=1754334547863"/>
     <meta charset="utf-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
-    <title>NAVIGATION</title>
+    <title>PAGINATION</title>
     <meta name="description" content="description"/>
     <meta name="theme-color" content=""/>
     <link rel="canonical" href=""/>
@@ -209,16 +209,6 @@
       <main class="page" id="page">
         <div class="section">
           <div class="container">
-            <p class="m3">Количество страниц пагинации: 1 </p>
-            <div class="pagination m3">
-              <div class="pagination__body">
-                <!-- Кнопка "Назад"-->
-                <div class="pagination__pages">
-                  <!-- Простой вариант для малого количества страниц--><span class="pagination__num _active">1</span>
-                </div>
-                <!-- Кнопка "Вперед"-->
-              </div>
-            </div>
             <p class="m3">Количество страниц пагинации: 2 </p>
             <div class="pagination m3">
               <div class="pagination__body">
@@ -1004,6 +994,175 @@
                 <!-- Кнопка "Вперед"-->
               </div>
             </div>
+            <p class="m3">Количество страниц пагинации: 12 </p>
+            <div class="pagination m3">
+              <div class="pagination__body">
+                <!-- Кнопка "Назад"-->
+                <div class="pagination__pages">
+                  <!-- Сложный вариант с троеточиями-->
+                  <!-- Первая страница--><span class="pagination__num _active">1</span>
+                  <!-- Левое троеточие или страница 2-->
+                  <!-- Центральные страницы--><a class="pagination__num" href="?page=2">2</a><a class="pagination__num" href="?page=3">3</a><a class="pagination__num" href="?page=4">4</a><a class="pagination__num" href="?page=5">5</a>
+                  <!-- Правое троеточие или предпоследняя страница--><a class="pagination__num" href="?page=3">&hellip;</a>
+                  <!-- Последняя страница (если не единственная)--><a class="pagination__num" href="?page=12">12</a>
+                </div>
+                <!-- Кнопка "Вперед"--><a class="pagination__next" href="?page=2">Вперед</a>
+              </div>
+            </div>
+            <div class="pagination m3">
+              <div class="pagination__body">
+                <!-- Кнопка "Назад"--><a class="pagination__prev" href="?page=1">Назад</a>
+                <div class="pagination__pages">
+                  <!-- Сложный вариант с троеточиями-->
+                  <!-- Первая страница--><a class="pagination__num" href="?page=1">1</a>
+                  <!-- Левое троеточие или страница 2-->
+                  <!-- Центральные страницы--><span class="pagination__num _active">2</span><a class="pagination__num" href="?page=3">3</a><a class="pagination__num" href="?page=4">4</a><a class="pagination__num" href="?page=5">5</a>
+                  <!-- Правое троеточие или предпоследняя страница--><a class="pagination__num" href="?page=4">&hellip;</a>
+                  <!-- Последняя страница (если не единственная)--><a class="pagination__num" href="?page=12">12</a>
+                </div>
+                <!-- Кнопка "Вперед"--><a class="pagination__next" href="?page=3">Вперед</a>
+              </div>
+            </div>
+            <div class="pagination m3">
+              <div class="pagination__body">
+                <!-- Кнопка "Назад"--><a class="pagination__prev" href="?page=2">Назад</a>
+                <div class="pagination__pages">
+                  <!-- Сложный вариант с троеточиями-->
+                  <!-- Первая страница--><a class="pagination__num" href="?page=1">1</a>
+                  <!-- Левое троеточие или страница 2-->
+                  <!-- Центральные страницы--><a class="pagination__num" href="?page=2">2</a><span class="pagination__num _active">3</span><a class="pagination__num" href="?page=4">4</a><a class="pagination__num" href="?page=5">5</a>
+                  <!-- Правое троеточие или предпоследняя страница--><a class="pagination__num" href="?page=5">&hellip;</a>
+                  <!-- Последняя страница (если не единственная)--><a class="pagination__num" href="?page=12">12</a>
+                </div>
+                <!-- Кнопка "Вперед"--><a class="pagination__next" href="?page=4">Вперед</a>
+              </div>
+            </div>
+            <div class="pagination m3">
+              <div class="pagination__body">
+                <!-- Кнопка "Назад"--><a class="pagination__prev" href="?page=3">Назад</a>
+                <div class="pagination__pages">
+                  <!-- Сложный вариант с троеточиями-->
+                  <!-- Первая страница--><a class="pagination__num" href="?page=1">1</a>
+                  <!-- Левое троеточие или страница 2--><a class="pagination__num" href="?page=2">2</a>
+                  <!-- Центральные страницы--><a class="pagination__num" href="?page=3">3</a><span class="pagination__num _active">4</span><a class="pagination__num" href="?page=5">5</a>
+                  <!-- Правое троеточие или предпоследняя страница--><a class="pagination__num" href="?page=6">&hellip;</a>
+                  <!-- Последняя страница (если не единственная)--><a class="pagination__num" href="?page=12">12</a>
+                </div>
+                <!-- Кнопка "Вперед"--><a class="pagination__next" href="?page=5">Вперед</a>
+              </div>
+            </div>
+            <div class="pagination m3">
+              <div class="pagination__body">
+                <!-- Кнопка "Назад"--><a class="pagination__prev" href="?page=4">Назад</a>
+                <div class="pagination__pages">
+                  <!-- Сложный вариант с троеточиями-->
+                  <!-- Первая страница--><a class="pagination__num" href="?page=1">1</a>
+                  <!-- Левое троеточие или страница 2--><a class="pagination__num" href="?page=3">&hellip;</a>
+                  <!-- Центральные страницы--><a class="pagination__num" href="?page=4">4</a><span class="pagination__num _active">5</span><a class="pagination__num" href="?page=6">6</a>
+                  <!-- Правое троеточие или предпоследняя страница--><a class="pagination__num" href="?page=7">&hellip;</a>
+                  <!-- Последняя страница (если не единственная)--><a class="pagination__num" href="?page=12">12</a>
+                </div>
+                <!-- Кнопка "Вперед"--><a class="pagination__next" href="?page=6">Вперед</a>
+              </div>
+            </div>
+            <div class="pagination m3">
+              <div class="pagination__body">
+                <!-- Кнопка "Назад"--><a class="pagination__prev" href="?page=5">Назад</a>
+                <div class="pagination__pages">
+                  <!-- Сложный вариант с троеточиями-->
+                  <!-- Первая страница--><a class="pagination__num" href="?page=1">1</a>
+                  <!-- Левое троеточие или страница 2--><a class="pagination__num" href="?page=4">&hellip;</a>
+                  <!-- Центральные страницы--><a class="pagination__num" href="?page=5">5</a><span class="pagination__num _active">6</span><a class="pagination__num" href="?page=7">7</a>
+                  <!-- Правое троеточие или предпоследняя страница--><a class="pagination__num" href="?page=8">&hellip;</a>
+                  <!-- Последняя страница (если не единственная)--><a class="pagination__num" href="?page=12">12</a>
+                </div>
+                <!-- Кнопка "Вперед"--><a class="pagination__next" href="?page=7">Вперед</a>
+              </div>
+            </div>
+            <div class="pagination m3">
+              <div class="pagination__body">
+                <!-- Кнопка "Назад"--><a class="pagination__prev" href="?page=6">Назад</a>
+                <div class="pagination__pages">
+                  <!-- Сложный вариант с троеточиями-->
+                  <!-- Первая страница--><a class="pagination__num" href="?page=1">1</a>
+                  <!-- Левое троеточие или страница 2--><a class="pagination__num" href="?page=5">&hellip;</a>
+                  <!-- Центральные страницы--><a class="pagination__num" href="?page=6">6</a><span class="pagination__num _active">7</span><a class="pagination__num" href="?page=8">8</a>
+                  <!-- Правое троеточие или предпоследняя страница--><a class="pagination__num" href="?page=9">&hellip;</a>
+                  <!-- Последняя страница (если не единственная)--><a class="pagination__num" href="?page=12">12</a>
+                </div>
+                <!-- Кнопка "Вперед"--><a class="pagination__next" href="?page=8">Вперед</a>
+              </div>
+            </div>
+            <div class="pagination m3">
+              <div class="pagination__body">
+                <!-- Кнопка "Назад"--><a class="pagination__prev" href="?page=7">Назад</a>
+                <div class="pagination__pages">
+                  <!-- Сложный вариант с троеточиями-->
+                  <!-- Первая страница--><a class="pagination__num" href="?page=1">1</a>
+                  <!-- Левое троеточие или страница 2--><a class="pagination__num" href="?page=6">&hellip;</a>
+                  <!-- Центральные страницы--><a class="pagination__num" href="?page=7">7</a><span class="pagination__num _active">8</span><a class="pagination__num" href="?page=9">9</a>
+                  <!-- Правое троеточие или предпоследняя страница--><a class="pagination__num" href="?page=10">&hellip;</a>
+                  <!-- Последняя страница (если не единственная)--><a class="pagination__num" href="?page=12">12</a>
+                </div>
+                <!-- Кнопка "Вперед"--><a class="pagination__next" href="?page=9">Вперед</a>
+              </div>
+            </div>
+            <div class="pagination m3">
+              <div class="pagination__body">
+                <!-- Кнопка "Назад"--><a class="pagination__prev" href="?page=8">Назад</a>
+                <div class="pagination__pages">
+                  <!-- Сложный вариант с троеточиями-->
+                  <!-- Первая страница--><a class="pagination__num" href="?page=1">1</a>
+                  <!-- Левое троеточие или страница 2--><a class="pagination__num" href="?page=7">&hellip;</a>
+                  <!-- Центральные страницы--><a class="pagination__num" href="?page=8">8</a><span class="pagination__num _active">9</span><a class="pagination__num" href="?page=10">10</a>
+                  <!-- Правое троеточие или предпоследняя страница--><a class="pagination__num" href="?page=11">11</a>
+                  <!-- Последняя страница (если не единственная)--><a class="pagination__num" href="?page=12">12</a>
+                </div>
+                <!-- Кнопка "Вперед"--><a class="pagination__next" href="?page=10">Вперед</a>
+              </div>
+            </div>
+            <div class="pagination m3">
+              <div class="pagination__body">
+                <!-- Кнопка "Назад"--><a class="pagination__prev" href="?page=9">Назад</a>
+                <div class="pagination__pages">
+                  <!-- Сложный вариант с троеточиями-->
+                  <!-- Первая страница--><a class="pagination__num" href="?page=1">1</a>
+                  <!-- Левое троеточие или страница 2--><a class="pagination__num" href="?page=8">&hellip;</a>
+                  <!-- Центральные страницы--><a class="pagination__num" href="?page=8">8</a><a class="pagination__num" href="?page=9">9</a><span class="pagination__num _active">10</span><a class="pagination__num" href="?page=11">11</a>
+                  <!-- Правое троеточие или предпоследняя страница-->
+                  <!-- Последняя страница (если не единственная)--><a class="pagination__num" href="?page=12">12</a>
+                </div>
+                <!-- Кнопка "Вперед"--><a class="pagination__next" href="?page=11">Вперед</a>
+              </div>
+            </div>
+            <div class="pagination m3">
+              <div class="pagination__body">
+                <!-- Кнопка "Назад"--><a class="pagination__prev" href="?page=10">Назад</a>
+                <div class="pagination__pages">
+                  <!-- Сложный вариант с троеточиями-->
+                  <!-- Первая страница--><a class="pagination__num" href="?page=1">1</a>
+                  <!-- Левое троеточие или страница 2--><a class="pagination__num" href="?page=9">&hellip;</a>
+                  <!-- Центральные страницы--><a class="pagination__num" href="?page=8">8</a><a class="pagination__num" href="?page=9">9</a><a class="pagination__num" href="?page=10">10</a><span class="pagination__num _active">11</span>
+                  <!-- Правое троеточие или предпоследняя страница-->
+                  <!-- Последняя страница (если не единственная)--><a class="pagination__num" href="?page=12">12</a>
+                </div>
+                <!-- Кнопка "Вперед"--><a class="pagination__next" href="?page=12">Вперед</a>
+              </div>
+            </div>
+            <div class="pagination m3">
+              <div class="pagination__body">
+                <!-- Кнопка "Назад"--><a class="pagination__prev" href="?page=11">Назад</a>
+                <div class="pagination__pages">
+                  <!-- Сложный вариант с троеточиями-->
+                  <!-- Первая страница--><a class="pagination__num" href="?page=1">1</a>
+                  <!-- Левое троеточие или страница 2--><a class="pagination__num" href="?page=10">&hellip;</a>
+                  <!-- Центральные страницы--><a class="pagination__num" href="?page=8">8</a><a class="pagination__num" href="?page=9">9</a><a class="pagination__num" href="?page=10">10</a><a class="pagination__num" href="?page=11">11</a>
+                  <!-- Правое троеточие или предпоследняя страница-->
+                  <!-- Последняя страница (если не единственная)--><span class="pagination__num _active">12</span>
+                </div>
+                <!-- Кнопка "Вперед"-->
+              </div>
+            </div>
           </div>
         </div>
       </main>
@@ -1083,6 +1242,6 @@
         </div>
       </footer>
     </div>
-    <script src="js/script.min.js?_v=1754052066139"></script>
+    <script src="js/script.min.js?_v=1754334547863"></script>
   </body>
 </html>
