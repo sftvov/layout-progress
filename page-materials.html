@@ -1,14 +1,14 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="utf-8"/>
-    <meta name="robots" content="noindex"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <meta name="description" content="description"/>
-    <meta name="theme-color" content=""/>
-    <link rel="canonical" href=""/>
-    <link rel="stylesheet" href="css/style.min.css?_v=1758204828414"/>
-    <title>NAVIGATION</title>
+  <head>   
+    <meta charset="utf-8">
+    <meta name="robots" content="noindex">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="color-scheme" content="only light">
+    <meta name="theme-color" content="#ed6824">
+    <meta name="description" content="Описание">
+    <title>МАТЕРИАЛЫ</title>
+    <link rel="stylesheet" href="css/style.min.css?_v=1758204830855">
   </head>
   <body>
     <div class="wrapper">
@@ -207,35 +207,35 @@
         </div>
       </header>
       <main class="page" id="page">
-        <div class="section">
+        <div class="breadcrumbs">
           <div class="container">
-            <ol class="ol">
-              <li class="ol__li"><a class="link" href="page-rubrics.html">РУБРИКАТОР</a></li>
-              <li class="ol__li"><a class="link" href="page-main.html">ГЛАВНАЯ СТРАНИЦА</a></li>
-              <li class="ol__li"><a class="link" href="archive-courses.html">РУБРИКА (РАЗВОДЯЩАЯ КУРСОВ)</a></li>
-              <li class="ol__li"><a class="link" href="page-search.html">ПОИСК (РЕЗУЛЬТАТЫ)</a></li>
-              <li class="ol__li"><a class="link" href="page-search-empty.html">ПОИСК (ПУСТОЙ)</a></li>
-              <li class="ol__li"><a class="link" href="page-plan.html">ПЛАН</a></li>
-              <li class="ol__li"><a class="link" href="page-mailing.html">РАССЫЛКА</a></li>
-              <li class="ol__li"><a class="link" href="page-hotels.html">ОТЕЛИ</a></li>
-              <li class="ol__li"><a class="link" href="page-booking.html">БРОНИРОВАНИЕ</a></li>
-              <li class="ol__li"><a class="link" href="page-feedback.html">ОБРАТНАЯ СВЯЗЬ</a></li>
-              <li class="ol__li"><a class="link" href="page-contacts.html">КОНТАКТЫ</a></li>
-              <li class="ol__li"><a class="link" href="page-distance.html">ДИСТАНЦИОННЫЕ КУРСЫ</a></li>
-              <li class="ol__li"><a class="link" href="page-prof.html">ПРОФЕССИОНАЛЬНАЯ ПЕРЕПОДГОТОВКА</a></li>
-              <li class="ol__li"><a class="link" href="page-corp.html">КОРПОРАТИВНОЕ ОБУЧЕНИЕ</a></li>
-              <li class="ol__li"><a class="link" href="archive-promo.html">АКЦИИ</a></li>
-              <li class="ol__li"><a class="link" href="page-clients.html">КЛИЕНТЫ</a></li>
-              <li class="ol__li"><a class="link" href="page-partners-alphabet.html">ПАРТНЕРЫ АЛФАВИТ</a></li>
-              <li class="ol__li"><a class="link" href="page-partners-category.html">ПАРТНЕРЫ КАТЕГОРИИ</a></li>
-              <li class="ol__li"><a class="link" href="page-materials.html">МАТЕРИАЛЫ</a></li>
-            </ol>
-            <ul class="ul m2">
-              <li class="ul__li"><a class="link" href="service-pagination.html">ПАГИНАЦИЯ</a></li>
-              <li class="ul__li"><a class="link" href="page-main-gothic.html"> ГЛАВНАЯ СТРАНИЦА (GOTHIC)</a></li>
-            </ul>
+            <div class="breadcrumbs__body"><a class="breadcrumbs__item" href="/page-main.html">Главная</a><span class="breadcrumbs__item">Скачать материалы</span>
+            </div>
           </div>
         </div>
+        <section class="section materials">
+          <div class="container"><img class="materials__img" src="img/materials/hero.png" alt="">
+            <div class="row-wrap g1 m1 n1o2 n2o1">
+              <div class="col3 n1w4 n2w5 n3w6 x3w2 x4w4">
+                <h1 class="t1d">информационные материалы</h1>
+                <p class="p1">Здесь вы&nbsp;можете скачать материалы от&nbsp;преподавателей курса, на&nbsp;котором вы&nbsp;учились в&nbsp;ЦНТИ Прогресс. <br> Все материалы предназначены только для личного использования. Вы&nbsp;не&nbsp;можете распространять или продавать их.</p>
+              </div>
+              <form class="col3 n1w4 n2w5 n3w6 x3w2 x4w4">
+                <div class="col5">
+                  <label class="input-wrapper">
+                    <p class="input-wrapper__label">Код курса</p>
+                    <input class="input" placeholder="00000">
+                  </label>
+                  <label class="input-wrapper">
+                    <p class="input-wrapper__label">Код доступа</p>
+                    <input class="input" placeholder="00000">
+                  </label>
+                </div>
+                <button class="button-primary" type="submit">Отправить</button>
+              </form>
+            </div>
+          </div>
+        </section>
       </main>
       <footer class="footer">
         <div class="container">
@@ -313,6 +313,6 @@
         </div>
       </footer>
     </div>
-    <script src="js/script.min.js?_v=1758204828414"></script>
+    <script src="js/script.min.js?_v=1758204830855"></script>
   </body>
 </html>
