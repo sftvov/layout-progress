@@ -8,7 +8,9 @@
     <meta name="theme-color" content="#ed6824">
     <meta name="description" content="Описание">
     <title>УЧЕБНЫЙ ЦЕНТР СПБ</title>
-    <link rel="stylesheet" href="css/style.min.css?_v=1758279486656">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/pannellum@2.5.6/build/pannellum.css">
+    <link rel="stylesheet" href="css/style.min.css?_v=1758690945075">
+    <script src="https://cdn.jsdelivr.net/npm/pannellum@2.5.6/build/pannellum.js"></script>
   </head>
   <body>
     <div class="wrapper">
@@ -260,7 +262,64 @@
         </section>
         <section class="section">
           <div class="container">
-            <h2 class="title">СОВЕРШИТЕ ВИРТУАЛЬНЫЙ ТУР ПО&nbsp;УЧЕБНОМУ КОМПЛЕКСУ В&nbsp;ПЕТЕРБУРГЕ:</h2><img class="img m2" src="img/center/tour.png" alt="">
+            <h2 class="title">СОВЕРШИТЕ ВИРТУАЛЬНЫЙ ТУР ПО&nbsp;УЧЕБНОМУ КОМПЛЕКСУ В&nbsp;ПЕТЕРБУРГЕ:</h2><div id="panorama" class="m2"></div>
+            <style>
+              #panorama {
+                  width: 100%;
+                  height: 678px;
+              }
+              
+            </style>
+            <script>
+              pannellum.viewer('panorama', {   
+                "default": {
+                  "firstScene": "circle",
+                  "author": "Matthew Petroff",
+                  "sceneFadeDuration": 1000,
+                  "preview": "img/center/tour.png",
+                  "autoLoad": true
+                },
+              
+                "scenes": {
+                  "circle": {
+                    "title": "Mason Circle",
+                    "hfov": 110,
+                    "pitch": -3,
+                    "yaw": 117,
+                    "type": "equirectangular",
+                    "panorama": "https://pannellum.org/images/from-tree.jpg",
+                    "hotSpots": [
+                      {
+                        "pitch": -2.1,
+                        "yaw": 132.9,
+                        "type": "scene",
+                        "text": "Spring House or Dairy",
+                        "sceneId": "house"
+                      }
+                    ]
+                  },
+              
+                  "house": {
+                    "title": "Spring House or Dairy",
+                    "hfov": 110,
+                    "yaw": 5,
+                    "type": "equirectangular",
+                    "panorama": "https://pannellum.org/images/bma-0.jpg",
+                    "hotSpots": [
+                      {
+                        "pitch": -0.6,
+                        "yaw": 37.1,
+                        "type": "scene",
+                        "text": "Mason Circle",
+                        "sceneId": "circle",
+                        "targetYaw": -23,
+                        "targetPitch": 2
+                      }
+                    ]
+                  }
+                }
+              });
+            </script>
           </div>
         </section>
       </main>
@@ -340,6 +399,6 @@
         </div>
       </footer>
     </div>
-    <script src="js/script.min.js?_v=1758279486656"></script>
+    <script src="js/script.min.js?_v=1758690945075"></script>
   </body>
 </html>
