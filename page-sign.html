@@ -8,7 +8,7 @@
     <meta name="theme-color" content="#ed6824">
     <meta name="description" content="Описание">
     <title>ЗАПИСЬ НА&nbsp;КУРС</title>
-    <link rel="stylesheet" href="css/style.min.css?_v=1772431681075">
+    <link rel="stylesheet" href="css/style.min.css?_v=1772687349892">
   </head>
   <body>
     <div class="widget-plan">
@@ -297,15 +297,15 @@
                     </label>
                   </div>
                   <div class="col3">
-                    <div class="col5">
-                      <label class="checkbox">
-                        <input class="checkbox__input" type="checkbox" name="code-exist" checked="checked"/>
+                    <div class="col5 ais">
+                      <label class="checkbox _activator">
+                        <input class="checkbox__input" type="checkbox" name="code-exist[]"/>
                         <div class="checkbox__span-wrapper-blue"><span class="checkbox__span">У&nbsp;меня есть промокод</span></div>
                       </label>
-                      <label class="input-wrapper col7">
+                      <label class="input-wrapper col7 w _removed">
                         <p class="input-wrapper__label"><span class="input-wrapper__label-main p2">Введите промокод (код Вы&nbsp;можете получить, только <a class="link" href="#">подписавшись на&nbsp;рассылку</a>)</span>
                         </p>
-                        <input class="input" type="text" name="code-num" placeholder="XXXXXX"/>
+                        <input class="input" type="text" name="code-num[]" placeholder="XXXXXX"/>
                       </label>
                     </div>
                     <label class="checkbox">
@@ -321,27 +321,46 @@
                     <legend class="t1d n1w3 n3w4">Данные участника | 2</legend>
                     <button class="button-second n1w2 n2w3 w4 x3w2 x4w4">Удалить участника</button>
                   </div>
-                  <div class="grid2 x3grid1 cg aie g3 m2">
-                    <label class="input-wrapper col7">
-                      <p class="input-wrapper__label"><span class="input-wrapper__label-main p2">Фамилия Имя Отчество</span>
-                      </p>
-                      <input class="input" type="text" name="participant" placeholder="Иванов Иван Иванович" required="required"/>
-                    </label>
-                    <label class="input-wrapper col7">
-                      <p class="input-wrapper__label"><span class="input-wrapper__label-main p2">Должность</span>
-                      </p>
-                      <input class="input" type="text" name="post" placeholder="Должность" required="required"/>
-                    </label>
-                    <label class="input-wrapper col7">
-                      <p class="input-wrapper__label"><span class="input-wrapper__label-main p2">Телефоны</span><span class="input-wrapper__label-add"> (мобильный, рабочий)</span>
-                      </p>
-                      <input class="input" type="text" name="phones" placeholder="Телефоны (мобильный, рабочий)" required="required"/>
-                    </label>
-                    <label class="input-wrapper col7">
-                      <p class="input-wrapper__label"><span class="input-wrapper__label-main p2">E-mail</span><span class="input-wrapper__label-add"> (слушателя или контактного лица. Необходим для отправки финансовых документов)</span>
-                      </p>
-                      <input class="input" type="email" name="email" placeholder="Иванов Иван Иванович" required="required"/>
-                    </label>
+                  <div class="col2">
+                    <div class="grid2 x3grid1 cg aie g3 m2">
+                      <label class="input-wrapper col7">
+                        <p class="input-wrapper__label"><span class="input-wrapper__label-main p2">Фамилия Имя Отчество</span>
+                        </p>
+                        <input class="input" type="text" name="participant" placeholder="Иванов Иван Иванович" required="required"/>
+                      </label>
+                      <label class="input-wrapper col7">
+                        <p class="input-wrapper__label"><span class="input-wrapper__label-main p2">Должность</span>
+                        </p>
+                        <input class="input" type="text" name="post" placeholder="Должность" required="required"/>
+                      </label>
+                      <label class="input-wrapper col7">
+                        <p class="input-wrapper__label"><span class="input-wrapper__label-main p2">Телефоны</span><span class="input-wrapper__label-add"> (мобильный, рабочий)</span>
+                        </p>
+                        <input class="input" type="text" name="phones" placeholder="Телефоны (мобильный, рабочий)" required="required"/>
+                      </label>
+                      <label class="input-wrapper col7">
+                        <p class="input-wrapper__label"><span class="input-wrapper__label-main p2">E-mail</span><span class="input-wrapper__label-add"> (слушателя или контактного лица. Необходим для отправки финансовых документов)</span>
+                        </p>
+                        <input class="input" type="email" name="email" placeholder="Иванов Иван Иванович" required="required"/>
+                      </label>
+                    </div>
+                    <div class="col3">
+                      <div class="col5 ais">
+                        <label class="checkbox _activator">
+                          <input class="checkbox__input" type="checkbox" name="code-exist[]"/>
+                          <div class="checkbox__span-wrapper-blue"><span class="checkbox__span">У&nbsp;меня есть промокод</span></div>
+                        </label>
+                        <label class="input-wrapper col7 w _removed">
+                          <p class="input-wrapper__label"><span class="input-wrapper__label-main p2">Введите промокод (код Вы&nbsp;можете получить, только <a class="link" href="#">подписавшись на&nbsp;рассылку</a>)</span>
+                          </p>
+                          <input class="input" type="text" name="code-num[]" placeholder="XXXXXX"/>
+                        </label>
+                      </div>
+                      <label class="checkbox">
+                        <input class="checkbox__input" type="checkbox" name="certificate" checked="checked"/>
+                        <div class="checkbox__span-wrapper-blue"><span class="checkbox__span">Хочу получить дополнительное удостоверение на&nbsp;английском языке (+3000 рублей)</span></div>
+                      </label>
+                    </div>
                   </div>
                 </div>
               </fieldset>
@@ -490,6 +509,6 @@
       </footer>
     </div>
     <div id="measure"></div>
-    <script src="js/script.min.js?_v=1772431681075"></script>
+    <script src="js/script.min.js?_v=1772687349892"></script>
   </body>
 </html>
