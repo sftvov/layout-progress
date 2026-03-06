@@ -8,7 +8,7 @@
     <meta name="theme-color" content="#ed6824">
     <meta name="description" content="Описание">
     <title>ЗАПИСЬ НА&nbsp;КУРС</title>
-    <link rel="stylesheet" href="css/style.min.css?_v=1772777042282">
+    <link rel="stylesheet" href="css/style.min.css?_v=1772779038167">
   </head>
   <body>
     <div class="widget-plan">
@@ -442,17 +442,27 @@
               </fieldset>
             `;
           
-            // ========== ФУНКЦИИ ВАЛИДАЦИИ ==========
+            function attachValidationListeners() {
+              const requiredInputs = document.querySelectorAll('._req');
           
-            // Функция проверки одного поля
+              requiredInputs.forEach(input => {
+                input.removeEventListener('change', inputValidationHandler);
+                input.removeEventListener('input', inputValidationHandler);
+                input.addEventListener('change', inputValidationHandler);
+                input.addEventListener('input', inputValidationHandler);
+              });
+            }
+          
             function validateField(input) {
-              if (!input.classList.contains('_req')) return;
           
-              if (!input.checkValidity()) {
-                input.classList.add('user-invalid');
-              } else {
+              if (input.checkValidity()) {
                 input.classList.remove('user-invalid');
               }
+            }
+          
+            // Обработчик для валидации поля
+            function inputValidationHandler(e) {
+              validateField(e.target);
             }
           
             // Функция валидации всех required полей
@@ -460,17 +470,21 @@
               const requiredInputs = document.querySelectorAll('._req');
               let hasErrors = false;
           
+              // Сначала убираем класс ошибки со всех полей
               requiredInputs.forEach(input => {
+                input.classList.remove('user-invalid');
+              });
+          
+              for (let input of requiredInputs) {
                 if (!input.checkValidity()) {
                   input.classList.add('user-invalid');
                   hasErrors = true;
-                } else {
-                  input.classList.remove('user-invalid');
                 }
-              });
+              }
           
               if (hasErrors) {
-                const firstInvalid = document.querySelector('._req.user-invalid');
+                // Фокусируемся на первом невалидном поле
+                const firstInvalid = document.querySelector('._req:invalid');
                 if (firstInvalid) {
                   firstInvalid.focus();
                 }
@@ -479,32 +493,6 @@
           
               return true;
             }
-          
-            // ========== НАВЕШИВАНИЕ ОБРАБОТЧИКОВ ==========
-          
-            // Функция для навешивания обработчиков на все поля ._req
-            function attachValidationListeners() {
-              const requiredInputs = document.querySelectorAll('._req');
-          
-              requiredInputs.forEach(input => {
-                // Удаляем старые обработчики, чтобы не было дублирования
-                input.removeEventListener('input', inputValidationHandler);
-                input.removeEventListener('blur', inputValidationHandler);
-                input.removeEventListener('change', inputValidationHandler);
-          
-                // Навешиваем новые обработчики
-                input.addEventListener('input', inputValidationHandler);
-                input.addEventListener('blur', inputValidationHandler);
-                input.addEventListener('change', inputValidationHandler);
-              });
-            }
-          
-            // Обработчик для валидации поля
-            function inputValidationHandler(e) {
-              validateField(e.target);
-            }
-          
-            // ========== РАБОТА С УЧАСТНИКАМИ ==========
           
             // Функция создания нового участника
             function createParticipantBlock() {
@@ -537,9 +525,6 @@
               fieldset.remove();
               updateLegends();
               updateAddButtonText();
-          
-              // После удаления обновляем обработчики (на всякий случай)
-              attachValidationListeners();
             });
           
             // Обработчик добавления
@@ -553,21 +538,14 @@
           
               const newParticipant = createParticipantBlock();
               participantsContainer.appendChild(newParticipant);
-          
-              // Обновляем обработчики валидации для всех полей
               attachValidationListeners();
               checkboxes.refresh();
+          
               updateLegends();
               updateAddButtonText();
             });
           
-            // ========== ИНИЦИАЛИЗАЦИЯ ==========
-          
-            // Первоначальное навешивание обработчиков на существующие поля
             attachValidationListeners();
-          
-            // Обновляем текст кнопки при загрузке
-            updateAddButtonText();
           });
         </script>
       </main>
@@ -643,6 +621,6 @@
       </footer>
     </div>
     <div id="measure"></div>
-    <script src="js/script.min.js?_v=1772777042282"></script>
+    <script src="js/script.min.js?_v=1772779038167"></script>
   </body>
 </html>
