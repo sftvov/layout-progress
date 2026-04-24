@@ -7,8 +7,8 @@
     <meta name="color-scheme" content="only light">
     <meta name="theme-color" content="#ed6824">
     <meta name="description" content="Описание">
-    <title>ПОИСК (ПУСТОЙ)</title>
-    <link rel="stylesheet" href="css/style.min.css?_v=1777036985928">
+    <title>flatpickr</title>
+    <link rel="stylesheet" href="css/style.min.css?_v=1777036979791">
   </head>
   <body>
     <div class="widget-plan">
@@ -224,39 +224,32 @@
       <main class="page" id="page">
         <div class="breadcrumbs">
           <div class="container">
-            <div class="breadcrumbs__body"><span class="breadcrumbs__item"><a class="tl hover p1" href="/page-main.html">Главная</a></span><span class="breadcrumbs__item"> <span class="p1">Поиск</span></span>
+            <div class="breadcrumbs__body"><span class="breadcrumbs__item"><a class="tl hover p1" href="/page-main.html">Главная</a></span><span class="breadcrumbs__item"> <span class="p1">flatpickr</span></span>
             </div>
           </div>
         </div>
-        <section class="section" id="results">
-          <div class="container">
-            <h1 class="title">вы&nbsp;искали &laquo;паовт&raquo;</h1>
-            <div class="col aic m2"><img class="n1w4 n3w6 w2 x4w4" src="img/search/yama.svg" alt="ничего не найдено по поисковому запросу">
-              <div class="m2">
-                <h2 class="subtitle">Увы, мы&nbsp;ничего не&nbsp;нашли по&nbsp;вашему запросу.</h2>
-                <div class="row wrap g3 w m1">
-                  <div class="n1w4 n2w5 n3w6 w4 n1or1 n3ol1">
-                    <h3 class="t2d">Попытаться еще раз</h3>
-                    <div class="m5">
-                      <ol class="ol col7">
-                        <li class="ol__li">Если у&nbsp;вас есть код курса, введите его в&nbsp;поле поиска. Например, 34541.</li>
-                        <li class="ol__li">Попробуйте упростить запрос до&nbsp;одного слова. Например, &laquo;бухгалтер&raquo; или &laquo;гособоронзаказ&raquo;.</li>
-                      </ol>
-                    </div>
-                  </div>
-                  <div class="n1w4 n3w5 w4 n1or1 n2ol1">
-                    <h3 class="t2d">Спросить вживую</h3>
-                    <div class="m5">
-                      <p class="p1">Позвоните нам по&nbsp;бесплатному номеру <a class="link" href="#"><br class="n1hide x3hide"> 
-                          <nobr>8 (800) 333-88-44</nobr></a> <br class="n2hide x3hide"> или закажите <a class="link" href="#">
-                          <nobr>обратный звонок</nobr></a></p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
+        <div class="container">
+          <div class="row">
+            <label class="input-wrapper col7 w4">
+              <p class="input-wrapper__label"><span class="input-wrapper__label-main p2">Дата заезда</span>
+              </p>
+              <input class="input input--date" type="date" name="date-in" value="2025-06-10"/>
+            </label>
+            <label class="input-wrapper col7 w4">
+              <p class="input-wrapper__label"><span class="input-wrapper__label-main p2">Дата выезда</span>
+              </p>
+              <input class="input input--date" type="date" name="date-out" value="2025-06-10"/>
+            </label>
+          </div><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+<script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+<script src="https://npmcdn.com/flatpickr/dist/l10n/ru.js"></script>
+          <script>
+            flatpickr(".input--date", {        
+              weekNumbers: true,           // Показывать номера недель
+              locale: "ru" 
+            });
+          </script>
+        </div>
       </main>
       <footer class="footer">
         <div class="container">
@@ -342,6 +335,6 @@
       </div>
     </section>
     <div id="measure"></div>
-    <script src="js/script.min.js?_v=1777036985928"></script>
+    <script src="js/script.min.js?_v=1777036979791"></script>
   </body>
 </html>
