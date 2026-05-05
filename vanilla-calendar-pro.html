@@ -8,7 +8,7 @@
     <meta name="theme-color" content="#ed6824">
     <meta name="description" content="Описание">
     <title>vanilla-calendar-pro</title>
-    <link rel="stylesheet" href="css/style.min.css?_v=1777971464612">
+    <link rel="stylesheet" href="css/style.min.css?_v=1777988752118">
   </head>
   <body>
     <div class="widget-plan">
@@ -228,54 +228,207 @@
             </div>
           </div>
         </div>
-        <div class="container">
-          <div id="calendar">
-            <input class="input">
+        <div class="section">
+          <div class="container">
+            <div class="col3">
+              <div class="col5">
+                <p class="t2d">Календарь одиночный</p>
+                <div class="col7 w4">
+                  <label>Дата начала</label>
+                  <input class="input" type="text" id="single" placeholder="ДД.ММ.ГГГГ">
+                </div>
+              </div>
+              <div class="col5">
+                <p class="t2d">Календарь с&nbsp;двумя input (парный)</p>
+                <div class="row">
+                  <div class="col7 w4">
+                    <label>Дата начала</label>
+                    <input class="input" type="text" id="dateStart" placeholder="ДД.ММ.ГГГГ">
+                  </div>
+                  <div class="col7 w4">
+                    <label>Дата окончания</label>
+                    <input class="input" type="text" id="dateEnd" placeholder="ДД.ММ.ГГГГ">
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col5">
+                  <p class="t2d">Календарь range (1 месяц)</p>
+                  <div class="col7 w4">
+                    <label>Период проведения</label>
+                    <input class="input" type="text" id="range1" placeholder="ДД.ММ.ГГГГ — ДД.ММ.ГГГГ">
+                  </div>
+                </div>
+                <div class="col5">
+                  <p class="t2d">Календарь range (2 месяца)</p>
+                  <div class="col7 w4">
+                    <label>Период проведения</label>
+                    <input class="input" type="text" id="range2" placeholder="ДД.ММ.ГГГГ — ДД.ММ.ГГГГ">
+                  </div>
+                </div>
+                <div class="col5">
+                  <p class="t2d">Календарь range (3 месяца)</p>
+                  <div class="col7 w4">
+                    <label>Период проведения</label>
+                    <input class="input" type="text" id="range3" placeholder="ДД.ММ.ГГГГ — ДД.ММ.ГГГГ">
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/vanilla-calendar-pro@3.1.0/styles/index.min.css">
         <script src="https://cdn.jsdelivr.net/npm/vanilla-calendar-pro@3.1.0/index.min.js"></script>
         <script>
           const { Calendar } = VanillaCalendarPro;
-          const calendar = new Calendar("#calendar", {
-            inputMode: true,
-            positionToInput: 'left',
-            type: 'multiple',
-            displayMonthsCount: 3,
-            monthsToSwitch: 1,
-            selectionDatesMode: 'multiple-ranged',
-            enableWeekNumbers: true,
-            locale: {
-                months: {
-                    short: ['Янв', 'Фев', 'Мар', 'Апр', 'Май', 'Июн', 'Июл', 'Авг', 'Сен', 'Окт', 'Ноя', 'Дек'],
-                    long: [
-                        'Январь', 'Февраль', 'Март', 'Апрель', 'Май', 'Июнь',
-                        'Июль', 'Август', 'Сентябрь', 'Октябрь', 'Ноябрь', 'Декабрь'
-                    ],
-                },
-                weekdays: {
-                    short: ['Пн', 'Вт', 'Ср', 'Чт', 'Пт', 'Сб', 'Вс'],
-                    long: [
-                        'Понедельник', 'Вторник', 'Среда', 'Четверг', 
-                        'Пятница', 'Суббота', 'Воскресенье'
-                    ],
-                },
+          
+          // Русская локализация
+          const ruLocale = {
+            months: {
+              short: ['Янв', 'Фев', 'Мар', 'Апр', 'Май', 'Июн', 'Июл', 'Авг', 'Сен', 'Окт', 'Ноя', 'Дек'],
+              long: ['Январь', 'Февраль', 'Март', 'Апрель', 'Май', 'Июнь', 'Июль', 'Август', 'Сентябрь', 'Октябрь', 'Ноябрь', 'Декабрь']
             },
-            onChangeToInput(self) {
-              if (!self.context.inputElement) return;
-              if (self.context.selectedDates[0] && !self.context.selectedDates[1]) {
-                self.context.inputElement.value = self.context.selectedDates[0];
-                console.log(self);
-              } else if (self.context.selectedDates[1]) {
-                self.context.inputElement.value = self.context.selectedDates[1];
-                self.hide();
-                console.log(self);
-              } else {
-                self.context.inputElement.value = '';
-              }
-            },
-          });
-          calendar.init();
+            weekdays: {
+              short: ['Вс','Пн', 'Вт', 'Ср', 'Чт', 'Пт', 'Сб'],
+              long: ['Понедельник', 'Вторник', 'Среда', 'Четверг', 'Пятница', 'Суббота', 'Воскресенье']
+            }
+          };
+          
+          // Форматирование даты
+          function formatDate(date) {
+            if (!date) return '';
+            const d = new Date(date);
+            const day = String(d.getDate()).padStart(2, '0');
+            const month = String(d.getMonth() + 1).padStart(2, '0');
+            const year = d.getFullYear();
+            return `${day}.${month}.${year}`;
+          }
+          
+          // Функция для одиночных календарей
+          function createSingleCalendar(selector) {
+            const calendar = new Calendar(selector, { 
+              inputMode: true,
+              locale: ruLocale,
+              onChangeToInput(self) {
+                if (!self.context.inputElement) return;
+                if (self.context.selectedDates[0]) {
+                  self.context.inputElement.value = formatDate(self.context.selectedDates[0]);
+                  self.hide();
+                } else {
+                  self.context.inputElement.value = '';
+                }
+              },
+            });
+            calendar.init();
+            return calendar;
+          }
+          
+          // Функция для парных календарей (с зависимостью)
+          function createPairedCalendars(startSelector, endSelector) {
+            
+            const today = new Date();
+            const threeDaysLater = new Date();
+            threeDaysLater.setDate(today.getDate() + 3);
+            let endCalendar = null;
+            
+            // Календарь начала
+            const startCalendar = new Calendar(startSelector, { 
+              inputMode: true,
+              dateMin: 'today',
+              locale: ruLocale,
+              onChangeToInput(self) {
+                if (!self.context.inputElement) return;
+                if (self.context.selectedDates[0]) {
+                  const selectedDate = self.context.selectedDates[0];
+                  self.context.inputElement.value = formatDate(selectedDate);
+                  self.hide();
+                  
+                  // Обновляем dateMin для календаря окончания через set()
+                  if (endCalendar) {
+                    const endDate = endCalendar.context.selectedDates?.[0];
+                    console.log(endDate);
+                    const selectedDateObj = new Date(selectedDate);
+          
+                    // Если текущая дата окончания стала меньше - очищаем
+                    if (endDate && endDate < selectedDate) {
+                      endCalendar.context.inputElement.value = '';
+                      endCalendar.context.selectedDates = [];
+                    }
+          
+                    endCalendar.set({ 
+                      dateMin: selectedDate,
+                      selectedMonth: selectedDateObj.getMonth(),
+                      selectedYear: selectedDateObj.getFullYear()
+                    });
+                  }
+                } else {
+                  self.context.inputElement.value = '';
+                }
+              },
+            });
+            startCalendar.init();
+            
+            // Календарь окончания
+            endCalendar = new Calendar(endSelector, { 
+              inputMode: true,
+              dateMin: new Date(),
+              locale: ruLocale,
+              onChangeToInput(self) {
+                if (!self.context.inputElement) return;
+                if (self.context.selectedDates[0]) {
+                  const selectedDate = self.context.selectedDates[0];
+                  const startDate = startCalendar.context.selectedDates?.[0];
+                  
+                  self.context.inputElement.value = formatDate(selectedDate);
+                  self.hide();
+                } else {
+                  self.context.inputElement.value = '';
+                }
+              },
+            });
+            endCalendar.init();
+            
+            return { startCalendar, endCalendar };
+          }
+          
+          // Функция для range календарей
+          function createRangeCalendar(selector, monthsCount) {
+            const isSingleMonth = monthsCount === 1;
+            const config = {
+              inputMode: true,
+              locale: ruLocale,
+              selectionDatesMode: 'multiple-ranged',
+              onChangeToInput(self) {
+                if (!self.context.inputElement) return;
+                if (self.context.selectedDates.length >= 2) {
+                  const start = formatDate(self.context.selectedDates[0]);
+                  const end = formatDate(self.context.selectedDates[self.context.selectedDates.length - 1]);
+                  self.context.inputElement.value = `${start} — ${end}`;
+                } else if (self.context.selectedDates.length === 1) {
+                  const start = formatDate(self.context.selectedDates[0]);
+                  self.context.inputElement.value = `${start} — ...`;
+                } else {
+                  self.context.inputElement.value = '';
+                }
+              },
+            };
+            
+            if (!isSingleMonth) {
+              config.type = 'multiple';
+              config.displayMonthsCount = monthsCount;
+            }
+            
+            const calendar = new Calendar(selector, config);
+            calendar.init();
+            return calendar;
+          }
+          
+          // Создаём все календари
+          const singleCalendar = createSingleCalendar("#single");
+          const { startCalendar, endCalendar } = createPairedCalendars("#dateStart", "#dateEnd");
+          const range1 = createRangeCalendar("#range1", 1);
+          const range2 = createRangeCalendar("#range2", 2);
+          const range3 = createRangeCalendar("#range3", 3);
         </script>
       </main>
       <footer class="footer">
@@ -362,6 +515,6 @@
       </div>
     </section>
     <div id="measure"></div>
-    <script src="js/script.min.js?_v=1777971464612"></script>
+    <script src="js/script.min.js?_v=1777988752118"></script>
   </body>
 </html>
