@@ -8,7 +8,7 @@
     <meta name="theme-color" content="#ed6824">
     <meta name="description" content="Описание">
     <title>flatpickr</title>
-    <link rel="stylesheet" href="css/style.min.css?_v=1777036979791">
+    <link rel="stylesheet" href="css/style.min.css?_v=1777971459324">
   </head>
   <body>
     <div class="widget-plan">
@@ -161,7 +161,7 @@
                           <use xlink:href="img/sprite/symbols.svg#chevron-down"></use>
                         </svg></a>
                       <div class="header-submenu-item col ais"><span class="header-submenu-item__name">Дистанционные курсы</span>
-                        <div class="header-submenu-item__links"><a class="header-submenu-item__link" href="#">Профпереподготовка
+                        <div class="header-submenu-item__links"><a class="header-submenu-item__link" href="#">Профессиональная переподготовка
                             <svg class="sw2 deg-90 i20 x2hide">
                               <use xlink:href="img/sprite/symbols.svg#chevron-down"></use>
                             </svg></a><a class="header-submenu-item__link" href="#">Повышение квалификации
@@ -228,27 +228,124 @@
             </div>
           </div>
         </div>
-        <div class="container">
-          <div class="row">
-            <label class="input-wrapper col7 w4">
-              <p class="input-wrapper__label"><span class="input-wrapper__label-main p2">Дата заезда</span>
-              </p>
-              <input class="input input--date" type="date" name="date-in" value="2025-06-10"/>
-            </label>
-            <label class="input-wrapper col7 w4">
-              <p class="input-wrapper__label"><span class="input-wrapper__label-main p2">Дата выезда</span>
-              </p>
-              <input class="input input--date" type="date" name="date-out" value="2025-06-10"/>
-            </label>
+        <div class="section">
+          <div class="container">
+            <div class="col3">
+              <div class="col5">
+                <p class="t2d">Календарь с&nbsp;двумя input</p>
+                <div class="row">
+                  <label class="input-wrapper col7 w4">
+                    <p class="input-wrapper__label"><span class="input-wrapper__label-main p2">Дата начала</span>
+                    </p>
+                    <input class="input input--date input0-1" type="date" name="date-in"/>
+                  </label>
+                  <label class="input-wrapper col7 w4">
+                    <p class="input-wrapper__label"><span class="input-wrapper__label-main p2">Дата окончания</span>
+                    </p>
+                    <input class="input input--date input0-2" type="date" name="date-out"/>
+                  </label>
+                </div>
+              </div>
+              <div class="col5">
+                <p class="t2d">Календари range</p>
+                <div class="row">
+                  <label class="input-wrapper col7 w4">
+                    <p class="input-wrapper__label"><span class="input-wrapper__label-main p2">Период проведения</span>
+                    </p>
+                    <input class="input input--date input1" type="date" name="date-in"/>
+                  </label>
+                  <label class="input-wrapper col7 w4">
+                    <p class="input-wrapper__label"><span class="input-wrapper__label-main p2">Период проведения</span>
+                    </p>
+                    <input class="input input--date input2" type="date" name="date-in"/>
+                  </label>
+                  <label class="input-wrapper col7 w4">
+                    <p class="input-wrapper__label"><span class="input-wrapper__label-main p2">Период проведения</span>
+                    </p>
+                    <input class="input input--date input3" type="date" name="date-in"/>
+                  </label>
+                </div>
+              </div>
+            </div>
           </div><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
 <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
 <script src="https://npmcdn.com/flatpickr/dist/l10n/ru.js"></script>
           <script>
-            flatpickr(".input--date", {        
+            const today = new Date();
+            const threeDaysLater = new Date();
+            threeDaysLater.setDate(today.getDate() + 3);
+            // Получаем reference на второй picker, чтобы управлять им из первого
+            let dateOutPicker = null;
+            
+            // Первый календарь (Дата заезда)
+            const dateInPicker = flatpickr(".input0-1", {        
+              weekNumbers: true,
+              locale: "ru",
+              minDate: "today",
+              defaultDate: "today",
+              altInput: true,
+              altFormat: "d.m.Y",
+              onChange: function(selectedDates, dateStr, instance) {
+                if (selectedDates[0]) {
+                  // Устанавливаем minDate для второго календаря = выбранная дата заезда
+                  if (dateOutPicker) {
+                    dateOutPicker.set('minDate', selectedDates[0]);
+                    dateOutPicker.jumpToDate(selectedDates[0]);
+                    // Если текущая дата выезда стала меньше даты заезда - очищаем
+                    if (dateOutPicker.selectedDates[0] && 
+                      dateOutPicker.selectedDates[0] < selectedDates[0]) {
+                      dateOutPicker.clear();
+                    }
+                  }
+                }
+              }
+            });
+            
+            // Второй календарь (Дата выезда)
+            dateOutPicker = flatpickr(".input0-2", {        
+              weekNumbers: true,
+              locale: "ru",
+              defaultDate: threeDaysLater,
+              altInput: true,
+              altFormat: "d.m.Y",
+              minDate: new Date() // начальный minDate (сегодня или дата из date-in)
+            });
+            
+            flatpickr(".input1", {    
+              mode: "range",   // Включаем режим выбора диапазона
+              minDate: "today", // Нельзя выбрать вчера     
               weekNumbers: true,           // Показывать номера недель
+              defaultDate: ["today", threeDaysLater],
+              altInput: true,                    // отдельное поле для красивого отображения
+              altFormat: "d.m.Y",
               locale: "ru" 
             });
+            flatpickr(".input2", {    
+              mode: "range",   // Включаем режим выбора диапазона
+              showMonths: 2, 
+              minDate: "today", // Нельзя выбрать вчера
+              defaultDate: ["today", threeDaysLater],
+              altInput: true,                    // отдельное поле для красивого отображения
+              altFormat: "d.m.Y",
+              locale: "ru" 
+            });
+            flatpickr(".input3", {    
+              mode: "range",   // Включаем режим выбора диапазона
+              showMonths: 3, 
+              minDate: "today", // Нельзя выбрать вчера
+              defaultDate: ["today", threeDaysLater],
+              altInput: true,                    // отдельное поле для красивого отображения
+              altFormat: "d.m.Y",
+              locale: "ru" 
+            });
+            
           </script>
+          <style>
+            .flatpickr-calendar.multiMonth .flatpickr-days .dayContainer:nth-child(n+1) .flatpickr-day.inRange:nth-child(7n+7) {
+              -webkit-box-shadow: -5px 0 0 #e6e6e6 !important;
+              box-shadow: -5px 0 0 #e6e6e6 !important;
+            }
+          </style>
         </div>
       </main>
       <footer class="footer">
@@ -270,7 +367,7 @@
               <h2 class="footer__column-title">О&nbsp;компании</h2>
               <div class="x4tac">
                 <ul class="col5">
-                  <li class="p1"><a class="hover" href="#">О&nbsp;ЦНТИ Прогресс</a></li>
+                  <li class="p1"><a class="hover" href="#">О&nbsp;ЦНТИ ПРОГРЕСС</a></li>
                   <li class="p1"><a class="hover" href="#">Основатель компании</a></li>
                   <li class="p1"><a class="hover" href="#">Учебный центр в&nbsp;Петербурге</a></li>
                   <li class="p1"><a class="hover" href="#">Учебный центр в&nbsp;Москве</a></li>
@@ -335,6 +432,6 @@
       </div>
     </section>
     <div id="measure"></div>
-    <script src="js/script.min.js?_v=1777036979791"></script>
+    <script src="js/script.min.js?_v=1777971459324"></script>
   </body>
 </html>
