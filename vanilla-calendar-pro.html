@@ -8,7 +8,7 @@
     <meta name="theme-color" content="#ed6824">
     <meta name="description" content="Описание">
     <title>vanilla-calendar-pro</title>
-    <link rel="stylesheet" href="css/style.min.css?_v=1777988752118">
+    <link rel="stylesheet" href="css/style.min.css?_v=1777989159949">
   </head>
   <body>
     <div class="widget-plan">
@@ -308,6 +308,7 @@
           function createSingleCalendar(selector) {
             const calendar = new Calendar(selector, { 
               inputMode: true,
+              enableWeekNumbers: true,
               locale: ruLocale,
               onChangeToInput(self) {
                 if (!self.context.inputElement) return;
@@ -335,6 +336,7 @@
             const startCalendar = new Calendar(startSelector, { 
               inputMode: true,
               dateMin: 'today',
+              enableWeekNumbers: true,
               locale: ruLocale,
               onChangeToInput(self) {
                 if (!self.context.inputElement) return;
@@ -372,6 +374,7 @@
             endCalendar = new Calendar(endSelector, { 
               inputMode: true,
               dateMin: new Date(),
+              enableWeekNumbers: true,
               locale: ruLocale,
               onChangeToInput(self) {
                 if (!self.context.inputElement) return;
@@ -396,8 +399,9 @@
             const isSingleMonth = monthsCount === 1;
             const config = {
               inputMode: true,
-              locale: ruLocale,
               selectionDatesMode: 'multiple-ranged',
+              enableWeekNumbers: true,
+              locale: ruLocale,
               onChangeToInput(self) {
                 if (!self.context.inputElement) return;
                 if (self.context.selectedDates.length >= 2) {
@@ -515,6 +519,6 @@
       </div>
     </section>
     <div id="measure"></div>
-    <script src="js/script.min.js?_v=1777988752118"></script>
+    <script src="js/script.min.js?_v=1777989159949"></script>
   </body>
 </html>
