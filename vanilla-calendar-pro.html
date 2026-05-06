@@ -8,7 +8,7 @@
     <meta name="theme-color" content="#ed6824">
     <meta name="description" content="Описание">
     <title>vanilla-calendar-pro</title>
-    <link rel="stylesheet" href="css/style.min.css?_v=1777989159949">
+    <link rel="stylesheet" href="css/style.min.css?_v=1778090220084">
   </head>
   <body>
     <div class="widget-plan">
@@ -277,7 +277,6 @@
             </div>
           </div>
         </div>
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/vanilla-calendar-pro@3.1.0/styles/index.min.css">
         <script src="https://cdn.jsdelivr.net/npm/vanilla-calendar-pro@3.1.0/index.min.js"></script>
         <script>
           const { Calendar } = VanillaCalendarPro;
@@ -310,6 +309,7 @@
               inputMode: true,
               enableWeekNumbers: true,
               locale: ruLocale,
+              selectedTheme: 'light',
               onChangeToInput(self) {
                 if (!self.context.inputElement) return;
                 if (self.context.selectedDates[0]) {
@@ -338,6 +338,7 @@
               dateMin: 'today',
               enableWeekNumbers: true,
               locale: ruLocale,
+              selectedTheme: 'light',
               onChangeToInput(self) {
                 if (!self.context.inputElement) return;
                 if (self.context.selectedDates[0]) {
@@ -348,7 +349,6 @@
                   // Обновляем dateMin для календаря окончания через set()
                   if (endCalendar) {
                     const endDate = endCalendar.context.selectedDates?.[0];
-                    console.log(endDate);
                     const selectedDateObj = new Date(selectedDate);
           
                     // Если текущая дата окончания стала меньше - очищаем
@@ -376,6 +376,7 @@
               dateMin: new Date(),
               enableWeekNumbers: true,
               locale: ruLocale,
+              selectedTheme: 'light',
               onChangeToInput(self) {
                 if (!self.context.inputElement) return;
                 if (self.context.selectedDates[0]) {
@@ -402,6 +403,7 @@
               selectionDatesMode: 'multiple-ranged',
               enableWeekNumbers: true,
               locale: ruLocale,
+              selectedTheme: 'light',
               onChangeToInput(self) {
                 if (!self.context.inputElement) return;
                 if (self.context.selectedDates.length >= 2) {
@@ -426,6 +428,14 @@
             calendar.init();
             return calendar;
           }
+          
+          //- const exp = new Calendar("#exp", {
+          //-   //- type: 'month',
+          //-   selectionDatesMode: 'multiple-ranged',
+          //-   locale: ruLocale,
+          //-   //- selectedTheme: 'light',
+          //- });
+          //- exp.init();
           
           // Создаём все календари
           const singleCalendar = createSingleCalendar("#single");
@@ -519,6 +529,6 @@
       </div>
     </section>
     <div id="measure"></div>
-    <script src="js/script.min.js?_v=1777989159949"></script>
+    <script src="js/script.min.js?_v=1778090220084"></script>
   </body>
 </html>
