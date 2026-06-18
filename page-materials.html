@@ -8,7 +8,7 @@
     <meta name="theme-color" content="#ed6824">
     <meta name="description" content="Описание">
     <title>МАТЕРИАЛЫ</title>
-    <link rel="stylesheet" href="css/style.min.css?_v=1779260501588">
+    <link rel="stylesheet" href="css/style.min.css?_v=1781770833439">
   </head>
   <body>
     <div class="widget-plan">
@@ -229,27 +229,32 @@
           </div>
         </div>
         <section class="section materials" id="materials">
-          <div class="container"><img class="materials__img w cvr" src="img/materials/hero.png" alt="">
-            <div class="row wrap g1 m1 n1o2 n2o1">
-              <div class="col3 n1w4 n2w5 n3w6 w2 x4w4">
-                <h1 class="t1d">информационные материалы</h1>
-                <p class="p1">Здесь вы&nbsp;можете скачать материалы от&nbsp;преподавателей курса, на&nbsp;котором вы&nbsp;учились в&nbsp;ЦНТИ ПРОГРЕСС. <br> Все материалы предназначены только для личного использования. Вы&nbsp;не&nbsp;можете распространять или продавать их.</p>
-              </div>
-              <form class="col3 n1w4 n2w5 n3w6 w2 x4w4">
-                <div class="col5">
-                  <label class="input-wrapper col7">
-                    <p class="input-wrapper__label"><span class="input-wrapper__label-main p2">Код курса</span>
-                    </p>
-                    <input class="input" type="text" placeholder="00000"/>
-                  </label>
-                  <label class="input-wrapper col7">
-                    <p class="input-wrapper__label"><span class="input-wrapper__label-main p2">Код доступа</span>
-                    </p>
-                    <input class="input" type="text" placeholder="00000"/>
-                  </label>
+          <div class="container">
+            <div class="row wrap g3 n2o1">
+              <picture>
+                <source type="image/webp" sizes="(max-width: 539.95px) calc(100vw - 20px), (max-width: 767.95px) calc(100vw - 32px), (max-width: 1031.95px) calc(50vw - 42px), (max-width: 1279.95px) calc((100vw + 20px) / 12 * 5 - 100px), 588px" srcset="img/materials/hero@0.6x.webp 353w, img/materials/hero@1.2x.webp 706w, img/materials/hero@1.8x.webp 1059w, img/materials/hero@2.4x.webp 1412w"/><img class="materials__img n1w6 n2w5 n3w6 x3w4 bg" src="img/materials/hero.png" alt="" width="588" height="auto"/>
+              </picture>
+              <div class="row wrap g3 n1w4 n2w5 n3w6 w4 x4w4">
+                <div class="col3 w x3w2 x4w4">
+                  <h1 class="t1d">информационные материалы</h1>
+                  <p class="p1">Здесь вы&nbsp;можете скачать материалы от&nbsp;преподавателей курса, на&nbsp;котором вы&nbsp;учились в&nbsp;ЦНТИ ПРОГРЕСС. <br> Все материалы предназначены только для личного использования. Вы&nbsp;не&nbsp;можете распространять или продавать их.</p>
                 </div>
-                <button class="button-primary" type="submit">Отправить</button>
-              </form>
+                <form class="col3 fg">
+                  <div class="col5">
+                    <label class="input-wrapper col7">
+                      <p class="input-wrapper__label"><span class="input-wrapper__label-main p2">Код курса</span>
+                      </p>
+                      <input class="input" type="text" placeholder="00000"/>
+                    </label>
+                    <label class="input-wrapper col7">
+                      <p class="input-wrapper__label"><span class="input-wrapper__label-main p2">Код доступа</span>
+                      </p>
+                      <input class="input" type="text" placeholder="00000"/>
+                    </label>
+                  </div>
+                  <button class="button-primary" type="submit">Отправить</button>
+                </form>
+              </div>
             </div>
           </div>
         </section>
@@ -337,7 +342,8 @@
         </div>
       </div>
     </section>
+    <div class="loading"><img class="loading__img" src="/img/loading.svg" alt=""></div>
     <div id="measure"></div>
-    <script src="js/script.min.js?_v=1779260501588"></script>
+    <script src="js/script.min.js?_v=1781770833439"></script>
   </body>
 </html>
