@@ -8,7 +8,7 @@
     <meta name="theme-color" content="#ed6824">
     <meta name="description" content="Описание">
     <title>КУРС</title>
-    <link rel="stylesheet" href="css/style.min.css?_v=1787030511585">
+    <link rel="stylesheet" href="css/style.min.css?_v=1787727537033">
   </head>
   <body>
     <div class="wrapper">
@@ -273,6 +273,16 @@
                               <li class="ol__li-dark"><span class="td">Использование нанотехнологий при нанесении полимерных материалов. </span>Повышение ресурсных характеристик полимерных материалов.</li>
                               <li class="ol__li-dark"><span class="td">Круглый стол. </span>Обмен мнениями. Выступления участников семинара. Обсуждение конкретных ситуаций на&nbsp;производствах.</li>
                             </ol>
+                          </div>
+                          <div class="si ti col7">
+                            <div class="r5">
+                              <svg class="i24">
+                                <use xlink:href="img/sprite/symbols.svg#attention"></use>
+                              </svg>
+                              <p class="t2">Внимание!</p>
+                            </div>
+                            <p class="t2">Полная программа будет размещена не&nbsp;позднее, чем за&nbsp;2 месяца до&nbsp;начала мероприятия</p>
+                            <p class="t2">Вы&nbsp;можете <a class="link _popup-link" href="#questions">оставить Ваши вопросы</a> и&nbsp;пожелания руководителю мероприятия.</p>
                           </div>
                           <div class="bgs r jcc pd3">
                             <div class="col3 n2w7 n3w10 w3">
@@ -704,10 +714,10 @@
             </div>
           </div>
         </div>
-        <section class="popup popup-dates">
-          <div class="container popup-dates__container">
-            <div class="popup__body popup-dates__body">
-              <button class="popup-dates__close-btn _popup-close" aria-label="Закрыть">
+        <section class="popup popup-dates modal-form">
+          <div class="container modal-form__container">
+            <div class="popup__body modal-form__body">
+              <button class="modal-form__close-btn _popup-close" aria-label="Закрыть">
                 <svg class="popup__close-svg">
                   <use xlink:href="img/sprite/symbols.svg#x-close"></use>
                 </svg>
@@ -717,7 +727,7 @@
                   <p class="t1 ta">Запросить другие даты</p>
                   <p class="p1">Оставьте контактные данные, и&nbsp;мы&nbsp;сообщим о&nbsp;новой дате проведения семинара.</p>
                 </div>
-                <form class="popup-dates__form col5 _invalid">
+                <form class="modal-form__form col5 _invalid">
                   <label class="input-wrapper col7">
                     <p class="input-wrapper__label"><span class="input-wrapper__label-main p2">Как к&nbsp;вам обращаться?</span>
                     </p>
@@ -749,10 +759,10 @@
             </div>
           </div>
         </section>
-        <section class="popup popup-success">
-          <div class="container popup-dates__container">   
-            <div class="popup__body popup-dates__body">
-              <button class="popup-dates__close-btn _popup-close" aria-label="Закрыть">
+        <section class="popup popup-success modal-form">
+          <div class="container modal-form__container">   
+            <div class="popup__body modal-form__body">
+              <button class="modal-form__close-btn _popup-close" aria-label="Закрыть">
                 <svg class="popup__close-svg">
                   <use xlink:href="img/sprite/symbols.svg#x-close"></use>
                 </svg>
@@ -765,6 +775,61 @@
                   <p class="t1">Спасибо! </p>
                   <p class="t1">Ваша заявка принята</p>
                 </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="popup popup-questions modal-form">
+          <div class="container modal-form__container">
+            <div class="popup__body modal-form__body">
+              <button class="modal-form__close-btn _popup-close" aria-label="Закрыть">
+                <svg class="popup__close-svg">
+                  <use xlink:href="img/sprite/symbols.svg#x-close"></use>
+                </svg>
+              </button>
+              <div class="col3">
+                <div class="col7">
+                  <p class="t1 ta">Задать вопрос</p>
+                  <p class="p1">Пожалуйста, оставьте Вашу контактную информацию. Руководители мероприятия обязательно ответят на&nbsp;Ваши вопросы.</p>
+                </div>
+                <form class="modal-form__form col5 _invalid">
+                  <label class="input-wrapper col7">
+                    <p class="input-wrapper__label"><span class="input-wrapper__label-main p2">Фамилия</span>
+                    </p>
+                    <input class="input" type="text" placeholder="Иванов" required="required"/>
+                  </label>
+                  <label class="input-wrapper col7">
+                    <p class="input-wrapper__label"><span class="input-wrapper__label-main p2">Имя</span>
+                    </p>
+                    <input class="input" type="text" placeholder="Иван" required="required"/>
+                  </label>
+                  <label class="input-wrapper col7">
+                    <p class="input-wrapper__label"><span class="input-wrapper__label-main p2">Отчество</span>
+                    </p>
+                    <input class="input" type="text" placeholder="Иванович"/>
+                  </label>
+                  <label class="input-wrapper col7">
+                    <p class="input-wrapper__label"><span class="input-wrapper__label-main p2">Телефон (мобильный или рабочий)</span>
+                    </p>
+                    <input class="input" type="tel" placeholder="8 (999) 999-99-99" required="required"/>
+                  </label>
+                  <label class="input-wrapper col7">
+                    <p class="input-wrapper__label"><span class="input-wrapper__label-main p2">Электронная почта</span>
+                    </p>
+                    <input class="input" type="email" placeholder="example@mail.ru" required="required"/>
+                  </label>
+                  <label class="input-wrapper col7">
+                    <p class="input-wrapper__label"><span class="input-wrapper__label-main p2">Сообщение</span>
+                    </p>
+                    <textarea class="textarea" placeholder="Ваши вопросы" required="required"></textarea>
+                  </label>
+                  <p class="ti p2 _invalid__el">Заполните данные корректно</p>
+                  <button class="button-primary" type="submit">Отправить</button>
+                  <label class="checkbox">
+                    <input class="checkbox__input" type="checkbox" checked="checked" required="required"/>
+                    <div class="checkbox__span-wrapper-blue"><span class="checkbox__span">Отправляя форму, я&nbsp;принимаю <a class="link" href="https://img.cntiprogress.ru/file/pdf/doc/reg/privacy_centr.pdf">пользовательское соглашение</a></span></div>
+                  </label>
+                </form>
               </div>
             </div>
           </div>
@@ -855,6 +920,6 @@
     </section>
     <div class="loading" id="loading"><img class="loading__img" src="/img/loading.svg" alt=""></div>
     <div id="measure"></div>
-    <script src="js/script.min.js?_v=1787030511585"></script>
+    <script src="js/script.min.js?_v=1787727537033"></script>
   </body>
 </html>
