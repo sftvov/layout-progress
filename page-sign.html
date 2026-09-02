@@ -8,7 +8,7 @@
     <meta name="theme-color" content="#ed6824">
     <meta name="description" content="Описание">
     <title>ЗАПИСЬ НА&nbsp;КУРС</title>
-    <link rel="stylesheet" href="css/style.min.css?_v=1787030510422">
+    <link rel="stylesheet" href="css/style.min.css?_v=1788353889139">
   </head>
   <body>
     <div class="wrapper">
@@ -215,12 +215,11 @@
         <div class="section">
           <div class="container">
             <div class="col2">
-              <div class="col7 n1o1">
+              <div class="col7">
                 <p class="tb t2">Запись на&nbsp;курс в&nbsp;учебном центре</p>
                 <h1 class="t1d">Комплексная диагностика технологического уровня предприятия. Технологический аудит. Повышение эффективности производства, надежности технологических процессов</h1>
               </div>
-              <hr class="bdl">
-              <div class="row jcb n1o1">
+              <div class="row jcb">
                 <div class="col7">
                   <p class="t2">Дата мероприятия: <span class="ta">10&nbsp;&mdash; 14&nbsp;марта 2025&nbsp;г.</span></p>
                   <p class="t2">Город: <span class="ta">Санкт-Петербург</span></p>
@@ -234,18 +233,24 @@
             </div>
           </div>
         </div>
-        <div class="section pd1 bgs">
+        <div class="contur section">
           <div class="container">
-            <div class="col5">
-              <div class="col7 aic">
-                <p class="p1">Заполните, пожалуйста, информацию об&nbsp;участниках или позвоните по&nbsp;телефону службы записи</p>
-                <p class="p2 r aic"><a class="sa-link link r5 aic">
-                    <svg class="i24">
-                      <use xlink:href="img/sprite/symbols.svg#phone"></use>
+            <div class="contur__main">
+              <div class="r15 aic fs">
+                <div class="contur__icon-area">
+                  <svg class="sa i24">
+                    <use xlink:href="img/sprite/symbols.svg#tablet"></use>
+                  </svg>
+                </div>
+                <p class="p2">Заполните, пожалуйста, информацию об&nbsp;участниках <br class="n1hide x3hide">или позвоните <br class="x1hide"><span class="n1hide">&ensp;</span>по&nbsp;телефону службы записи <br class="n1hide x3hide"><span class="x1hide">&ensp;</span><a class="sa-link link vat ri5">
+                    <svg class="sw2 i16">
+                      <use xlink:href="img/sprite/symbols.svg#phone-call"></use>
                     </svg><span>+7&nbsp;(812)&nbsp;327-49-55</span></a>&ensp;<span>(многоканальный)</span></p>
               </div>
-              <div class="col7 aic">
-                <p class="p1">Для оперативного обмена документами присоединяйтесь к&nbsp;нам в&nbsp;ЭДО</p><img src="img/sign/contur.png" alt="">
+              <hr class="bdl">
+              <div class="contur__info-area">
+                <div class="contur__icon-area n3hide x4hide" style="visibility: hidden;"></div>
+                <p class="p2 x4tac twb fg">Для оперативного обмена документами присоединяйтесь к&nbsp;нам в&nbsp;ЭДО</p><img class="contur__img" src="img/sign/contur.png" alt="">
               </div>
             </div>
           </div>
@@ -254,49 +259,47 @@
           <div class="container">
             <form class="col1">
               <div class="col1" id="participants">
-                <fieldset class="tpd1 tbd2l">
-                  <div class="n1o1">
-                    <legend class="t1d n1w3 n3w4">Данные участника | 1</legend>
-                    <div class="col2">
-                      <div class="grid2 x3grid1 cg aie g3 m2">
-                        <label class="input-wrapper col7">
-                          <p class="input-wrapper__label"><span class="input-wrapper__label-main p2">Фамилия Имя Отчество</span>
-                          </p>
-                          <input class="input _req" type="text" name="participant[]" placeholder="Иванов Иван Иванович" required="required"/>
+                <fieldset class="n1o1">         
+                  <legend class="t1d n1w3 n3w4">Данные участника | 1</legend>
+                  <div class="col2">
+                    <div class="grid2 x3grid1 cg aie g3 m2">
+                      <label class="input-wrapper col7">
+                        <p class="input-wrapper__label"><span class="input-wrapper__label-main p2">Фамилия Имя Отчество</span>
+                        </p>
+                        <input class="input _req" type="text" name="participant[]" placeholder="Иванов Иван Иванович" required="required"/>
+                      </label>
+                      <label class="input-wrapper col7">
+                        <p class="input-wrapper__label"><span class="input-wrapper__label-main p2">Должность</span>
+                        </p>
+                        <input class="input _req" type="text" name="post[]" placeholder="Должность" required="required"/>
+                      </label>
+                      <label class="input-wrapper col7">
+                        <p class="input-wrapper__label"><span class="input-wrapper__label-main p2">Телефоны</span><span class="input-wrapper__label-add"> (мобильный, рабочий)</span>
+                        </p>
+                        <input class="input _req" type="text" name="phones[]" placeholder="Телефоны (мобильный, рабочий)" required="required"/>
+                      </label>
+                      <label class="input-wrapper col7">
+                        <p class="input-wrapper__label"><span class="input-wrapper__label-main p2">E-mail</span><span class="input-wrapper__label-add"> (слушателя или контактного лица. Необходим для отправки финансовых документов)</span>
+                        </p>
+                        <input class="input _req" type="email" name="email[]" placeholder="Иванов Иван Иванович" required="required"/>
+                      </label>
+                    </div>
+                    <div class="col3">
+                      <div>
+                        <label class="checkbox _checkbox">
+                          <input class="checkbox__input" type="checkbox" name="code-exist[]" value=""/>
+                          <div class="checkbox__span-wrapper-blue"><span class="checkbox__span">У&nbsp;меня есть промокод</span></div>
                         </label>
-                        <label class="input-wrapper col7">
-                          <p class="input-wrapper__label"><span class="input-wrapper__label-main p2">Должность</span>
+                        <label class="input-wrapper col7 w m5 _checkbox-body">
+                          <p class="input-wrapper__label"><span class="input-wrapper__label-main p2">Введите промокод (код Вы&nbsp;можете получить, только <a class="link" href="#">подписавшись на&nbsp;рассылку</a>)</span>
                           </p>
-                          <input class="input _req" type="text" name="post[]" placeholder="Должность" required="required"/>
-                        </label>
-                        <label class="input-wrapper col7">
-                          <p class="input-wrapper__label"><span class="input-wrapper__label-main p2">Телефоны</span><span class="input-wrapper__label-add"> (мобильный, рабочий)</span>
-                          </p>
-                          <input class="input _req" type="text" name="phones[]" placeholder="Телефоны (мобильный, рабочий)" required="required"/>
-                        </label>
-                        <label class="input-wrapper col7">
-                          <p class="input-wrapper__label"><span class="input-wrapper__label-main p2">E-mail</span><span class="input-wrapper__label-add"> (слушателя или контактного лица. Необходим для отправки финансовых документов)</span>
-                          </p>
-                          <input class="input _req" type="email" name="email[]" placeholder="Иванов Иван Иванович" required="required"/>
+                          <input class="input" type="text" name="code-num[]" placeholder="XXXXXX"/>
                         </label>
                       </div>
-                      <div class="col3">
-                        <div>
-                          <label class="checkbox _checkbox">
-                            <input class="checkbox__input" type="checkbox" name="code-exist[]"/>
-                            <div class="checkbox__span-wrapper-blue"><span class="checkbox__span">У&nbsp;меня есть промокод</span></div>
-                          </label>
-                          <label class="input-wrapper col7 w m5 _checkbox-body">
-                            <p class="input-wrapper__label"><span class="input-wrapper__label-main p2">Введите промокод (код Вы&nbsp;можете получить, только <a class="link" href="#">подписавшись на&nbsp;рассылку</a>)</span>
-                            </p>
-                            <input class="input" type="text" name="code-num[]" placeholder="XXXXXX"/>
-                          </label>
-                        </div>
-                        <label class="checkbox">
-                          <input class="checkbox__input" type="checkbox" name="certificate[]"/>
-                          <div class="checkbox__span-wrapper-blue"><span class="checkbox__span">Хочу получить дополнительное удостоверение на&nbsp;английском языке (+3000 рублей)</span></div>
-                        </label>
-                      </div>
+                      <label class="checkbox">
+                        <input class="checkbox__input" type="checkbox" name="certificate[]" value=""/>
+                        <div class="checkbox__span-wrapper-blue"><span class="checkbox__span">Хочу получить дополнительное удостоверение на&nbsp;английском языке (+3000 рублей)</span></div>
+                      </label>
                     </div>
                   </div>
                 </fieldset>
@@ -336,7 +339,7 @@
                 <div class="row x3wrap g7 n1o1">
                   <div class="col ais n2w3 w4">
                     <label class="checkbox">
-                      <input class="checkbox__input" type="checkbox" name="code-exist" checked="checked"/>
+                      <input class="checkbox__input" type="checkbox" name="code-exist" value="" checked="checked"/>
                       <div class="checkbox__span-wrapper-blue"><span class="checkbox__span">Нужна&nbsp;ли вам гостиница?</span></div>
                     </label>
                   </div>
@@ -351,11 +354,11 @@
                   </div>
                   <div class="col7 ais">
                     <label class="checkbox">
-                      <input class="checkbox__input" type="checkbox" name="general-management" checked="checked"/>
+                      <input class="checkbox__input" type="checkbox" name="general-management" value="" checked="checked"/>
                       <div class="checkbox__span-wrapper-blue"><span class="checkbox__span">Общий менеджмент</span></div>
                     </label>
                     <label class="checkbox">
-                      <input class="checkbox__input" type="checkbox" name="production-managers" checked="checked"/>
+                      <input class="checkbox__input" type="checkbox" name="production-managers" value="" checked="checked"/>
                       <div class="checkbox__span-wrapper-blue"><span class="checkbox__span">Руководителям производств</span></div>
                     </label>
                   </div>
@@ -365,7 +368,7 @@
                 <div class="n1o1 n2o0 n3o2 col5 ais">
                   <button class="button-primary n1w5 n2w6 n3w8 w4">Записаться на&nbsp;курс в&nbsp;учебном центре</button>
                   <label class="checkbox">
-                    <input class="checkbox__input" type="checkbox" name="information-received" checked="checked" required="required"/>
+                    <input class="checkbox__input" type="checkbox" name="information-received" value="" checked="checked" required="required"/>
                     <div class="checkbox__span-wrapper-blue"><span class="checkbox__span">С&nbsp;<span class="link _spoller-btn">информацией</span> об&nbsp;ограничении ответственности ознакомлен</span></div>
                   </label>
                 </div>
@@ -628,6 +631,6 @@
     </section>
     <div class="loading" id="loading"><img class="loading__img" src="/img/loading.svg" alt=""></div>
     <div id="measure"></div>
-    <script src="js/script.min.js?_v=1787030510422"></script>
+    <script src="js/script.min.js?_v=1788353889139"></script>
   </body>
 </html>
