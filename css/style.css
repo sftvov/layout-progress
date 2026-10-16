@@ -4790,6 +4790,46 @@ button[data-vc-week-day] {
   }
 }
 
+@media (max-width: 1279.95px) {
+  picture:has(> img.x1hide) {
+    display: none;
+  }
+}
+@media (max-width: 1031.95px) {
+  picture:has(> img.x2hide) {
+    display: none;
+  }
+}
+@media (max-width: 767.95px) {
+  picture:has(> img.x3hide) {
+    display: none;
+  }
+}
+@media (max-width: 539.95px) {
+  picture:has(> img.x4hide) {
+    display: none;
+  }
+}
+@media (min-width: 1279.95px) {
+  picture:has(> img.n1hide) {
+    display: none;
+  }
+}
+@media (min-width: 1031.95px) {
+  picture:has(> img.n2hide) {
+    display: none;
+  }
+}
+@media (min-width: 767.95px) {
+  picture:has(> img.n3hide) {
+    display: none;
+  }
+}
+@media (min-width: 539.95px) {
+  picture:has(> img.n4hide) {
+    display: none;
+  }
+}
 .mba {
   margin-bottom: auto;
 }
@@ -7103,7 +7143,7 @@ svg {
   row-gap: 15px;
   justify-content: flex-end;
   width: var(--4columns);
-  padding-bottom: 15px;
+  padding-bottom: 30px;
 }
 @media (min-width: 1279.95px) {
   .main-slide__body {
@@ -8381,7 +8421,6 @@ svg {
 }
 @media (max-width: 539.95px) {
   .distance-hero__main {
-    margin-top: 30px;
     padding: 30px 0;
   }
 }
@@ -8842,7 +8881,7 @@ svg {
 
 .main-slider__navigation {
   position: absolute;
-  bottom: 75px;
+  bottom: 90px;
   right: var(--field);
 }
 @media (min-width: 1279.95px) {
