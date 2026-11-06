@@ -5058,6 +5058,30 @@ button[data-vc-week-day] {
   }
 }
 
+@media (max-width: 539.95px) {
+  .x4tpd5, .x4pd5f, .x4pd5 {
+    padding-top: 15px;
+  }
+}
+
+@media (max-width: 539.95px) {
+  .x4rpd5, .x4pd5f {
+    padding-right: 15px;
+  }
+}
+
+@media (max-width: 539.95px) {
+  .x4bpd5, .x4pd5f, .x4pd5 {
+    padding-bottom: 15px;
+  }
+}
+
+@media (max-width: 539.95px) {
+  .x4lpd5, .x4pd5f {
+    padding-left: 15px;
+  }
+}
+
 .tpd7, .pd7 {
   padding-top: 7px;
 }
