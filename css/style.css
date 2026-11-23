@@ -3651,11 +3651,14 @@ button[data-vc-week-day] {
   hyphens: auto; /* Красивые переносы с дефисами */
 }
 
-.t1, .t1d, .title {
+.x2t1s, .t1s, .t1m, .t1, .t1d, .title {
   font-family: "RobotoCondensed";
+  text-transform: uppercase;
+}
+
+.t1, .t1d, .title {
   font-size: 1.7142857143em;
   line-height: 1.25;
-  text-transform: uppercase;
 }
 @media (max-width: 1031.95px) {
   .t1, .t1d, .title {
@@ -3665,6 +3668,23 @@ button[data-vc-week-day] {
 }
 @media (max-width: 539.95px) {
   .t1, .t1d, .title {
+    font-size: 1.1428571429em;
+    line-height: 1.25;
+  }
+}
+
+.t1m {
+  font-size: 1.4285714286em;
+  line-height: 1.2;
+}
+
+.t1s {
+  font-size: 1.1428571429em;
+  line-height: 1.25;
+}
+
+@media (max-width: 1031.95px) {
+  .x2t1s {
     font-size: 1.1428571429em;
     line-height: 1.25;
   }
@@ -8798,6 +8818,49 @@ svg {
 }
 .plan__format {
   min-height: 30px;
+}
+
+.prezident__grid {
+  display: grid;
+  grid-template-columns: var(--3columns) 1fr;
+  grid-template-areas: "photo content" "sign add-content";
+  gap: 30px var(--gutter);
+}
+@media (max-width: 1279.95px) {
+  .prezident__grid {
+    grid-template-columns: var(--4columns) 1fr;
+  }
+}
+@media (max-width: 1031.95px) {
+  .prezident__grid {
+    grid-template-columns: var(--3columns) 1fr;
+    grid-template-areas: "photo content" "sign content" "add-content add-content";
+  }
+}
+@media (max-width: 767.95px) {
+  .prezident__grid {
+    align-items: end;
+    grid-template-columns: var(--2columns) 1fr;
+    grid-template-areas: "photo sign" "content content" "add-content add-content";
+  }
+}
+@media (max-width: 539.95px) {
+  .prezident__grid {
+    grid-template-columns: 1fr;
+    grid-template-areas: "photo" "sign" "content" "add-content";
+  }
+}
+.prezident__photo {
+  grid-area: photo;
+}
+.prezident__sign {
+  grid-area: sign;
+}
+.prezident__content {
+  grid-area: content;
+}
+.prezident__add-content {
+  grid-area: add-content;
 }
 
 .programms__main {
