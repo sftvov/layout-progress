@@ -3611,6 +3611,12 @@ button[data-vc-week-day] {
   }
 }
 
+@media (max-width: 767.95px) {
+  .x3tas {
+    text-align: start;
+  }
+}
+
 @media (max-width: 539.95px) {
   .x4tas {
     text-align: start;
@@ -3619,6 +3625,12 @@ button[data-vc-week-day] {
 
 .tae {
   text-align: end;
+}
+
+@media (max-width: 539.95px) {
+  .x4tae {
+    text-align: end;
+  }
 }
 
 .vat {
@@ -8823,8 +8835,8 @@ svg {
 .prezident__grid {
   display: grid;
   grid-template-columns: var(--3columns) 1fr;
-  grid-template-areas: "photo content" "sign add-content";
-  gap: 30px var(--gutter);
+  grid-template-areas: "photo content" "sign-1 add-1" "sign-2 add-2";
+  gap: 15px var(--gutter);
 }
 @media (max-width: 1279.95px) {
   .prezident__grid {
@@ -8834,20 +8846,22 @@ svg {
 @media (max-width: 1031.95px) {
   .prezident__grid {
     grid-template-columns: var(--3columns) 1fr;
-    grid-template-areas: "photo content" "sign content" "add-content add-content";
+    grid-template-rows: auto auto 1fr;
+    grid-template-areas: "photo content" "sign-1 content" "sign-2 content" "add-1 add-1" "add-2 add-2";
   }
 }
 @media (max-width: 767.95px) {
   .prezident__grid {
     align-items: end;
+    grid-template-rows: 1fr auto;
     grid-template-columns: var(--2columns) 1fr;
-    grid-template-areas: "photo sign" "content content" "add-content add-content";
+    grid-template-areas: "photo sign-1" "photo sign-2" "content content" "add-1 add-1" "add-2 add-2";
   }
 }
 @media (max-width: 539.95px) {
   .prezident__grid {
     grid-template-columns: 1fr;
-    grid-template-areas: "photo" "sign" "content" "add-content";
+    grid-template-areas: "photo" "sign" "content" "add-1" "add-2";
   }
 }
 .prezident__photo {
@@ -8856,11 +8870,25 @@ svg {
 .prezident__sign {
   grid-area: sign;
 }
+.prezident__sign-1 {
+  grid-area: sign-1;
+}
+.prezident__sign-2 {
+  grid-area: sign-2;
+}
 .prezident__content {
   grid-area: content;
 }
-.prezident__add-content {
-  grid-area: add-content;
+@media (max-width: 767.95px) {
+  .prezident__content {
+    margin-top: 15px;
+  }
+}
+.prezident__add-1 {
+  grid-area: add-1;
+}
+.prezident__add-2 {
+  grid-area: add-2;
 }
 
 .programms__main {
